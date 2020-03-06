@@ -148,7 +148,7 @@ static void user_task(void *arg) {
  */
  
     //microsd_write_operation_t write;
-   // write.filename = "USR";
+    // write.filename = "USR";
     //write.content = "Startup\n";
     //xQueueSendToBack(queue_microsd, &write, portMAX_DELAY);
 
@@ -174,7 +174,7 @@ static void user_task(void *arg) {
     //char str4[20];
     while(true){
         vTaskDelay(1000);
-        sprintf(str1,"X:%i Y:%i",(int) gX_hat, (int) gY_hat);
+        sprintf(str1,"X: %i Y: %i",(int)gX_hat, (int)gY_hat);
         display_text_on_line(1,str1);
         sprintf(str2,"HEADING: %i",(int) ((gTheta_hat)*RAD2DEG));
         display_text_on_line(2,str2);
