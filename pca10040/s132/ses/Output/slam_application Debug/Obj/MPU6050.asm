@@ -24,7 +24,7 @@
 MPU_read_8bit:
 .LVL0:
 .LFB266:
-	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\MPU6050.c"
+	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\MPU6050.c"
 	.loc 1 18 35 view -0
 	@ args = 0, pretend = 0, frame = 8
 	@ frame_needed = 0, uses_anonymous_args = 0
@@ -2015,7 +2015,7 @@ IMU_COPY:
 	.byte	0x5
 	.4byte	.LASF28
 	.byte	0
-	.file 6 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\MPU6050.h"
+	.file 6 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\MPU6050.h"
 	.section	.debug_types,"G",%progbits,wt.19672b919b6a58e3,comdat
 	.4byte	0x4c
 	.2byte	0x4
@@ -2070,7 +2070,7 @@ IMU_COPY:
 	.file 8 "../../../../../../modules/nrfx/mdk/system_nrf52.h"
 	.file 9 "../../../../../../components/libraries/util/app_util.h"
 	.file 10 "C:/Program Files (x86)/SEGGER/SEGGER Embedded Studio for ARM 4.50/include/stdio.h"
-	.file 11 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\i2c.h"
+	.file 11 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\i2c.h"
 	.section	.debug_info,"",%progbits
 .Ldebug_info0:
 	.4byte	0x98e
@@ -4982,6 +4982,10 @@ IMU_COPY:
 	.ascii	"__RAL_codeset_ascii\000"
 .LASF9:
 	.ascii	"__RAL_error_decoder_fn_t\000"
+.LASF145:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application\\\\pca10040\\\\s132\\\\"
+	.ascii	"ses\000"
 .LASF41:
 	.ascii	"p_cs_precedes\000"
 .LASF88:
@@ -5027,9 +5031,6 @@ IMU_COPY:
 	.ascii	"__RAL_global_locale\000"
 .LASF17:
 	.ascii	"codeset\000"
-.LASF144:
-	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
-	.ascii	"al\\slam_applicationLeithe\\drivers\\MPU6050.c\000"
 .LASF24:
 	.ascii	"__towupper\000"
 .LASF28:
@@ -5038,8 +5039,9 @@ IMU_COPY:
 	.ascii	"i2cRecive\000"
 .LASF85:
 	.ascii	"__RAL_data_utf8_comma\000"
-.LASF105:
-	.ascii	"stdin\000"
+.LASF144:
+	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
+	.ascii	"al\\slam_application\\drivers\\MPU6050.c\000"
 .LASF43:
 	.ascii	"n_cs_precedes\000"
 .LASF20:
@@ -5072,6 +5074,8 @@ IMU_COPY:
 	.ascii	"temp\000"
 .LASF58:
 	.ascii	"date_format\000"
+.LASF105:
+	.ascii	"stdin\000"
 .LASF3:
 	.ascii	"unsigned int\000"
 .LASF119:
@@ -5122,10 +5126,6 @@ IMU_COPY:
 	.ascii	"day_names\000"
 .LASF5:
 	.ascii	"__cr_flag\000"
-.LASF145:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF103:
 	.ascii	"timeval\000"
 .LASF106:

@@ -23,7 +23,7 @@
 mag3110_write:
 .LVL0:
 .LFB277:
-	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\mag3110.c"
+	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\mag3110.c"
 	.loc 1 38 53 view -0
 	@ args = 0, pretend = 0, frame = 8
 	@ frame_needed = 0, uses_anonymous_args = 0
@@ -1916,7 +1916,7 @@ y_scale:
 	.byte	0x5
 	.4byte	.LASF39
 	.byte	0
-	.file 7 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\mag3110.h"
+	.file 7 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\mag3110.h"
 	.section	.debug_types,"G",%progbits,wt.d573fbda0068ce4d,comdat
 	.4byte	0x58
 	.2byte	0x4
@@ -2023,7 +2023,7 @@ y_scale:
 	.file 12 "../../../../../../components/libraries/experimental_log/src/nrf_log_internal.h"
 	.file 13 "C:/Program Files (x86)/SEGGER/SEGGER Embedded Studio for ARM 4.50/include/math.h"
 	.file 14 "../../../../../../components/libraries/experimental_log/nrf_log_ctrl.h"
-	.file 15 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\i2c.h"
+	.file 15 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\i2c.h"
 	.file 16 "C:/Program Files (x86)/SEGGER/SEGGER Embedded Studio for ARM 4.50/include/stdlib.h"
 	.section	.debug_info,"",%progbits
 .Ldebug_info0:
@@ -5151,6 +5151,10 @@ y_scale:
 	.ascii	"__RAL_error_decoder_fn_t\000"
 .LASF140:
 	.ascii	"x_min\000"
+.LASF154:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application\\\\pca10040\\\\s132\\\\"
+	.ascii	"ses\000"
 .LASF52:
 	.ascii	"p_cs_precedes\000"
 .LASF103:
@@ -5222,6 +5226,8 @@ y_scale:
 	.ascii	"uint16_t\000"
 .LASF89:
 	.ascii	"double\000"
+.LASF64:
+	.ascii	"day_names\000"
 .LASF31:
 	.ascii	"__isctype\000"
 .LASF15:
@@ -5282,16 +5288,13 @@ y_scale:
 	.ascii	"name\000"
 .LASF87:
 	.ascii	"mag_oversampling_t\000"
-.LASF64:
-	.ascii	"day_names\000"
+.LASF153:
+	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
+	.ascii	"al\\slam_application\\drivers\\mag3110.c\000"
 .LASF126:
 	.ascii	"x_offset\000"
 .LASF77:
 	.ascii	"MAG_OS_16\000"
-.LASF154:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF118:
 	.ascii	"timeval\000"
 .LASF121:
@@ -5358,9 +5361,6 @@ y_scale:
 	.ascii	"short int\000"
 .LASF141:
 	.ascii	"y_min\000"
-.LASF153:
-	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
-	.ascii	"al\\slam_applicationLeithe\\drivers\\mag3110.c\000"
 .LASF108:
 	.ascii	"__RAL_error_decoder_head\000"
 .LASF146:

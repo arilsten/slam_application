@@ -24,7 +24,7 @@
 pwm_ready_callback:
 .LVL0:
 .LFB317:
-	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\motor.c"
+	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\motor.c"
 	.loc 1 22 1 view -0
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
@@ -37,7 +37,7 @@ pwm_ready_callback:
 	.align	2
 .LC1:
 	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
-	.ascii	"al\\slam_applicationLeithe\\drivers\\motor.c\000"
+	.ascii	"al\\slam_application\\drivers\\motor.c\000"
 	.section	.text.motor_init,"ax",%progbits
 	.align	1
 	.global	motor_init
@@ -73,9 +73,9 @@ motor_init:
 	cmp	r4, #0
 	bne	.L8
 .L4:
-	.loc 1 31 247 is_stmt 1 discriminator 3 view .LVU11
+	.loc 1 31 241 is_stmt 1 discriminator 3 view .LVU11
 .LBE14:
-	.loc 1 31 262 discriminator 3 view .LVU12
+	.loc 1 31 256 discriminator 3 view .LVU12
 	.loc 1 33 2 discriminator 3 view .LVU13
 	.loc 1 33 27 is_stmt 0 discriminator 3 view .LVU14
 	movs	r4, #0
@@ -138,9 +138,9 @@ motor_init:
 	cbnz	r0, .L9
 .LVL9:
 .L5:
-	.loc 1 44 247 is_stmt 1 discriminator 3 view .LVU34
+	.loc 1 44 241 is_stmt 1 discriminator 3 view .LVU34
 .LBE15:
-	.loc 1 44 262 discriminator 3 view .LVU35
+	.loc 1 44 256 discriminator 3 view .LVU35
 	.loc 1 45 2 discriminator 3 view .LVU36
 	ldr	r0, .L10+8
 	bl	app_pwm_enable
@@ -6540,7 +6540,7 @@ m_pwm_PWM1_timer:
 	.byte	0x3
 	.uleb128 0
 	.uleb128 0x1
-	.file 20 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\motor.h"
+	.file 20 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\motor.h"
 	.byte	0x3
 	.uleb128 0x1
 	.uleb128 0x14
@@ -6847,6 +6847,10 @@ m_pwm_PWM1_timer:
 	.ascii	"__RAL_error_decoder_fn_t\000"
 .LASF80:
 	.ascii	"NRF_GPIOTE_POLARITY_HITOLO\000"
+.LASF246:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application\\\\pca10040\\\\s132\\\\"
+	.ascii	"ses\000"
 .LASF21:
 	.ascii	"app_pwm_polarity_t\000"
 .LASF141:
@@ -7064,10 +7068,6 @@ m_pwm_PWM1_timer:
 	.ascii	"m_pwm_PWM1_cb\000"
 .LASF83:
 	.ascii	"__cr_flag\000"
-.LASF246:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF232:
 	.ascii	"pwm1_cfg\000"
 .LASF198:
@@ -7156,9 +7156,8 @@ m_pwm_PWM1_timer:
 	.ascii	"__StackTop\000"
 .LASF242:
 	.ascii	"app_pwm_enable\000"
-.LASF245:
-	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
-	.ascii	"al\\slam_applicationLeithe\\drivers\\motor.c\000"
+.LASF76:
+	.ascii	"_Bool\000"
 .LASF167:
 	.ascii	"int32_t\000"
 .LASF23:
@@ -7181,6 +7180,8 @@ m_pwm_PWM1_timer:
 	.ascii	"instance_id\000"
 .LASF188:
 	.ascii	"__RAL_error_decoder_head\000"
+.LASF161:
+	.ascii	"__mbstate_s\000"
 .LASF197:
 	.ascii	"FILE\000"
 .LASF13:
@@ -7207,8 +7208,6 @@ m_pwm_PWM1_timer:
 	.ascii	"int_p_sign_posn\000"
 .LASF24:
 	.ascii	"pins\000"
-.LASF76:
-	.ascii	"_Bool\000"
 .LASF227:
 	.ascii	"motor_right_forward\000"
 .LASF110:
@@ -7261,8 +7260,9 @@ m_pwm_PWM1_timer:
 	.ascii	"__RAL_error_decoder_s\000"
 .LASF187:
 	.ascii	"__RAL_error_decoder_t\000"
-.LASF161:
-	.ascii	"__mbstate_s\000"
+.LASF245:
+	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
+	.ascii	"al\\slam_application\\drivers\\motor.c\000"
 .LASF22:
 	.ascii	"uint8_t\000"
 .LASF155:

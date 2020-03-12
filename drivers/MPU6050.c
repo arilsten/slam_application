@@ -131,7 +131,7 @@ float fIMU_readFloatGyroY(void){
 float fIMU_readFloatGyroZ(void){
     int16_t temp;
     temp = ((int16_t)IMU_COPY[12]<<8) | IMU_COPY[13];
-    return GyroValueToDegrees(temp);
+    return GyroValueToDegrees(temp);						
 }
 
 IMU_reading_t IMU_getGyro(void){

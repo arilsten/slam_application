@@ -28,7 +28,7 @@
 motorRegulator:
 .LVL0:
 .LFB293:
-	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\software\\ControllerTask.c"
+	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\software\\ControllerTask.c"
 	.loc 1 339 73 view -0
 	@ args = 0, pretend = 0, frame = 8
 	@ frame_needed = 0, uses_anonymous_args = 0
@@ -1752,7 +1752,7 @@ rightI:
 .LEFDE2:
 	.text
 .Letext0:
-	.file 2 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\software\\globals.h"
+	.file 2 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\software\\globals.h"
 	.section	.debug_types,"G",%progbits,wt.983716c4a1013425,comdat
 	.4byte	0x45
 	.2byte	0x4
@@ -7719,7 +7719,7 @@ rightI:
 	.byte	0x4
 	.byte	0x4
 	.byte	0x4
-	.file 84 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\software\\ControllerTask.h"
+	.file 84 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\software\\ControllerTask.h"
 	.byte	0x3
 	.uleb128 0x12
 	.uleb128 0x54
@@ -7766,8 +7766,10 @@ rightI:
 	.ascii	"int_curr_symbol\000"
 .LASF23:
 	.ascii	"__RAL_error_decoder_fn_t\000"
-.LASF157:
-	.ascii	"rspeed\000"
+.LASF247:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application\\\\pca10040\\\\s132\\\\"
+	.ascii	"ses\000"
 .LASF53:
 	.ascii	"p_cs_precedes\000"
 .LASF128:
@@ -7875,6 +7877,8 @@ rightI:
 	.ascii	"time_format\000"
 .LASF231:
 	.ascii	"display_text_on_line\000"
+.LASF157:
+	.ascii	"rspeed\000"
 .LASF8:
 	.ascii	"NRF_LOG_SEVERITY_WARNING\000"
 .LASF5:
@@ -7989,10 +7993,8 @@ rightI:
 	.ascii	"__cr_flag\000"
 .LASF52:
 	.ascii	"frac_digits\000"
-.LASF247:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
+.LASF234:
+	.ascii	"sprintf\000"
 .LASF112:
 	.ascii	"timeval\000"
 .LASF210:
@@ -8033,6 +8035,8 @@ rightI:
 	.ascii	"xControllerBSem\000"
 .LASF242:
 	.ascii	"xQueueReceive\000"
+.LASF99:
+	.ascii	"__user_set_time_of_day\000"
 .LASF21:
 	.ascii	"decode\000"
 .LASF121:
@@ -8051,8 +8055,9 @@ rightI:
 	.ascii	"__tolower\000"
 .LASF136:
 	.ascii	"xPoseMutex\000"
-.LASF99:
-	.ascii	"__user_set_time_of_day\000"
+.LASF246:
+	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
+	.ascii	"al\\slam_application\\software\\ControllerTask.c\000"
 .LASF60:
 	.ascii	"int_n_cs_precedes\000"
 .LASF151:
@@ -8063,10 +8068,6 @@ rightI:
 	.ascii	"controllerStop\000"
 .LASF38:
 	.ascii	"__towlower\000"
-.LASF246:
-	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
-	.ascii	"al\\slam_applicationLeithe\\software\\ControllerTas"
-	.ascii	"k.c\000"
 .LASF46:
 	.ascii	"mon_decimal_point\000"
 .LASF74:
@@ -8087,8 +8088,6 @@ rightI:
 	.ascii	"unsigned char\000"
 .LASF178:
 	.ascii	"yhat\000"
-.LASF234:
-	.ascii	"sprintf\000"
 .LASF89:
 	.ascii	"__RAL_c_locale_day_names\000"
 .LASF239:

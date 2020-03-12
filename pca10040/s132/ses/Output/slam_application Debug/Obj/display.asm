@@ -24,7 +24,7 @@
 	.align	2
 .LC3:
 	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
-	.ascii	"al\\slam_applicationLeithe\\drivers\\display.c\000"
+	.ascii	"al\\slam_application\\drivers\\display.c\000"
 	.section	.text.display_init,"ax",%progbits
 	.align	1
 	.global	display_init
@@ -35,7 +35,7 @@
 	.type	display_init, %function
 display_init:
 .LFB256:
-	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\display.c"
+	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\display.c"
 	.loc 1 30 25 view -0
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
@@ -53,9 +53,9 @@ display_init:
 	cbnz	r0, .L4
 .LVL1:
 .L2:
-	.loc 1 31 270 is_stmt 1 discriminator 3 view .LVU6
+	.loc 1 31 264 is_stmt 1 discriminator 3 view .LVU6
 .LBE14:
-	.loc 1 31 285 discriminator 3 view .LVU7
+	.loc 1 31 279 discriminator 3 view .LVU7
 	.loc 1 32 2 discriminator 3 view .LVU8
 	ldr	r4, .L5
 	movs	r1, #0
@@ -660,9 +660,9 @@ display_task:
 	movs	r1, #141
 	bl	app_error_handler
 .LVL55:
-	.loc 1 141 220 discriminator 1 view .LVU178
+	.loc 1 141 214 discriminator 1 view .LVU178
 .LBE28:
-	.loc 1 141 235 discriminator 1 view .LVU179
+	.loc 1 141 229 discriminator 1 view .LVU179
 	.loc 1 143 13 discriminator 1 view .LVU180
 	.loc 1 144 13 discriminator 1 view .LVU181
 	b	.L39
@@ -743,9 +743,9 @@ display_task:
 	movs	r1, #150
 	bl	app_error_handler
 .LVL62:
-	.loc 1 150 329 discriminator 1 view .LVU202
+	.loc 1 150 323 discriminator 1 view .LVU202
 .LBE29:
-	.loc 1 150 344 discriminator 1 view .LVU203
+	.loc 1 150 338 discriminator 1 view .LVU203
 	.loc 1 152 13 discriminator 1 view .LVU204
 	.loc 1 153 13 discriminator 1 view .LVU205
 	b	.L39
@@ -770,9 +770,9 @@ display_task:
 	movs	r1, #155
 	bl	app_error_handler
 .LVL64:
-	.loc 1 155 374 discriminator 1 view .LVU213
+	.loc 1 155 368 discriminator 1 view .LVU213
 .LBE30:
-	.loc 1 155 389 discriminator 1 view .LVU214
+	.loc 1 155 383 discriminator 1 view .LVU214
 	.loc 1 158 13 discriminator 1 view .LVU215
 	.loc 1 159 13 discriminator 1 view .LVU216
 	b	.L39
@@ -799,9 +799,9 @@ display_task:
 	movs	r1, #161
 	bl	app_error_handler
 .LVL66:
-	.loc 1 161 468 discriminator 1 view .LVU224
+	.loc 1 161 462 discriminator 1 view .LVU224
 .LBE31:
-	.loc 1 161 483 discriminator 1 view .LVU225
+	.loc 1 161 477 discriminator 1 view .LVU225
 	.loc 1 165 13 discriminator 1 view .LVU226
 	.loc 1 166 13 discriminator 1 view .LVU227
 	b	.L39
@@ -1091,7 +1091,7 @@ m_nrf_lcd:
 .LEFDE16:
 	.text
 .Letext0:
-	.file 2 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\microsd.h"
+	.file 2 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\microsd.h"
 	.section	.debug_types,"G",%progbits,wt.6948d92ecae410ce,comdat
 	.4byte	0x4b
 	.2byte	0x4
@@ -1371,7 +1371,7 @@ m_nrf_lcd:
 	.byte	0x5
 	.ascii	"int\000"
 	.byte	0
-	.file 6 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\display.h"
+	.file 6 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\display.h"
 	.section	.debug_types,"G",%progbits,wt.d067c6f8b36ed178,comdat
 	.4byte	0x52
 	.2byte	0x4
@@ -7386,7 +7386,7 @@ m_nrf_lcd:
 	.uleb128 0x8
 	.byte	0x4
 	.byte	0x4
-	.file 58 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\oled.h"
+	.file 58 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\oled.h"
 	.byte	0x3
 	.uleb128 0xd
 	.uleb128 0x3a
@@ -7678,10 +7678,6 @@ m_nrf_lcd:
 	.ascii	"display_element_circle_t\000"
 .LASF195:
 	.ascii	"FONT_INFO\000"
-.LASF266:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF262:
 	.ascii	"nrf_log_frontend_std_0\000"
 .LASF254:
@@ -7734,6 +7730,8 @@ m_nrf_lcd:
 	.ascii	"_Bool\000"
 .LASF2:
 	.ascii	"char\000"
+.LASF56:
+	.ascii	"DISPLAY_LINE\000"
 .LASF16:
 	.ascii	"NRF_SPI_MODE_0\000"
 .LASF17:
@@ -7871,8 +7869,10 @@ m_nrf_lcd:
 	.ascii	"display_text_on_line\000"
 .LASF148:
 	.ascii	"am_pm_indicator\000"
-.LASF56:
-	.ascii	"DISPLAY_LINE\000"
+.LASF266:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application\\\\pca10040\\\\s132\\\\"
+	.ascii	"ses\000"
 .LASF133:
 	.ascii	"p_sep_by_space\000"
 .LASF25:
@@ -8091,6 +8091,9 @@ m_nrf_lcd:
 	.ascii	"NRF_LCD_ROTATE_90\000"
 .LASF95:
 	.ascii	"__irq_masks\000"
+.LASF265:
+	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
+	.ascii	"al\\slam_application\\drivers\\display.c\000"
 .LASF175:
 	.ascii	"__RAL_data_empty_string\000"
 .LASF83:
@@ -8119,9 +8122,6 @@ m_nrf_lcd:
 	.ascii	"data\000"
 .LASF49:
 	.ascii	"nrf_gfx_line_t\000"
-.LASF265:
-	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
-	.ascii	"al\\slam_applicationLeithe\\drivers\\display.c\000"
 .LASF231:
 	.ascii	"gX_hat\000"
 .LASF62:

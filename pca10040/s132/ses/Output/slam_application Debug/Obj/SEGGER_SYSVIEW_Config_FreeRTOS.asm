@@ -29,7 +29,7 @@
 	.type	_cbSendSystemDesc, %function
 _cbSendSystemDesc:
 .LFB200:
-	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\systemView\\SEGGER_SYSVIEW_Config_FreeRTOS.c"
+	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\systemView\\SEGGER_SYSVIEW_Config_FreeRTOS.c"
 	.loc 1 97 37 view -0
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
@@ -2207,7 +2207,7 @@ SEGGER_SYSVIEW_Conf:
 	.byte	0x4
 	.byte	0x4
 	.byte	0x4
-	.file 44 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\systemView\\SEGGER_SYSVIEW.h"
+	.file 44 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\systemView\\SEGGER_SYSVIEW.h"
 	.byte	0x3
 	.uleb128 0x41
 	.uleb128 0x2c
@@ -2308,8 +2308,8 @@ SEGGER_SYSVIEW_Conf:
 	.ascii	"long int\000"
 .LASF113:
 	.ascii	"_cbSendSystemDesc\000"
-.LASF35:
-	.ascii	"mon_thousands_sep\000"
+.LASF99:
+	.ascii	"long unsigned int\000"
 .LASF71:
 	.ascii	"__RAL_c_locale_abbrev_day_names\000"
 .LASF101:
@@ -2354,8 +2354,10 @@ SEGGER_SYSVIEW_Conf:
 	.ascii	"unsigned int\000"
 .LASF53:
 	.ascii	"day_names\000"
-.LASF99:
-	.ascii	"long unsigned int\000"
+.LASF111:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application\\\\pca10040\\\\s132\\\\"
+	.ascii	"ses\000"
 .LASF57:
 	.ascii	"am_pm_indicator\000"
 .LASF67:
@@ -2370,10 +2372,6 @@ SEGGER_SYSVIEW_Conf:
 	.ascii	"thousands_sep\000"
 .LASF10:
 	.ascii	"char\000"
-.LASF111:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF106:
 	.ascii	"SEGGER_SYSVIEW_Init\000"
 .LASF87:
@@ -2400,8 +2398,8 @@ SEGGER_SYSVIEW_Conf:
 	.ascii	"int_p_sign_posn\000"
 .LASF110:
 	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
-	.ascii	"al\\slam_applicationLeithe\\systemView\\SEGGER_SYSV"
-	.ascii	"IEW_Config_FreeRTOS.c\000"
+	.ascii	"al\\slam_application\\systemView\\SEGGER_SYSVIEW_Co"
+	.ascii	"nfig_FreeRTOS.c\000"
 .LASF47:
 	.ascii	"int_p_cs_precedes\000"
 .LASF94:
@@ -2418,6 +2416,8 @@ SEGGER_SYSVIEW_Conf:
 	.ascii	"stdin\000"
 .LASF65:
 	.ascii	"__RAL_global_locale\000"
+.LASF35:
+	.ascii	"mon_thousands_sep\000"
 .LASF27:
 	.ascii	"__mbtowc\000"
 .LASF103:

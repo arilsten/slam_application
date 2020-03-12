@@ -24,7 +24,7 @@
 buffer_init:
 .LVL0:
 .LFB0:
-	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\communication\\buffer.c"
+	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\communication\\buffer.c"
 	.loc 1 4 63 view -0
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
@@ -1361,7 +1361,7 @@ buffer_remove:
 	.byte	0x5
 	.4byte	.LASF22
 	.byte	0
-	.file 3 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\communication\\buffer.h"
+	.file 3 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\communication\\buffer.h"
 	.file 4 "C:/Program Files (x86)/SEGGER/SEGGER Embedded Studio for ARM 4.50/include/stdint.h"
 	.section	.debug_types,"G",%progbits,wt.0f7170025156f7d8,comdat
 	.4byte	0x91
@@ -3205,6 +3205,9 @@ buffer_remove:
 	.ascii	"decimal_point\000"
 .LASF47:
 	.ascii	"day_names\000"
+.LASF98:
+	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
+	.ascii	"al\\slam_application\\communication\\buffer.c\000"
 .LASF33:
 	.ascii	"int_frac_digits\000"
 .LASF11:
@@ -3231,8 +3234,6 @@ buffer_remove:
 	.ascii	"__towlower\000"
 .LASF32:
 	.ascii	"negative_sign\000"
-.LASF0:
-	.ascii	"decode\000"
 .LASF9:
 	.ascii	"name\000"
 .LASF94:
@@ -3263,6 +3264,10 @@ buffer_remove:
 	.ascii	"unsigned int\000"
 .LASF61:
 	.ascii	"uint16_t\000"
+.LASF99:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application\\\\pca10040\\\\s132\\\\"
+	.ascii	"ses\000"
 .LASF51:
 	.ascii	"am_pm_indicator\000"
 .LASF72:
@@ -3277,10 +3282,6 @@ buffer_remove:
 	.ascii	"size\000"
 .LASF2:
 	.ascii	"char\000"
-.LASF99:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF37:
 	.ascii	"n_cs_precedes\000"
 .LASF54:
@@ -3339,10 +3340,8 @@ buffer_remove:
 	.ascii	"p_sign_posn\000"
 .LASF83:
 	.ascii	"__RAL_data_utf8_minus\000"
-.LASF98:
-	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
-	.ascii	"al\\slam_applicationLeithe\\communication\\buffer.c"
-	.ascii	"\000"
+.LASF0:
+	.ascii	"decode\000"
 .LASF48:
 	.ascii	"abbrev_day_names\000"
 .LASF1:

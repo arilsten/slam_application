@@ -24,7 +24,7 @@
 BMA2x2_delay_msek:
 .LVL0:
 .LFB277:
-	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\bma2x2_support.c"
+	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\bma2x2_support.c"
 	.loc 1 28 33 view -0
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
@@ -1503,7 +1503,7 @@ delay_bytecode.8394:
 	.byte	0x5
 	.4byte	.LASF49
 	.byte	0
-	.file 11 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\bma2x2.h"
+	.file 11 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\bma2x2.h"
 	.section	.debug_types,"G",%progbits,wt.455b29ed6cb72083,comdat
 	.4byte	0x14e
 	.2byte	0x4
@@ -1807,7 +1807,7 @@ delay_bytecode.8394:
 	.file 14 "../../../../../../components/libraries/util/app_util.h"
 	.file 15 "C:/Program Files (x86)/SEGGER/SEGGER Embedded Studio for ARM 4.50/include/stdio.h"
 	.file 16 "../../../../../../components/libraries/experimental_log/src/nrf_log_internal.h"
-	.file 17 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\i2c.h"
+	.file 17 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\i2c.h"
 	.section	.debug_info,"",%progbits
 .Ldebug_info0:
 	.4byte	0x7d8
@@ -4144,7 +4144,7 @@ delay_bytecode.8394:
 	.uleb128 0x2
 	.uleb128 0xb
 	.byte	0x4
-	.file 18 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\bma2x2_support.h"
+	.file 18 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\bma2x2_support.h"
 	.byte	0x3
 	.uleb128 0x3
 	.uleb128 0x12
@@ -4533,6 +4533,10 @@ delay_bytecode.8394:
 	.ascii	"sample_xyz\000"
 .LASF92:
 	.ascii	"bus_write\000"
+.LASF178:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application\\\\pca10040\\\\s132\\\\"
+	.ascii	"ses\000"
 .LASF62:
 	.ascii	"p_cs_precedes\000"
 .LASF9:
@@ -4672,6 +4676,9 @@ delay_bytecode.8394:
 	.ascii	"data\000"
 .LASF59:
 	.ascii	"negative_sign\000"
+.LASF177:
+	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
+	.ascii	"al\\slam_application\\drivers\\bma2x2_support.c\000"
 .LASF3:
 	.ascii	"short unsigned int\000"
 .LASF36:
@@ -4686,10 +4693,6 @@ delay_bytecode.8394:
 	.ascii	"ms_time\000"
 .LASF27:
 	.ascii	"__cr_flag\000"
-.LASF178:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF132:
 	.ascii	"timeval\000"
 .LASF20:
@@ -4742,10 +4745,6 @@ delay_bytecode.8394:
 	.ascii	"__RAL_c_locale\000"
 .LASF43:
 	.ascii	"__tolower\000"
-.LASF177:
-	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
-	.ascii	"al\\slam_applicationLeithe\\drivers\\bma2x2_support"
-	.ascii	".c\000"
 .LASF119:
 	.ascii	"__user_set_time_of_day\000"
 .LASF155:

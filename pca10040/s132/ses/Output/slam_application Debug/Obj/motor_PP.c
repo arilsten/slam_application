@@ -1,9 +1,9 @@
-# 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\motor.c"
-# 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\pca10040\\s132\\ses//"
+# 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\motor.c"
+# 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\pca10040\\s132\\ses//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\motor.c"
-# 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\motor.h" 1
+# 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\motor.c"
+# 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\motor.h" 1
 
 
 
@@ -48,7 +48,7 @@ void motor_stop(void);
 void motor_brake(void);
 
 void vMotorMovementSwitch(int leftSpeed, int rightSpeed);
-# 2 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\motor.c" 2
+# 2 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\motor.c" 2
 # 1 "../../../../../../modules/nrfx/drivers/include/nrfx_gpiote.h" 1
 # 44 "../../../../../../modules/nrfx/drivers/include/nrfx_gpiote.h"
 # 1 "../../../../../../modules/nrfx/nrfx.h" 1
@@ -6040,7 +6040,7 @@ void nrfx_gpiote_clr_task_trigger(nrfx_gpiote_pin_t pin);
 
 
 void GPIOTE_IRQHandler(void);
-# 3 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\motor.c" 2
+# 3 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\motor.c" 2
 # 1 "../../../../../../components/libraries/pwm/app_pwm.h" 1
 # 65 "../../../../../../components/libraries/pwm/app_pwm.h"
 # 1 "../../../../../../integration/nrfx/legacy/nrf_drv_timer.h" 1
@@ -7207,8 +7207,8 @@ app_pwm_duty_t app_pwm_channel_duty_get(app_pwm_t const * const p_instance, uint
     uint16_t app_pwm_channel_duty_ticks_get(app_pwm_t const * const p_instance, uint8_t channel);
 # 327 "../../../../../../components/libraries/pwm/app_pwm.h"
     uint16_t app_pwm_cycle_ticks_get(app_pwm_t const * const p_instance);
-# 4 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\motor.c" 2
-# 16 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\motor.c"
+# 4 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\motor.c" 2
+# 16 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\motor.c"
 const nrf_drv_timer_t m_pwm_PWM1_timer = { .p_reg = ((NRF_TIMER_Type *) 0x40009000UL), .instance_id = NRFX_TIMER1_INST_IDX, .cc_channel_count = 4, }; app_pwm_cb_t m_pwm_PWM1_cb; const app_pwm_t PWM1 = { .p_cb = &m_pwm_PWM1_cb, .p_timer = &m_pwm_PWM1_timer, };
 
 extern int RightMotorDirection;
@@ -7224,17 +7224,17 @@ void motor_init() {
 
  if(!nrfx_gpiote_is_init())
   err = nrfx_gpiote_init();
- do { const uint32_t LOCAL_ERR_CODE = (err); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 31, (uint8_t*) "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\motor.c"); } while (0); } } while (0);
+ do { const uint32_t LOCAL_ERR_CODE = (err); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 31, (uint8_t*) "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\motor.c"); } while (0); } } while (0);
 
  nrfx_gpiote_out_config_t ina_config = { .init_state = 1 ? NRF_GPIOTE_INITIAL_VALUE_HIGH : NRF_GPIOTE_INITIAL_VALUE_LOW, .task_pin = 
-# 33 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\motor.c" 3 4
+# 33 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\motor.c" 3 4
                                       0
-# 33 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\motor.c"
+# 33 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\motor.c"
                                       , };
  nrfx_gpiote_out_config_t inb_config = { .init_state = 0 ? NRF_GPIOTE_INITIAL_VALUE_HIGH : NRF_GPIOTE_INITIAL_VALUE_LOW, .task_pin = 
-# 34 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\motor.c" 3 4
+# 34 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\motor.c" 3 4
                                       0
-# 34 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\motor.c"
+# 34 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\motor.c"
                                       , };
  nrfx_gpiote_out_init(3, &ina_config);
  nrfx_gpiote_out_init(4, &inb_config);
@@ -7245,7 +7245,7 @@ void motor_init() {
  pwm1_cfg.pin_polarity[0] = APP_PWM_POLARITY_ACTIVE_HIGH;
  pwm1_cfg.pin_polarity[1] = APP_PWM_POLARITY_ACTIVE_HIGH;
  err = app_pwm_init(&PWM1,&pwm1_cfg,pwm_ready_callback);
- do { const uint32_t LOCAL_ERR_CODE = (err); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 44, (uint8_t*) "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\motor.c"); } while (0); } } while (0);
+ do { const uint32_t LOCAL_ERR_CODE = (err); if (LOCAL_ERR_CODE != ((0x0) + 0)) { do { app_error_handler((LOCAL_ERR_CODE), 44, (uint8_t*) "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\motor.c"); } while (0); } } while (0);
  app_pwm_enable(&PWM1);
 }
 

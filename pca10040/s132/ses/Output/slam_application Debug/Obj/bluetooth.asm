@@ -181,7 +181,7 @@ bx r14
 on_adv_evt:
 .LVL12:
 .LFB299:
-	.file 3 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\communication\\bluetooth.c"
+	.file 3 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\communication\\bluetooth.c"
 	.loc 3 277 1 is_stmt 1 view -0
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
@@ -196,8 +196,7 @@ on_adv_evt:
 	.align	2
 .LC0:
 	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
-	.ascii	"al\\slam_applicationLeithe\\communication\\bluetoot"
-	.ascii	"h.c\000"
+	.ascii	"al\\slam_application\\communication\\bluetooth.c\000"
 	.section	.text.nrf_qwr_error_handler,"ax",%progbits
 	.align	1
 	.syntax unified
@@ -220,7 +219,7 @@ nrf_qwr_error_handler:
 	movs	r1, #148
 	bl	app_error_handler
 .LVL14:
-	.loc 3 148 175 view .LVU26
+	.loc 3 148 169 view .LVU26
 	.loc 3 149 1 is_stmt 0 view .LVU27
 	pop	{r3, pc}
 .L11:
@@ -251,7 +250,7 @@ conn_params_error_handler:
 	movs	r1, #242
 	bl	app_error_handler
 .LVL16:
-	.loc 3 242 175 view .LVU32
+	.loc 3 242 169 view .LVU32
 	.loc 3 243 1 is_stmt 0 view .LVU33
 	pop	{r3, pc}
 .L15:
@@ -310,9 +309,9 @@ on_conn_params_evt:
 	movs	r1, #231
 	bl	app_error_handler
 .LVL22:
-	.loc 3 231 270 discriminator 1 view .LVU50
+	.loc 3 231 264 discriminator 1 view .LVU50
 .LBE2:
-	.loc 3 231 285 discriminator 1 view .LVU51
+	.loc 3 231 279 discriminator 1 view .LVU51
 	.loc 3 233 1 is_stmt 0 discriminator 1 view .LVU52
 	b	.L16
 .L21:
@@ -432,9 +431,9 @@ log_init:
 	cbnz	r0, .L31
 .LVL30:
 .L29:
-	.loc 3 499 266 is_stmt 1 discriminator 3 view .LVU84
+	.loc 3 499 260 is_stmt 1 discriminator 3 view .LVU84
 .LBE3:
-	.loc 3 499 281 discriminator 3 view .LVU85
+	.loc 3 499 275 discriminator 3 view .LVU85
 	.loc 3 501 5 discriminator 3 view .LVU86
 	bl	nrf_log_default_backends_init
 .LVL31:
@@ -497,9 +496,9 @@ timers_init:
 	movs	r1, #106
 	bl	app_error_handler
 .LVL37:
-	.loc 3 106 266 discriminator 1 view .LVU102
+	.loc 3 106 260 discriminator 1 view .LVU102
 .LBE6:
-	.loc 3 106 281 discriminator 1 view .LVU103
+	.loc 3 106 275 discriminator 1 view .LVU103
 	.loc 3 107 1 is_stmt 0 discriminator 1 view .LVU104
 	b	.L34
 .L39:
@@ -537,9 +536,9 @@ ble_stack_init:
 	cbnz	r0, .L45
 .LVL39:
 .L41:
-	.loc 3 370 266 is_stmt 1 discriminator 3 view .LVU113
+	.loc 3 370 260 is_stmt 1 discriminator 3 view .LVU113
 .LBE7:
-	.loc 3 370 281 discriminator 3 view .LVU114
+	.loc 3 370 275 discriminator 3 view .LVU114
 	.loc 3 374 5 discriminator 3 view .LVU115
 	.loc 3 374 14 is_stmt 0 discriminator 3 view .LVU116
 	movs	r3, #0
@@ -558,9 +557,9 @@ ble_stack_init:
 	cbnz	r0, .L46
 .LVL41:
 .L42:
-	.loc 3 376 266 is_stmt 1 discriminator 3 view .LVU123
+	.loc 3 376 260 is_stmt 1 discriminator 3 view .LVU123
 .LBE8:
-	.loc 3 376 281 discriminator 3 view .LVU124
+	.loc 3 376 275 discriminator 3 view .LVU124
 	.loc 3 379 5 discriminator 3 view .LVU125
 	.loc 3 379 16 is_stmt 0 discriminator 3 view .LVU126
 	add	r0, sp, #4
@@ -617,9 +616,9 @@ ble_stack_init:
 	mov	r1, #380
 	bl	app_error_handler
 .LVL49:
-	.loc 3 380 266 discriminator 1 view .LVU143
+	.loc 3 380 260 discriminator 1 view .LVU143
 .LBE12:
-	.loc 3 380 281 discriminator 1 view .LVU144
+	.loc 3 380 275 discriminator 1 view .LVU144
 	.loc 3 383 5 discriminator 1 view .LVU145
 	.loc 3 383 56 discriminator 1 view .LVU146
 	.loc 3 383 110 discriminator 1 view .LVU147
@@ -864,9 +863,9 @@ ble_evt_handler:
 	movw	r1, #325
 	bl	app_error_handler
 .LVL74:
-	.loc 3 325 274 discriminator 1 view .LVU227
+	.loc 3 325 268 discriminator 1 view .LVU227
 .LBE17:
-	.loc 3 325 289 discriminator 1 view .LVU228
+	.loc 3 325 283 discriminator 1 view .LVU228
 .LBE16:
 	.loc 3 326 11 discriminator 1 view .LVU229
 	.loc 3 326 9 is_stmt 0 discriminator 1 view .LVU230
@@ -999,9 +998,9 @@ gap_params_init:
 	cbnz	r0, .L70
 .LVL87:
 .L67:
-	.loc 3 125 266 is_stmt 1 discriminator 3 view .LVU271
+	.loc 3 125 260 is_stmt 1 discriminator 3 view .LVU271
 .LBE20:
-	.loc 3 125 281 discriminator 3 view .LVU272
+	.loc 3 125 275 discriminator 3 view .LVU272
 	.loc 3 127 5 discriminator 3 view .LVU273
 	movs	r2, #8
 	movs	r1, #0
@@ -1067,9 +1066,9 @@ gap_params_init:
 	movs	r1, #135
 	bl	app_error_handler
 .LVL94:
-	.loc 3 135 266 discriminator 1 view .LVU296
+	.loc 3 135 260 discriminator 1 view .LVU296
 .LBE23:
-	.loc 3 135 281 discriminator 1 view .LVU297
+	.loc 3 135 275 discriminator 1 view .LVU297
 	.loc 3 136 1 is_stmt 0 discriminator 1 view .LVU298
 	b	.L66
 .L73:
@@ -1116,9 +1115,9 @@ services_init:
 	cbnz	r0, .L78
 .LVL96:
 .L75:
-	.loc 3 201 266 is_stmt 1 discriminator 3 view .LVU311
+	.loc 3 201 260 is_stmt 1 discriminator 3 view .LVU311
 .LBE24:
-	.loc 3 201 281 discriminator 3 view .LVU312
+	.loc 3 201 275 discriminator 3 view .LVU312
 	.loc 3 204 5 discriminator 3 view .LVU313
 	movs	r2, #4
 	movs	r1, #0
@@ -1173,9 +1172,9 @@ services_init:
 	movs	r1, #209
 	bl	app_error_handler
 .LVL103:
-	.loc 3 209 266 discriminator 1 view .LVU330
+	.loc 3 209 260 discriminator 1 view .LVU330
 .LBE27:
-	.loc 3 209 281 discriminator 1 view .LVU331
+	.loc 3 209 275 discriminator 1 view .LVU331
 	.loc 3 210 1 is_stmt 0 discriminator 1 view .LVU332
 	b	.L74
 .L81:
@@ -1302,9 +1301,9 @@ advertising_init:
 	cbnz	r0, .L89
 .LVL111:
 .L87:
-	.loc 3 488 266 is_stmt 1 discriminator 3 view .LVU371
+	.loc 3 488 260 is_stmt 1 discriminator 3 view .LVU371
 .LBE29:
-	.loc 3 488 281 discriminator 3 view .LVU372
+	.loc 3 488 275 discriminator 3 view .LVU372
 	.loc 3 490 5 discriminator 3 view .LVU373
 	movs	r1, #1
 	ldr	r0, .L90+8
@@ -1421,9 +1420,9 @@ conn_params_init:
 	movw	r1, #265
 	bl	app_error_handler
 .LVL119:
-	.loc 3 265 266 discriminator 1 view .LVU408
+	.loc 3 265 260 discriminator 1 view .LVU408
 .LBE32:
-	.loc 3 265 281 discriminator 1 view .LVU409
+	.loc 3 265 275 discriminator 1 view .LVU409
 	.loc 3 266 1 is_stmt 0 discriminator 1 view .LVU410
 	b	.L92
 .L97:
@@ -1499,9 +1498,9 @@ gatt_init:
 	cbnz	r0, .L106
 .LVL125:
 .L103:
-	.loc 3 407 266 is_stmt 1 discriminator 3 view .LVU425
+	.loc 3 407 260 is_stmt 1 discriminator 3 view .LVU425
 .LBE33:
-	.loc 3 407 281 discriminator 3 view .LVU426
+	.loc 3 407 275 discriminator 3 view .LVU426
 	.loc 3 409 5 discriminator 3 view .LVU427
 	.loc 3 409 16 is_stmt 0 discriminator 3 view .LVU428
 	movs	r1, #23
@@ -1542,9 +1541,9 @@ gatt_init:
 	mov	r1, #410
 	bl	app_error_handler
 .LVL131:
-	.loc 3 410 266 discriminator 1 view .LVU441
+	.loc 3 410 260 discriminator 1 view .LVU441
 .LBE36:
-	.loc 3 410 281 discriminator 1 view .LVU442
+	.loc 3 410 275 discriminator 1 view .LVU442
 	.loc 3 411 1 is_stmt 0 discriminator 1 view .LVU443
 	b	.L102
 .L109:
@@ -1592,9 +1591,9 @@ ble_send:
 .L114:
 .LBB37:
 .LBB38:
-	.loc 3 456 286 is_stmt 1 discriminator 3 view .LVU454
+	.loc 3 456 280 is_stmt 1 discriminator 3 view .LVU454
 .LBE38:
-	.loc 3 456 301 discriminator 3 view .LVU455
+	.loc 3 456 295 discriminator 3 view .LVU455
 .LBE37:
 	.loc 3 458 25 discriminator 3 view .LVU456
 	.loc 3 458 17 is_stmt 0 discriminator 3 view .LVU457
@@ -1758,9 +1757,9 @@ advertising_start:
 	mov	r1, #512
 	bl	app_error_handler
 .LVL150:
-	.loc 3 512 266 discriminator 1 view .LVU507
+	.loc 3 512 260 discriminator 1 view .LVU507
 .LBE42:
-	.loc 3 512 281 discriminator 1 view .LVU508
+	.loc 3 512 275 discriminator 1 view .LVU508
 	.loc 3 513 1 is_stmt 0 discriminator 1 view .LVU509
 	b	.L122
 .L127:
@@ -14484,7 +14483,7 @@ m_advertising_soc_obs:
 	.file 31 "../../../../../../components/libraries/experimental_log/nrf_log_default_backends.h"
 	.file 32 "C:/Program Files (x86)/SEGGER/SEGGER Embedded Studio for ARM 4.50/include/string.h"
 	.file 33 "../../../../../../components/softdevice/common/nrf_sdh.h"
-	.file 34 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\communication\\network.h"
+	.file 34 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\communication\\network.h"
 	.file 35 "../../../../../../components/libraries/timer/app_timer.h"
 	.section	.debug_info,"",%progbits
 .Ldebug_info0:
@@ -21178,8 +21177,6 @@ m_advertising_soc_obs:
 	.ascii	"p_data\000"
 .LASF346:
 	.ascii	"ch_sdu_buf_released\000"
-.LASF357:
-	.ascii	"sdu_len\000"
 .LASF564:
 	.ascii	"SD_BLE_GAP_DEVICE_NAME_GET\000"
 .LASF114:
@@ -21806,6 +21803,10 @@ m_advertising_soc_obs:
 	.ascii	"signed char\000"
 .LASF38:
 	.ascii	"BLE_NUS_EVT_TX_RDY\000"
+.LASF783:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application\\\\pca10040\\\\s132\\\\"
+	.ascii	"ses\000"
 .LASF650:
 	.ascii	"__RAL_codeset_utf8\000"
 .LASF574:
@@ -21866,6 +21867,9 @@ m_advertising_soc_obs:
 	.ascii	"ble_gatts_evt_rw_authorize_request_t\000"
 .LASF84:
 	.ascii	"ble_conn_params_evt_handler_t\000"
+.LASF782:
+	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
+	.ascii	"al\\slam_application\\communication\\bluetooth.c\000"
 .LASF53:
 	.ascii	"att_mtu_desired\000"
 .LASF4:
@@ -22116,10 +22120,8 @@ m_advertising_soc_obs:
 	.ascii	"BLE_ADV_EVT_SLOW\000"
 .LASF717:
 	.ascii	"gatt_evt_handler\000"
-.LASF783:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
+.LASF357:
+	.ascii	"sdu_len\000"
 .LASF470:
 	.ascii	"key_type\000"
 .LASF601:
@@ -22358,10 +22360,6 @@ m_advertising_soc_obs:
 	.ascii	"BLE_GAP_EVT_SEC_PARAMS_REQUEST\000"
 .LASF331:
 	.ascii	"BLE_GATTC_EVT_CHAR_VALS_READ_RSP\000"
-.LASF782:
-	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
-	.ascii	"al\\slam_applicationLeithe\\communication\\bluetoot"
-	.ascii	"h.c\000"
 .LASF66:
 	.ascii	"nrf_ble_gatt_link_t\000"
 .LASF90:

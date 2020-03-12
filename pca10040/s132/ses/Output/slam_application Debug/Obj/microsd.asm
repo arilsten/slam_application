@@ -40,7 +40,7 @@
 microsd_write:
 .LVL0:
 .LFB207:
-	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\microsd.c"
+	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\microsd.c"
 	.loc 1 39 48 view -0
 	@ args = 0, pretend = 0, frame = 8
 	@ frame_needed = 0, uses_anonymous_args = 0
@@ -3369,7 +3369,7 @@ m_block_dev_sdc:
 	.byte	0x7
 	.4byte	.LASF23
 	.byte	0
-	.file 14 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\microsd.h"
+	.file 14 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\microsd.h"
 	.section	.debug_types,"G",%progbits,wt.6948d92ecae410ce,comdat
 	.4byte	0x4b
 	.2byte	0x4
@@ -6300,10 +6300,6 @@ m_block_dev_sdc:
 	.ascii	"app_sdc_config_t\000"
 .LASF146:
 	.ascii	"FR_WRITE_PROTECTED\000"
-.LASF306:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF303:
 	.ascii	"nrf_log_frontend_std_0\000"
 .LASF302:
@@ -6507,6 +6503,10 @@ m_block_dev_sdc:
 	.ascii	"fatbase\000"
 .LASF129:
 	.ascii	"am_pm_indicator\000"
+.LASF306:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application\\\\pca10040\\\\s132\\\\"
+	.ascii	"ses\000"
 .LASF114:
 	.ascii	"p_sep_by_space\000"
 .LASF0:
@@ -6517,9 +6517,6 @@ m_block_dev_sdc:
 	.ascii	"__user_set_time_of_day\000"
 .LASF77:
 	.ascii	"NRF_BLOCK_DEV_EVT_BLK_WRITE_DONE\000"
-.LASF305:
-	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
-	.ascii	"al\\slam_applicationLeithe\\drivers\\microsd.c\000"
 .LASF152:
 	.ascii	"FR_LOCKED\000"
 .LASF204:
@@ -6648,6 +6645,9 @@ m_block_dev_sdc:
 	.ascii	"miso_pin\000"
 .LASF63:
 	.ascii	"blk_count\000"
+.LASF305:
+	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
+	.ascii	"al\\slam_application\\drivers\\microsd.c\000"
 .LASF151:
 	.ascii	"FR_TIMEOUT\000"
 .LASF188:

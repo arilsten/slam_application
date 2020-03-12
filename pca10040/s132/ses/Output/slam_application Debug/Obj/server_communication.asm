@@ -28,7 +28,7 @@
 server_receiver:
 .LVL0:
 .LFB207:
-	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\communication\\server_communication.c"
+	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\communication\\server_communication.c"
 	.loc 1 130 51 view -0
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
@@ -1076,7 +1076,7 @@ use_arq:
 	.byte	0x7
 	.4byte	.LASF14
 	.byte	0
-	.file 5 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\communication\\server_communication.h"
+	.file 5 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\communication\\server_communication.h"
 	.section	.debug_types,"G",%progbits,wt.5752a6060baf580c,comdat
 	.4byte	0x55
 	.2byte	0x4
@@ -2285,7 +2285,7 @@ use_arq:
 	.byte	0
 	.file 8 "C:/Program Files (x86)/SEGGER/SEGGER Embedded Studio for ARM 4.50/include/stdio.h"
 	.file 9 "C:/Program Files (x86)/SEGGER/SEGGER Embedded Studio for ARM 4.50/include/stdarg.h"
-	.file 10 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\communication\\arq.h"
+	.file 10 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\communication\\arq.h"
 	.file 11 "../../../../../../components/toolchain/cmsis/include/core_cm4.h"
 	.file 12 "../../../../../../modules/nrfx/mdk/system_nrf52.h"
 	.file 13 "../../../../../../components/libraries/util/app_util.h"
@@ -2294,7 +2294,7 @@ use_arq:
 	.file 16 "../../../../../../external/freertos/source/include/semphr.h"
 	.file 17 "../../../../../../components/libraries/experimental_log/src/nrf_log_internal.h"
 	.file 18 "C:/Program Files (x86)/SEGGER/SEGGER Embedded Studio for ARM 4.50/include/string.h"
-	.file 19 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\communication\\simple_protocol.h"
+	.file 19 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\communication\\simple_protocol.h"
 	.section	.debug_info,"",%progbits
 .Ldebug_info0:
 	.4byte	0x8b0
@@ -5005,6 +5005,10 @@ use_arq:
 	.ascii	"__RAL_codeset_ascii\000"
 .LASF51:
 	.ascii	"__RAL_error_decoder_fn_t\000"
+.LASF189:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application\\\\pca10040\\\\s132\\\\"
+	.ascii	"ses\000"
 .LASF82:
 	.ascii	"p_cs_precedes\000"
 .LASF132:
@@ -5068,6 +5072,10 @@ use_arq:
 	.ascii	"module_id\000"
 .LASF58:
 	.ascii	"codeset\000"
+.LASF188:
+	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
+	.ascii	"al\\slam_application\\communication\\server_communi"
+	.ascii	"cation.c\000"
 .LASF172:
 	.ascii	"S2_cm\000"
 .LASF117:
@@ -5120,10 +5128,6 @@ use_arq:
 	.ascii	"am_pm_indicator\000"
 .LASF116:
 	.ascii	"__RAL_data_utf8_period\000"
-.LASF188:
-	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
-	.ascii	"al\\slam_applicationLeithe\\communication\\server_c"
-	.ascii	"ommunication.c\000"
 .LASF72:
 	.ascii	"grouping\000"
 .LASF143:
@@ -5172,10 +5176,6 @@ use_arq:
 	.ascii	"strcpy\000"
 .LASF12:
 	.ascii	"__cr_flag\000"
-.LASF189:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF127:
 	.ascii	"timeval\000"
 .LASF130:

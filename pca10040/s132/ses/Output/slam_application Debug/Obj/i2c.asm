@@ -27,7 +27,7 @@
 	.type	i2cInit, %function
 i2cInit:
 .LFB277:
-	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\i2c.c"
+	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\i2c.c"
 	.loc 1 25 15 view -0
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
@@ -6657,7 +6657,7 @@ m_nrf_twi_mngr:
 	.byte	0x3
 	.uleb128 0
 	.uleb128 0x1
-	.file 24 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_applicationLeithe\\drivers\\i2c.h"
+	.file 24 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\i2c.h"
 	.byte	0x3
 	.uleb128 0x1
 	.uleb128 0x18
@@ -7190,17 +7190,10 @@ m_nrf_twi_mngr:
 	.ascii	"nrf_twi_mngr_cb_t\000"
 .LASF178:
 	.ascii	"int_p_cs_precedes\000"
-.LASF268:
-	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
-	.ascii	"al\\slam_applicationLeithe\\drivers\\i2c.c\000"
 .LASF179:
 	.ascii	"int_n_cs_precedes\000"
 .LASF19:
 	.ascii	"nrf_twi_mngr_transfer_t\000"
-.LASF269:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF264:
 	.ascii	"nrf_log_frontend_std_0\000"
 .LASF100:
@@ -7223,6 +7216,9 @@ m_nrf_twi_mngr:
 	.ascii	"i2cSendNOADDR\000"
 .LASF105:
 	.ascii	"EVENTS_ERROR\000"
+.LASF268:
+	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
+	.ascii	"al\\slam_application\\drivers\\i2c.c\000"
 .LASF7:
 	.ascii	"p_current_configuration\000"
 .LASF92:
@@ -7378,6 +7374,10 @@ m_nrf_twi_mngr:
 	.ascii	"getBusConfig\000"
 .LASF188:
 	.ascii	"am_pm_indicator\000"
+.LASF269:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application\\\\pca10040\\\\s132\\\\"
+	.ascii	"ses\000"
 .LASF173:
 	.ascii	"p_sep_by_space\000"
 .LASF70:
