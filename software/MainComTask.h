@@ -1,6 +1,6 @@
 /************************************************************************/
 // File:            MainComTask.h                                      //
-// Author:          Stenset                                              //
+// Author:          Stenset, Spring 2020                                //
 // Purpose:                                                             //
 //                                                                      //
 /************************************************************************/
@@ -9,6 +9,9 @@
 #define MAIN_COM_TASK_H
 
 #include <stdint.h>
+#include "defines.h"
+
+extern int8_t collisionAngles[NUM_DIST_SENSORS];
 
 void vMainCommunicationTask(void *pvParameters);
 

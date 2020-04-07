@@ -5428,10 +5428,6 @@ m_handlers:
 	.ascii	"int_n_cs_precedes\000"
 .LASF111:
 	.ascii	"EVENTS_STARTED\000"
-.LASF242:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF226:
 	.ascii	"nrfx_spi_evt_t\000"
 .LASF107:
@@ -5542,6 +5538,10 @@ m_handlers:
 	.ascii	"decode\000"
 .LASF83:
 	.ascii	"NRF_SPIM_FREQ_4M\000"
+.LASF242:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF223:
 	.ascii	"ret_code_t\000"
 .LASF63:

@@ -15996,8 +15996,6 @@ m_nrf_log_nrf_ble_gatt_logs_data_dynamic:
 	.ascii	"p_data\000"
 .LASF203:
 	.ascii	"ch_sdu_buf_released\000"
-.LASF214:
-	.ascii	"sdu_len\000"
 .LASF405:
 	.ascii	"SD_BLE_GAP_DEVICE_NAME_GET\000"
 .LASF459:
@@ -16670,10 +16668,8 @@ m_nrf_log_nrf_ble_gatt_logs_data_dynamic:
 	.ascii	"lesc_dhkey_request\000"
 .LASF490:
 	.ascii	"__RAL_c_locale\000"
-.LASF554:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
+.LASF214:
+	.ascii	"sdu_len\000"
 .LASF320:
 	.ascii	"key_type\000"
 .LASF442:
@@ -16722,6 +16718,10 @@ m_nrf_log_nrf_ble_gatt_logs_data_dynamic:
 	.ascii	"BLE_GAP_EVT_DATA_LENGTH_UPDATE\000"
 .LASF368:
 	.ascii	"BLE_GAP_EVT_SEC_INFO_REQUEST\000"
+.LASF554:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF356:
 	.ascii	"aux_phy\000"
 .LASF317:

@@ -11152,6 +11152,10 @@ m_ble_observer:
 	.ascii	"ble_gap_phys_t\000"
 .LASF289:
 	.ascii	"tx_power\000"
+.LASF446:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF347:
 	.ascii	"max_conn_interval\000"
 .LASF265:
@@ -11551,10 +11555,6 @@ m_ble_observer:
 	.ascii	"descs\000"
 .LASF188:
 	.ascii	"ble_gatt_char_props_t\000"
-.LASF446:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF141:
 	.ascii	"error_handle\000"
 .LASF397:

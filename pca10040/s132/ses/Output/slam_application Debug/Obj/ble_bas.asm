@@ -14717,8 +14717,6 @@ m_nrf_log_ble_bas_logs_data_dynamic:
 	.ascii	"ch_sdu_buf_released\000"
 .LASF40:
 	.ascii	"report_ref_handle\000"
-.LASF236:
-	.ascii	"sdu_len\000"
 .LASF501:
 	.ascii	"char_handle\000"
 .LASF410:
@@ -15360,10 +15358,8 @@ m_nrf_log_ble_bas_logs_data_dynamic:
 	.ascii	"lesc_dhkey_request\000"
 .LASF440:
 	.ascii	"__RAL_c_locale\000"
-.LASF516:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
+.LASF236:
+	.ascii	"sdu_len\000"
 .LASF337:
 	.ascii	"key_type\000"
 .LASF393:
@@ -15404,6 +15400,10 @@ m_nrf_log_ble_bas_logs_data_dynamic:
 	.ascii	"rand\000"
 .LASF88:
 	.ascii	"ble_gatts_evt_exchange_mtu_request_t\000"
+.LASF516:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF372:
 	.ascii	"aux_phy\000"
 .LASF334:

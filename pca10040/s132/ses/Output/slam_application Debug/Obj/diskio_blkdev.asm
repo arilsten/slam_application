@@ -7440,6 +7440,8 @@ m_drives_count:
 	.ascii	"next\000"
 .LASF11:
 	.ascii	"wait_func\000"
+.LASF114:
+	.ascii	"DWORD\000"
 .LASF97:
 	.ascii	"abbrev_month_names\000"
 .LASF122:
@@ -7486,8 +7488,10 @@ m_drives_count:
 	.ascii	"uint16_t\000"
 .LASF41:
 	.ascii	"NRF_BLOCK_DEV_RESULT_TIMEOUT\000"
-.LASF114:
-	.ascii	"DWORD\000"
+.LASF179:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF104:
 	.ascii	"__wchar\000"
 .LASF88:
@@ -7564,10 +7568,8 @@ m_drives_count:
 	.ascii	"day_names\000"
 .LASF158:
 	.ascii	"sector\000"
-.LASF179:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
+.LASF166:
+	.ascii	"p_blk_dev\000"
 .LASF180:
 	.ascii	"timeval\000"
 .LASF156:
@@ -7628,8 +7630,6 @@ m_drives_count:
 	.ascii	"int_n_cs_precedes\000"
 .LASF126:
 	.ascii	"__RAL_codeset_utf8\000"
-.LASF166:
-	.ascii	"p_blk_dev\000"
 .LASF32:
 	.ascii	"nrf_block_dev_s\000"
 .LASF12:

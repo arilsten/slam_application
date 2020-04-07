@@ -11915,10 +11915,6 @@ m_nrf_log_TIMER_logs_data_dynamic:
 	.ascii	"TASKS_COUNT\000"
 .LASF353:
 	.ascii	"nrf_timer_shorts_enable\000"
-.LASF372:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF361:
 	.ascii	"_NRFX_IRQ_PRIORITY_SET\000"
 .LASF344:
@@ -12061,6 +12057,10 @@ m_nrf_log_TIMER_logs_data_dynamic:
 	.ascii	"SHCSR\000"
 .LASF183:
 	.ascii	"SWI5_EGU5_IRQn\000"
+.LASF372:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF37:
 	.ascii	"NRFX_TIMER_ENABLED_COUNT\000"
 .LASF147:

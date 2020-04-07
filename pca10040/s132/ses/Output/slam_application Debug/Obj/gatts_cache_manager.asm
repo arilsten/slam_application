@@ -8668,6 +8668,10 @@ service_changed_pending.9718:
 	.ascii	"gscm_service_changed_ind_needed\000"
 .LASF128:
 	.ascii	"SD_BLE_GATTS_SYS_ATTR_GET\000"
+.LASF308:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF99:
 	.ascii	"PM_PEER_DATA_ID_PEER_RANK\000"
 .LASF93:
@@ -8929,10 +8933,6 @@ service_changed_pending.9718:
 	.ascii	"gscm_init\000"
 .LASF138:
 	.ascii	"ble_gatt_char_props_t\000"
-.LASF308:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF14:
 	.ascii	"_Bool\000"
 .LASF239:

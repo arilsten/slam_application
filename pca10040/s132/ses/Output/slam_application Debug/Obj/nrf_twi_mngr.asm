@@ -9717,10 +9717,6 @@ nrf_twi_mngr_perform:
 	.ascii	"int_n_cs_precedes\000"
 .LASF22:
 	.ascii	"nrf_twi_mngr_transfer_t\000"
-.LASF290:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF105:
 	.ascii	"EVENTS_STOPPED\000"
 .LASF164:
@@ -9843,6 +9839,10 @@ nrf_twi_mngr_perform:
 	.ascii	"nrfx_twim_xfer_type_t\000"
 .LASF18:
 	.ascii	"p_transfers\000"
+.LASF290:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF138:
 	.ascii	"TWIM_PSEL_Type\000"
 .LASF37:

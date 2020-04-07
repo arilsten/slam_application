@@ -23,7 +23,7 @@
 get_accel_len_to_parse:
 .LVL0:
 .LFB140:
-	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\bma2x2.c"
+	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application-master\\drivers\\bma2x2.c"
 	.loc 1 8474 1 view -0
 	@ args = 4, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
@@ -21145,7 +21145,7 @@ V_BMA2x2RESOLUTION_U8:
 .LEFDE292:
 	.text
 .Letext0:
-	.file 2 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\bma2x2.h"
+	.file 2 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application-master\\drivers\\bma2x2.h"
 	.section	.debug_types,"G",%progbits,wt.4a9ae2bbc3b4e935,comdat
 	.4byte	0x6c
 	.2byte	0x4
@@ -53345,10 +53345,6 @@ V_BMA2x2RESOLUTION_U8:
 	.ascii	"fifo_frame_count\000"
 .LASF12:
 	.ascii	"bus_write\000"
-.LASF285:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_application\\\\pca10040\\\\s132\\\\"
-	.ascii	"ses\000"
 .LASF231:
 	.ascii	"sleep_durn_u8\000"
 .LASF202:
@@ -53462,8 +53458,10 @@ V_BMA2x2RESOLUTION_U8:
 	.ascii	"hyst_u8\000"
 .LASF205:
 	.ascii	"bma2x2_set_slow_no_motion\000"
-.LASF278:
-	.ascii	"bma2x2_init\000"
+.LASF285:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF260:
 	.ascii	"bma2x2_read_accel_xyz\000"
 .LASF207:
@@ -53506,9 +53504,8 @@ V_BMA2x2RESOLUTION_U8:
 	.ascii	"bma2x2_accel_data_temp\000"
 .LASF259:
 	.ascii	"bma2x2_read_accel_eight_resolution_xyz\000"
-.LASF284:
-	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
-	.ascii	"al\\slam_application\\drivers\\bma2x2.c\000"
+.LASF179:
+	.ascii	"bma2x2_get_new_data\000"
 .LASF17:
 	.ascii	"unsigned int\000"
 .LASF86:
@@ -53523,8 +53520,6 @@ V_BMA2x2RESOLUTION_U8:
 	.ascii	"bma2x2_get_fifo_stat\000"
 .LASF200:
 	.ascii	"bma2x2_get_intr_high_g\000"
-.LASF179:
-	.ascii	"bma2x2_get_new_data\000"
 .LASF240:
 	.ascii	"bma2x2_set_bw\000"
 .LASF57:
@@ -53571,6 +53566,9 @@ V_BMA2x2RESOLUTION_U8:
 	.ascii	"bma2x2_set_selftest_sign\000"
 .LASF48:
 	.ascii	"fifo_data_select\000"
+.LASF284:
+	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
+	.ascii	"al\\slam_application-master\\drivers\\bma2x2.c\000"
 .LASF110:
 	.ascii	"bma2x2_get_orient_enable\000"
 .LASF164:
@@ -53689,6 +53687,8 @@ V_BMA2x2RESOLUTION_U8:
 	.ascii	"frame_count_u8\000"
 .LASF4:
 	.ascii	"unsigned char\000"
+.LASF278:
+	.ascii	"bma2x2_init\000"
 .LASF279:
 	.ascii	"bma2x2\000"
 .LASF178:

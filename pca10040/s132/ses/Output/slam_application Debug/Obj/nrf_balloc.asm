@@ -4069,8 +4069,10 @@ nrf_balloc_free:
 	.ascii	"NRF_LOG_SEVERITY_WARNING\000"
 .LASF6:
 	.ascii	"uint16_t\000"
-.LASF39:
-	.ascii	"__isctype\000"
+.LASF142:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF66:
 	.ascii	"int_p_cs_precedes\000"
 .LASF22:
@@ -4133,10 +4135,6 @@ nrf_balloc_free:
 	.ascii	"day_names\000"
 .LASF23:
 	.ascii	"__cr_flag\000"
-.LASF142:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF118:
 	.ascii	"timeval\000"
 .LASF31:
@@ -4256,6 +4254,8 @@ nrf_balloc_free:
 	.ascii	"stderr\000"
 .LASF95:
 	.ascii	"__RAL_c_locale_month_names\000"
+.LASF39:
+	.ascii	"__isctype\000"
 .LASF30:
 	.ascii	"__RAL_error_decoder_s\000"
 .LASF105:

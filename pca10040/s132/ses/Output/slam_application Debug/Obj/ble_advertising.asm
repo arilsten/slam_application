@@ -17854,8 +17854,6 @@ ble_advertising_modes_config_set:
 	.ascii	"p_data\000"
 .LASF236:
 	.ascii	"ch_sdu_buf_released\000"
-.LASF247:
-	.ascii	"sdu_len\000"
 .LASF439:
 	.ascii	"SD_BLE_GAP_DEVICE_NAME_GET\000"
 .LASF44:
@@ -18609,10 +18607,8 @@ ble_advertising_modes_config_set:
 	.ascii	"BLE_ADV_EVT_SLOW\000"
 .LASF599:
 	.ascii	"p_addr\000"
-.LASF612:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
+.LASF247:
+	.ascii	"sdu_len\000"
 .LASF344:
 	.ascii	"key_type\000"
 .LASF478:
@@ -18661,6 +18657,10 @@ ble_advertising_modes_config_set:
 	.ascii	"BLE_GAP_EVT_DATA_LENGTH_UPDATE\000"
 .LASF402:
 	.ascii	"BLE_GAP_EVT_SEC_INFO_REQUEST\000"
+.LASF612:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF573:
 	.ascii	"advertising_mode\000"
 .LASF341:

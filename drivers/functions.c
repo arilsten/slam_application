@@ -29,6 +29,14 @@ int16_t distObjectX(int16_t x, int16_t theta, int8_t servoAngle, int16_t* sensor
     return xDist;
 }
 
+
+int16_t distObjectXlocal(int16_t theta, int8_t servoAngle, int16_t* sensorData, uint8_t sensorNumber){
+    int16_t xDist = cos(theta+(servoAngle+sensorNumber*90)*DEG2RAD)*(sensorData[sensorNumber]);
+
+    return xDist;
+}
+
+
 /* Calculates the distance in y direction to a measured object*/
 int16_t distObjectY(int16_t y, int16_t theta, int8_t servoAngle, int16_t* sensorData, uint8_t sensorNumber){
     int16_t yDist = y - cos(theta)*SENSOR_TOWER_OFFSET_Y_MM + sin(theta+(servoAngle+sensorNumber*90)*DEG2RAD)*(sensorData[sensorNumber]);
@@ -36,9 +44,18 @@ int16_t distObjectY(int16_t y, int16_t theta, int8_t servoAngle, int16_t* sensor
     return yDist;
 }
 
+
+int16_t distObjectYlocal(int16_t theta, int8_t servoAngle, int16_t* sensorData, uint8_t sensorNumber){
+    int16_t yDist = sin(theta+(servoAngle+sensorNumber*90)*DEG2RAD)*(sensorData[sensorNumber]);
+	
+    return yDist;
+}
+
+
 /* Arranges the message with robot positons, object positions and returns an array used from February 2020*/
-int8_t *getPoseMessage(int16_t x, int16_t y, int16_t theta, int8_t servoAngle, int16_t* sensorData){
-    static int8_t data[23];
+void sendNewPoseMessage(int16_t x, int16_t y, int16_t theta, int8_t servoAngle, int16_t* sensorData){
+	uint8_t msgLength = 23;
+    int8_t data[msgLength];
     int16_t xObject;
     int16_t yObject;
     data[22] = 0;
@@ -65,7 +82,7 @@ int8_t *getPoseMessage(int16_t x, int16_t y, int16_t theta, int8_t servoAngle, i
             data[22] &= ~(1 << ((NUM_DIST_SENSORS-i)-1));
         }
     }
-    return data;
+	i2cSendNOADDR(I2C_DEVICE_DONGLE, data, msgLength);
 }
 
 
@@ -73,7 +90,8 @@ int8_t *getPoseMessage(int16_t x, int16_t y, int16_t theta, int8_t servoAngle, i
 /* If using Grindviks server version, this function has to be used to format the messages */
 
 void sendOldPoseMessage(int16_t x, int16_t y, int16_t theta, int8_t servoAngle, int16_t* sensorData){
-    int8_t data[8];
+	uint8_t msgLength = 8;
+    int8_t data[msgLength];
     int16_t xObject;
     int16_t yObject;
 
@@ -90,7 +108,7 @@ void sendOldPoseMessage(int16_t x, int16_t y, int16_t theta, int8_t servoAngle, 
             data[5] = (xObject >> 8);
             data[6] = (yObject & 0xFF);
             data[7] = (yObject >> 8);
-            i2cSendNOADDR(I2C_DEVICE_DONGLE, data, 8);
+            i2cSendNOADDR(I2C_DEVICE_DONGLE, data, msgLength);
         }
     }
 }

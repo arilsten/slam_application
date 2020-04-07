@@ -3347,8 +3347,8 @@ pm_mutex_lock_status_get:
 	.ascii	"__wchar\000"
 .LASF95:
 	.ascii	"nrf_nvic_state_t\000"
-.LASF41:
-	.ascii	"n_sep_by_space\000"
+.LASF108:
+	.ascii	"mutex_size\000"
 .LASF19:
 	.ascii	"__tolower\000"
 .LASF43:
@@ -3365,6 +3365,8 @@ pm_mutex_lock_status_get:
 	.ascii	"p_cs_precedes\000"
 .LASF62:
 	.ascii	"uint8_t\000"
+.LASF41:
+	.ascii	"n_sep_by_space\000"
 .LASF53:
 	.ascii	"abbrev_month_names\000"
 .LASF49:
@@ -3467,10 +3469,6 @@ pm_mutex_lock_status_get:
 	.ascii	"thousands_sep\000"
 .LASF7:
 	.ascii	"char\000"
-.LASF121:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF109:
 	.ascii	"mutex_base\000"
 .LASF51:
@@ -3566,6 +3564,8 @@ pm_mutex_lock_status_get:
 	.ascii	"next\000"
 .LASF9:
 	.ascii	"__locale_s\000"
-.LASF108:
-	.ascii	"mutex_size\000"
+.LASF121:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 	.ident	"GCC: (GNU) 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599]"

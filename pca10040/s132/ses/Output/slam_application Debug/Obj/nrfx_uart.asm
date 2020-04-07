@@ -18791,10 +18791,6 @@ m_nrf_log_UART_logs_data_dynamic:
 	.ascii	"IRQn\000"
 .LASF98:
 	.ascii	"NRF_UART_BAUDRATE_38400\000"
-.LASF445:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF432:
 	.ascii	"_NRFX_IRQ_PRIORITY_SET\000"
 .LASF60:
@@ -18957,6 +18953,10 @@ m_nrf_log_UART_logs_data_dynamic:
 	.ascii	"pseltxd\000"
 .LASF227:
 	.ascii	"SWI5_EGU5_IRQn\000"
+.LASF445:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF85:
 	.ascii	"NRF_UART_Type\000"
 .LASF191:

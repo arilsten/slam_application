@@ -2522,8 +2522,8 @@ m_error_data.7462:
 	.ascii	"__wchar\000"
 .LASF46:
 	.ascii	"n_sep_by_space\000"
-.LASF24:
-	.ascii	"__tolower\000"
+.LASF98:
+	.ascii	"ret_code_t\000"
 .LASF48:
 	.ascii	"n_sign_posn\000"
 .LASF61:
@@ -2536,6 +2536,8 @@ m_error_data.7462:
 	.ascii	"p_cs_precedes\000"
 .LASF59:
 	.ascii	"am_pm_indicator\000"
+.LASF24:
+	.ascii	"__tolower\000"
 .LASF115:
 	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\components\\libraries\\"
 	.ascii	"util\\app_error.c\000"
@@ -2631,18 +2633,14 @@ m_error_data.7462:
 	.ascii	"__RAL_codeset_ascii\000"
 .LASF34:
 	.ascii	"int_curr_symbol\000"
-.LASF107:
-	.ascii	"_Bool\000"
 .LASF85:
 	.ascii	"__RAL_data_utf8_plus\000"
 .LASF4:
 	.ascii	"short unsigned int\000"
 .LASF12:
 	.ascii	"char\000"
-.LASF116:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
+.LASF107:
+	.ascii	"_Bool\000"
 .LASF68:
 	.ascii	"int32_t\000"
 .LASF109:
@@ -2733,6 +2731,8 @@ m_error_data.7462:
 	.ascii	"next\000"
 .LASF14:
 	.ascii	"__locale_s\000"
-.LASF98:
-	.ascii	"ret_code_t\000"
+.LASF116:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 	.ident	"GCC: (GNU) 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599]"

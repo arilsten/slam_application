@@ -12444,6 +12444,10 @@ m_peer_delete_deferred:
 	.ascii	"pds_evt\000"
 .LASF229:
 	.ascii	"p_cs_precedes\000"
+.LASF382:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF131:
 	.ascii	"PM_CONN_SEC_PROCEDURE_PAIRING\000"
 .LASF342:
@@ -12788,10 +12792,6 @@ m_peer_delete_deferred:
 	.ascii	"FDS_ERR_NO_SPACE_IN_FLASH\000"
 .LASF374:
 	.ascii	"peer_id_init\000"
-.LASF382:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF12:
 	.ascii	"_Bool\000"
 .LASF261:

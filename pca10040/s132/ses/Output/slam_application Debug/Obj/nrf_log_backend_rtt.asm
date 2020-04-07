@@ -4114,8 +4114,10 @@ nrf_log_backend_rtt_api:
 	.ascii	"n_cs_precedes\000"
 .LASF29:
 	.ascii	"uint16_t\000"
-.LASF130:
-	.ascii	"nrf_log_backend_rtt_api\000"
+.LASF159:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF73:
 	.ascii	"int_p_cs_precedes\000"
 .LASF31:
@@ -4184,10 +4186,6 @@ nrf_log_backend_rtt_api:
 	.ascii	"ms_time\000"
 .LASF32:
 	.ascii	"__cr_flag\000"
-.LASF159:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF124:
 	.ascii	"timeval\000"
 .LASF8:
@@ -4217,6 +4215,8 @@ nrf_log_backend_rtt_api:
 	.ascii	"p_context\000"
 .LASF35:
 	.ascii	"decode\000"
+.LASF130:
+	.ascii	"nrf_log_backend_rtt_api\000"
 .LASF53:
 	.ascii	"__mbtowc\000"
 .LASF122:

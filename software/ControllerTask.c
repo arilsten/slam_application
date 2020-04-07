@@ -126,6 +126,7 @@ void vMainPoseControllerTask(void *pvParameters) {
                     sprintf(str4,"Tx:%i Ty:%i",((int)xTargt),((int)yTargt));
                     display_text_on_line(4,str4); 
                 }
+				
                 prevDist = distance;
                 distance = (float)sqrt((xTargt - xhat) * (xTargt - xhat) + (yTargt - yhat) * (yTargt - yhat));
 
@@ -293,7 +294,7 @@ void vMainPoseControllerTask(void *pvParameters) {
                    // NRF_LOG_INFO("DISTANCE:%d X:%d Y:%d theta:%d", distance, xhat, yhat, (int)(thetahat * RAD2DEG));
                         //vMotorMovementSwitch(LSpeed, RSpeed);
                     motorRegulator(LSpeed, RSpeed, ticks);
-                } else {
+                } else { // Close enough to target
 
                     if (idleSendt == false) {
                         NRF_LOG_INFO("controller sending idle");
@@ -306,6 +307,7 @@ void vMainPoseControllerTask(void *pvParameters) {
                     motor_brake();
 
                     lastMovement = moveStop;
+					display_text_on_line(4,"Reached goal");
                 }
                 xQueueSend(scanStatusQ, &lastMovement, 0); // Send the current movement to the scan task
             }                                              // No semaphore available, task is blocking

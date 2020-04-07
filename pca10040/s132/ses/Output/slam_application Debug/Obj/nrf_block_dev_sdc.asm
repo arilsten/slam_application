@@ -6974,8 +6974,10 @@ nrf_block_device_sdc_ops:
 	.ascii	"NRF_BLOCK_DEV_RESULT_TIMEOUT\000"
 .LASF118:
 	.ascii	"day_names\000"
-.LASF85:
-	.ascii	"__isctype\000"
+.LASF201:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF112:
 	.ascii	"int_p_cs_precedes\000"
 .LASF40:
@@ -7068,10 +7070,8 @@ nrf_block_device_sdc_ops:
 	.ascii	"SDC_ERROR_COMMUNICATION\000"
 .LASF41:
 	.ascii	"__cr_flag\000"
-.LASF201:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
+.LASF178:
+	.ascii	"p_blk_dev\000"
 .LASF165:
 	.ascii	"timeval\000"
 .LASF168:
@@ -7128,8 +7128,6 @@ nrf_block_device_sdc_ops:
 	.ascii	"int_n_cs_precedes\000"
 .LASF139:
 	.ascii	"__RAL_codeset_utf8\000"
-.LASF178:
-	.ascii	"p_blk_dev\000"
 .LASF58:
 	.ascii	"nrf_block_dev_s\000"
 .LASF4:
@@ -7224,6 +7222,8 @@ nrf_block_device_sdc_ops:
 	.ascii	"NRF_BLOCK_DEV_RESULT_SUCCESS\000"
 .LASF143:
 	.ascii	"__RAL_c_locale_month_names\000"
+.LASF85:
+	.ascii	"__isctype\000"
 .LASF29:
 	.ascii	"sdc_result_t\000"
 .LASF17:

@@ -6987,8 +6987,10 @@ sys_id_handles:
 	.ascii	"uint16_t\000"
 .LASF16:
 	.ascii	"vendor_id\000"
-.LASF110:
-	.ascii	"__isctype\000"
+.LASF230:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF137:
 	.ascii	"int_p_cs_precedes\000"
 .LASF93:
@@ -7063,10 +7065,8 @@ sys_id_handles:
 	.ascii	"day_names\000"
 .LASF66:
 	.ascii	"ble_uuid_t\000"
-.LASF230:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
+.LASF84:
+	.ascii	"SD_BLE_GATTS_EXCHANGE_MTU_REPLY\000"
 .LASF5:
 	.ascii	"sw_rev_str\000"
 .LASF188:
@@ -7129,8 +7129,6 @@ sys_id_handles:
 	.ascii	"SD_BLE_GATTS_RW_AUTHORIZE_REPLY\000"
 .LASF172:
 	.ascii	"__user_set_time_of_day\000"
-.LASF84:
-	.ascii	"SD_BLE_GATTS_EXCHANGE_MTU_REPLY\000"
 .LASF138:
 	.ascii	"int_n_cs_precedes\000"
 .LASF17:
@@ -7203,6 +7201,8 @@ sys_id_handles:
 	.ascii	"char\000"
 .LASF14:
 	.ascii	"ble_dis_pnp_id_t\000"
+.LASF110:
+	.ascii	"__isctype\000"
 .LASF0:
 	.ascii	"manufact_name_str\000"
 .LASF1:

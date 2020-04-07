@@ -16906,10 +16906,6 @@ m_nrf_log_PWM_logs_data_dynamic:
 	.ascii	"NRF_PWM_MODE_UP\000"
 .LASF424:
 	.ascii	"nrf_pwm_shorts_set\000"
-.LASF449:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF437:
 	.ascii	"_NRFX_IRQ_PRIORITY_SET\000"
 .LASF344:
@@ -17080,6 +17076,10 @@ m_nrf_log_PWM_logs_data_dynamic:
 	.ascii	"pwm_control_block_t\000"
 .LASF230:
 	.ascii	"SWI5_EGU5_IRQn\000"
+.LASF449:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF289:
 	.ascii	"abbrev_day_names\000"
 .LASF194:

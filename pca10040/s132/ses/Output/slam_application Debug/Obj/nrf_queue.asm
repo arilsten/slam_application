@@ -9449,8 +9449,10 @@ nrf_queue_max_utilization_reset:
 	.ascii	"NRF_LOG_SEVERITY_WARNING\000"
 .LASF19:
 	.ascii	"uint16_t\000"
-.LASF43:
-	.ascii	"__isctype\000"
+.LASF177:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF70:
 	.ascii	"int_p_cs_precedes\000"
 .LASF27:
@@ -9525,10 +9527,6 @@ nrf_queue_max_utilization_reset:
 	.ascii	"day_names\000"
 .LASF28:
 	.ascii	"__cr_flag\000"
-.LASF177:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF123:
 	.ascii	"timeval\000"
 .LASF149:
@@ -9684,6 +9682,8 @@ nrf_queue_max_utilization_reset:
 	.ascii	"memset\000"
 .LASF101:
 	.ascii	"__RAL_c_locale_month_names\000"
+.LASF43:
+	.ascii	"__isctype\000"
 .LASF147:
 	.ascii	"status\000"
 .LASF75:

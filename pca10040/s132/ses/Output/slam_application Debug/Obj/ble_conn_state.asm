@@ -15324,8 +15324,6 @@ m_ble_evt_observer:
 	.ascii	"p_data\000"
 .LASF221:
 	.ascii	"ch_sdu_buf_released\000"
-.LASF232:
-	.ascii	"sdu_len\000"
 .LASF241:
 	.ascii	"tx_mps\000"
 .LASF457:
@@ -15943,10 +15941,8 @@ m_ble_evt_observer:
 	.ascii	"__category\000"
 .LASF411:
 	.ascii	"__RAL_c_locale\000"
-.LASF501:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
+.LASF232:
+	.ascii	"sdu_len\000"
 .LASF335:
 	.ascii	"key_type\000"
 .LASF66:
@@ -15987,6 +15983,10 @@ m_ble_evt_observer:
 	.ascii	"BLE_GAP_EVT_DATA_LENGTH_UPDATE\000"
 .LASF382:
 	.ascii	"BLE_GAP_EVT_SEC_INFO_REQUEST\000"
+.LASF501:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF15:
 	.ascii	"handler\000"
 .LASF371:

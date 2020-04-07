@@ -5189,8 +5189,10 @@ nrf_atfifo_get_free:
 	.ascii	"n_cs_precedes\000"
 .LASF75:
 	.ascii	"day_names\000"
-.LASF42:
-	.ascii	"__isctype\000"
+.LASF157:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF133:
 	.ascii	"released\000"
 .LASF85:
@@ -5263,10 +5265,6 @@ nrf_atfifo_get_free:
 	.ascii	"nrf_atfifo_item_alloc\000"
 .LASF129:
 	.ascii	"nrf_atfifo_get_free\000"
-.LASF157:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF158:
 	.ascii	"timeval\000"
 .LASF121:
@@ -5390,6 +5388,8 @@ nrf_atfifo_get_free:
 	.ascii	"visible\000"
 .LASF93:
 	.ascii	"__RAL_c_locale_month_names\000"
+.LASF42:
+	.ascii	"__isctype\000"
 .LASF134:
 	.ascii	"nrf_atfifo_item_put\000"
 .LASF103:

@@ -3054,8 +3054,10 @@ uart_log_backend:
 	.ascii	"NRF_LOG_SEVERITY_WARNING\000"
 .LASF20:
 	.ascii	"uint16_t\000"
-.LASF125:
-	.ascii	"nrf_log_backend_rtt_api\000"
+.LASF138:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF68:
 	.ascii	"int_p_cs_precedes\000"
 .LASF14:
@@ -3116,10 +3118,6 @@ uart_log_backend:
 	.ascii	"day_names\000"
 .LASF15:
 	.ascii	"__cr_flag\000"
-.LASF138:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF131:
 	.ascii	"backend_id\000"
 .LASF119:
@@ -3146,6 +3144,8 @@ uart_log_backend:
 	.ascii	"p_backend\000"
 .LASF29:
 	.ascii	"decode\000"
+.LASF125:
+	.ascii	"nrf_log_backend_rtt_api\000"
 .LASF48:
 	.ascii	"__mbtowc\000"
 .LASF117:

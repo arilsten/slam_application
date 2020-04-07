@@ -83,6 +83,7 @@ SemaphoreHandle_t xTickMutex;
 SemaphoreHandle_t xControllerBSem;
 SemaphoreHandle_t xCommandReadyBSem;
 SemaphoreHandle_t mutex_spi;
+SemaphoreHandle_t xCollisionMutex;
 
 
 /* Queues */
@@ -95,6 +96,7 @@ QueueHandle_t queue_microsd = 0;
 uint8_t gHandshook = false;
 uint8_t gPaused = false;
 
+/* ________ SETUP VARIABLES ________ */
 uint8_t USEBLUETOOTH = false; //for switching between bluetooth and NRF52840 dongle
 
 // Global robot pose
@@ -138,6 +140,7 @@ volatile int LeftMotorDirection = 1;
  * @details Task for miscellaneous operations. Currently only adding display ops
  *			to the display_task's queue.
  */
+ 
 static void user_task(void *arg) {
 
 /*TEMPLATE FOR WRITING TO MICROSD Card
@@ -172,19 +175,55 @@ static void user_task(void *arg) {
     char str2[20];
     //char str3[20];
     //char str4[20];
+	//char str5[20];
+	
+	int targetX = 100;
+	int targetY = 0;
+	bool sent = false;
+	bool testWaypoint = false;
+	
     while(true){
         vTaskDelay(1000);
         sprintf(str1,"X: %i Y: %i",(int)gX_hat, (int)gY_hat);
-        display_text_on_line(1,str1);
+        display_text_on_line(1, str1);
         sprintf(str2,"HEADING: %i",(int) ((gTheta_hat)*RAD2DEG));
-        display_text_on_line(2,str2);
+        display_text_on_line(2, str2);
+	
         //NRF_LOG_INFO("HEADING_MAIN: %i",(int)(gTheta_hat)*RAD2DEG);     //Fails with programcounter at 0x26555 or something
-        
         //encoderTicks tick = encoder_get_all_ticks();
         //sprintf(str4,"el:%d,er:%d",(int)tick.left,(int)tick.right); //stuff written to debug shows up in NETBEANS output
         //display_text_on_line(5,str4);
+		
+		// Test-function, sends targetX and targetY 1 minute after initialization.
+		if(testWaypoint){
+			int time = (xTaskGetTickCount()/1000);
+			NRF_LOG_INFO("Time: %i", (int)time);
+		
+			if ((time > 60) && (sent == false)){
+				struct sCartesian target = {targetX, targetY};
+				xQueueSend(poseControllerQ, &target, 100);
+				sent = true;
+				time = 0;
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
     }
-
 }
 
 
@@ -269,6 +308,7 @@ int main(void) {
 	xTickMutex = xSemaphoreCreateMutex();       // Global variable to hold robot tick values
 	xControllerBSem = xSemaphoreCreateBinary(); // Estimator to Controller synchronization
 	xCommandReadyBSem = xSemaphoreCreateBinary();
+	xCollisionMutex = xSemaphoreCreateMutex();
 	
     /*
 	stack size is usStackDepth * stack width (4)

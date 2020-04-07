@@ -4082,10 +4082,6 @@ nrf_atflags_find_and_clear_flag:
 	.ascii	"nrf_atomic_u32_fetch_and\000"
 .LASF2:
 	.ascii	"char\000"
-.LASF117:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF94:
 	.ascii	"first_one\000"
 .LASF62:
@@ -4168,4 +4164,8 @@ nrf_atflags_find_and_clear_flag:
 	.ascii	"next\000"
 .LASF105:
 	.ascii	"nrf_atflags_fetch_clear\000"
+.LASF117:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 	.ident	"GCC: (GNU) 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599]"

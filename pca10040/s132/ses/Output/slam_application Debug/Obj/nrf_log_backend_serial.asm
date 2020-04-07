@@ -4334,8 +4334,10 @@ nrf_log_backend_serial_put:
 	.ascii	"p_io_buffer\000"
 .LASF5:
 	.ascii	"uint16_t\000"
-.LASF31:
-	.ascii	"io_buffer_size\000"
+.LASF179:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF98:
 	.ascii	"int_p_cs_precedes\000"
 .LASF171:
@@ -4418,10 +4420,6 @@ nrf_log_backend_serial_put:
 	.ascii	"day_names\000"
 .LASF59:
 	.ascii	"__cr_flag\000"
-.LASF179:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF172:
 	.ascii	"nrf_memobj_read\000"
 .LASF148:
@@ -4462,6 +4460,8 @@ nrf_log_backend_serial_put:
 	.ascii	"nrf_memobj_get\000"
 .LASF73:
 	.ascii	"__tolower\000"
+.LASF31:
+	.ascii	"io_buffer_size\000"
 .LASF135:
 	.ascii	"__user_set_time_of_day\000"
 .LASF99:

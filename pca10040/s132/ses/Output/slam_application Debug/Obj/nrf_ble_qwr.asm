@@ -11812,6 +11812,10 @@ nrf_ble_qwr_on_ble_evt:
 	.ascii	"ble_gap_phys_t\000"
 .LASF251:
 	.ascii	"tx_power\000"
+.LASF456:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF309:
 	.ascii	"max_conn_interval\000"
 .LASF227:
@@ -12213,10 +12217,6 @@ nrf_ble_qwr_on_ble_evt:
 	.ascii	"descs\000"
 .LASF151:
 	.ascii	"ble_gatt_char_props_t\000"
-.LASF456:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF12:
 	.ascii	"nrf_ble_qwr_t\000"
 .LASF162:

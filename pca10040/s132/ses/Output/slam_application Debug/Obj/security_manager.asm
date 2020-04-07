@@ -16359,8 +16359,6 @@ m_flag_params_reply_pending_flash_full:
 	.ascii	"p_data\000"
 .LASF225:
 	.ascii	"ch_sdu_buf_released\000"
-.LASF236:
-	.ascii	"sdu_len\000"
 .LASF531:
 	.ascii	"ble_conn_state_user_flag_acquire\000"
 .LASF410:
@@ -17024,10 +17022,8 @@ m_flag_params_reply_pending_flash_full:
 	.ascii	"PM_EVT_PEERS_DELETE_SUCCEEDED\000"
 .LASF484:
 	.ascii	"m_flag_link_secure_pending_busy\000"
-.LASF540:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
+.LASF236:
+	.ascii	"sdu_len\000"
 .LASF335:
 	.ascii	"key_type\000"
 .LASF393:
@@ -17064,6 +17060,10 @@ m_flag_params_reply_pending_flash_full:
 	.ascii	"conn_sec\000"
 .LASF146:
 	.ascii	"ble_gatts_evt_exchange_mtu_request_t\000"
+.LASF540:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF82:
 	.ascii	"PM_EVT_CONN_SEC_SUCCEEDED\000"
 .LASF417:

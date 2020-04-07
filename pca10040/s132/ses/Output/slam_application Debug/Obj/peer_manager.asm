@@ -22927,8 +22927,6 @@ m_ble_evt_observer:
 	.ascii	"srv_uuid\000"
 .LASF127:
 	.ascii	"report_ref_handle\000"
-.LASF245:
-	.ascii	"sdu_len\000"
 .LASF578:
 	.ascii	"event_handler\000"
 .LASF426:
@@ -23710,10 +23708,8 @@ m_ble_evt_observer:
 	.ascii	"p_addr\000"
 .LASF85:
 	.ascii	"PM_EVT_PEERS_DELETE_SUCCEEDED\000"
-.LASF639:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
+.LASF245:
+	.ascii	"sdu_len\000"
 .LASF349:
 	.ascii	"key_type\000"
 .LASF409:
@@ -23756,6 +23752,10 @@ m_ble_evt_observer:
 	.ascii	"pdb_peer_allocate\000"
 .LASF160:
 	.ascii	"ble_gatts_evt_exchange_mtu_request_t\000"
+.LASF639:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF75:
 	.ascii	"PM_EVT_CONN_SEC_SUCCEEDED\000"
 .LASF0:

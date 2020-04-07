@@ -88,6 +88,7 @@ void vMainPoseEstimatorTask(void *pvParameters) {
 			//gyrZ = fIMU_readFloatGyroZ() - gyroOffset; //GYRO Z is in degrees here
 			gyrZ = gyro.z - gyroOffset;
 			
+			/*
 			if(gyrZ < 0){
 					NRF_LOG_INFO("\t Before gyrZ: -%i", gyrZ*-1000);
 			}
@@ -108,7 +109,8 @@ void vMainPoseEstimatorTask(void *pvParameters) {
 			else{
 				NRF_LOG_INFO("\t After gyrZ: %i", gyrZ*1000);
 			}
-		
+			
+			
 			
 			if(count % 20 == 0){
 				if(gyrZ < 0){
@@ -125,6 +127,8 @@ void vMainPoseEstimatorTask(void *pvParameters) {
 					NRF_LOG_INFO("gO: %i", gyroOffset*1000);
 				}
 			}
+			*/
+			
 			
 			//char str1[20];
 			//sprintf(str1,"gyrZ: %i", (int) gyrZ*100);
@@ -270,24 +274,24 @@ void vMainPoseEstimatorTask(void *pvParameters) {
 				vTaskDelay(150);//use delay so we dont write before i2c is initialized
 
 				for (i = 0; i <= samples; i++) {
-				IMU_read(); //needs to be called to get new gyro data
-				gyro = IMU_getGyro();
-				accel = IMU_getAccel();
-				gyroF += gyro.z;
-				accelFX += accel.x;
-				accelFY += accel.y;
+					IMU_read(); //needs to be called to get new gyro data
+					gyro = IMU_getGyro();
+					accel = IMU_getAccel();
+					gyroF += gyro.z;
+					accelFX += accel.x;
+					accelFY += accel.y;
 
-				vTaskDelay(40);
-				sprintf(str4,"cal F:%i S:%i",fails,sucsess);
-				display_text_on_line(4,str4);
-				sucsess++;
+					vTaskDelay(40);
+					sprintf(str4,"cal F:%i S:%i",fails,sucsess);
+					display_text_on_line(4,str4);
+					sucsess++;
 
-				while (!IMU_newData()) {
-				vTaskDelay(20); // wait for new data
-				fails++;
-				sprintf(str4,"cal F:%i S:%i",fails,sucsess);
-				display_text_on_line(4,str4); 
-				}
+					while (!IMU_newData()) {
+						vTaskDelay(20); // wait for new data
+						fails++;
+						sprintf(str4,"cal F:%i S:%i",fails,sucsess);
+						display_text_on_line(4,str4); 
+					}
 				}
 				NRF_LOG_INFO("aFX: %i aFY: %i gF: %i", gyroF, accelFX, gyroOffset);
 				gyroOffset = gyroF / (float)i;

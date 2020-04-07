@@ -40,7 +40,7 @@
 microsd_write:
 .LVL0:
 .LFB207:
-	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\microsd.c"
+	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application-master\\drivers\\microsd.c"
 	.loc 1 39 48 view -0
 	@ args = 0, pretend = 0, frame = 8
 	@ frame_needed = 0, uses_anonymous_args = 0
@@ -418,12 +418,12 @@ m_block_dev_sdc_work:
 	.size	disk_state, 1
 disk_state:
 	.byte	1
-	.section	.data.drives.9499,"aw"
+	.section	.data.drives.9500,"aw"
 	.align	2
 	.set	.LANCHOR1,. + 0
-	.type	drives.9499, %object
-	.size	drives.9499, 12
-drives.9499:
+	.type	drives.9500, %object
+	.size	drives.9500, 12
+drives.9500:
 	.word	m_block_dev_sdc
 	.word	0
 	.byte	0
@@ -3369,7 +3369,7 @@ m_block_dev_sdc:
 	.byte	0x7
 	.4byte	.LASF23
 	.byte	0
-	.file 14 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\microsd.h"
+	.file 14 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application-master\\drivers\\microsd.h"
 	.section	.debug_types,"G",%progbits,wt.6948d92ecae410ce,comdat
 	.4byte	0x4b
 	.2byte	0x4
@@ -3429,15 +3429,15 @@ m_block_dev_sdc:
 	.file 25 "C:/Program Files (x86)/SEGGER/SEGGER Embedded Studio for ARM 4.50/include/string.h"
 	.section	.debug_info,"",%progbits
 .Ldebug_info0:
-	.4byte	0x98f
+	.4byte	0x99b
 	.2byte	0x4
 	.4byte	.Ldebug_abbrev0
 	.byte	0x4
 	.uleb128 0x1e
-	.4byte	.LASF304
-	.byte	0xc
 	.4byte	.LASF305
+	.byte	0xc
 	.4byte	.LASF306
+	.4byte	.LASF307
 	.4byte	.Ldebug_ranges0+0
 	.4byte	0
 	.4byte	.Ldebug_line0
@@ -4111,9 +4111,9 @@ m_block_dev_sdc:
 	.uleb128 0x25
 	.4byte	.LASF263
 	.byte	0x18
-	.byte	0x24
-	.byte	0x16
-	.4byte	0x3f4
+	.byte	0x21
+	.byte	0x1a
+	.4byte	0x400
 	.uleb128 0x25
 	.4byte	.LASF264
 	.byte	0x18
@@ -4129,9 +4129,9 @@ m_block_dev_sdc:
 	.uleb128 0x25
 	.4byte	.LASF266
 	.byte	0x18
-	.byte	0x29
-	.byte	0x10
-	.4byte	0x103
+	.byte	0x27
+	.byte	0x16
+	.4byte	0x3f4
 	.uleb128 0x25
 	.4byte	.LASF267
 	.byte	0x18
@@ -4141,25 +4141,25 @@ m_block_dev_sdc:
 	.uleb128 0x25
 	.4byte	.LASF268
 	.byte	0x18
-	.byte	0x2c
+	.byte	0x2b
 	.byte	0x10
 	.4byte	0x103
 	.uleb128 0x25
 	.4byte	.LASF269
 	.byte	0x18
-	.byte	0x2f
+	.byte	0x2d
+	.byte	0x10
+	.4byte	0x103
+	.uleb128 0x25
+	.4byte	.LASF270
+	.byte	0x18
+	.byte	0x30
 	.byte	0xe
-	.4byte	0x531
+	.4byte	0x53d
 	.uleb128 0x5
 	.byte	0x4
 	.byte	0x4
-	.4byte	.LASF270
-	.uleb128 0x25
 	.4byte	.LASF271
-	.byte	0x18
-	.byte	0x30
-	.byte	0x10
-	.4byte	0x10f
 	.uleb128 0x25
 	.4byte	.LASF272
 	.byte	0x18
@@ -4170,28 +4170,34 @@ m_block_dev_sdc:
 	.4byte	.LASF273
 	.byte	0x18
 	.byte	0x32
-	.byte	0xe
-	.4byte	0x531
+	.byte	0x10
+	.4byte	0x10f
 	.uleb128 0x25
 	.4byte	.LASF274
 	.byte	0x18
 	.byte	0x33
 	.byte	0xe
-	.4byte	0x531
+	.4byte	0x53d
 	.uleb128 0x25
 	.4byte	.LASF275
 	.byte	0x18
-	.byte	0x36
-	.byte	0x10
-	.4byte	0x10f
+	.byte	0x34
+	.byte	0xe
+	.4byte	0x53d
 	.uleb128 0x25
 	.4byte	.LASF276
 	.byte	0x18
 	.byte	0x37
 	.byte	0x10
 	.4byte	0x10f
-	.uleb128 0x26
+	.uleb128 0x25
 	.4byte	.LASF277
+	.byte	0x18
+	.byte	0x38
+	.byte	0x10
+	.4byte	0x10f
+	.uleb128 0x26
+	.4byte	.LASF278
 	.byte	0x1
 	.byte	0x15
 	.byte	0x21
@@ -4200,7 +4206,7 @@ m_block_dev_sdc:
 	.byte	0x3
 	.4byte	m_block_dev_sdc_work
 	.uleb128 0x26
-	.4byte	.LASF278
+	.4byte	.LASF279
 	.byte	0x1
 	.byte	0x15
 	.byte	0x58
@@ -4230,7 +4236,7 @@ m_block_dev_sdc:
 	.byte	0x10
 	.4byte	0xd0
 	.uleb128 0x26
-	.4byte	.LASF279
+	.4byte	.LASF280
 	.byte	0x1
 	.byte	0x21
 	.byte	0xc
@@ -4239,7 +4245,7 @@ m_block_dev_sdc:
 	.byte	0x3
 	.4byte	file
 	.uleb128 0x26
-	.4byte	.LASF280
+	.4byte	.LASF281
 	.byte	0x1
 	.byte	0x22
 	.byte	0x10
@@ -4248,7 +4254,7 @@ m_block_dev_sdc:
 	.byte	0x3
 	.4byte	failed
 	.uleb128 0x29
-	.4byte	.LASF281
+	.4byte	.LASF282
 	.byte	0x1
 	.byte	0x23
 	.byte	0x9
@@ -4257,7 +4263,7 @@ m_block_dev_sdc:
 	.byte	0x3
 	.4byte	disk_state
 	.uleb128 0x2a
-	.4byte	.LASF283
+	.4byte	.LASF284
 	.byte	0x1
 	.byte	0x70
 	.byte	0x6
@@ -4265,7 +4271,7 @@ m_block_dev_sdc:
 	.4byte	.LFE208-.LFB208
 	.uleb128 0x1
 	.byte	0x9c
-	.4byte	0x68d
+	.4byte	0x699
 	.uleb128 0x2b
 	.ascii	"arg\000"
 	.byte	0x1
@@ -4275,7 +4281,7 @@ m_block_dev_sdc:
 	.4byte	.LLST5
 	.4byte	.LVUS5
 	.uleb128 0x26
-	.4byte	.LASF282
+	.4byte	.LASF283
 	.byte	0x1
 	.byte	0x71
 	.byte	0x1e
@@ -4285,8 +4291,8 @@ m_block_dev_sdc:
 	.sleb128 -16
 	.uleb128 0x2c
 	.4byte	.LVL38
-	.4byte	0x8ef
-	.4byte	0x656
+	.4byte	0x8fb
+	.4byte	0x662
 	.uleb128 0x2d
 	.uleb128 0x1
 	.byte	0x51
@@ -4302,8 +4308,8 @@ m_block_dev_sdc:
 	.byte	0
 	.uleb128 0x2c
 	.4byte	.LVL39
-	.4byte	0x8fc
-	.4byte	0x66a
+	.4byte	0x908
+	.4byte	0x676
 	.uleb128 0x2d
 	.uleb128 0x1
 	.byte	0x51
@@ -4313,10 +4319,10 @@ m_block_dev_sdc:
 	.byte	0
 	.uleb128 0x2e
 	.4byte	.LVL40
-	.4byte	0x68d
+	.4byte	0x699
 	.uleb128 0x2f
 	.4byte	.LVL41
-	.4byte	0x909
+	.4byte	0x915
 	.uleb128 0x2d
 	.uleb128 0x1
 	.byte	0x51
@@ -4335,7 +4341,7 @@ m_block_dev_sdc:
 	.byte	0
 	.byte	0
 	.uleb128 0x2a
-	.4byte	.LASF284
+	.4byte	.LASF285
 	.byte	0x1
 	.byte	0x27
 	.byte	0x6
@@ -4343,7 +4349,7 @@ m_block_dev_sdc:
 	.4byte	.LFE207-.LFB207
 	.uleb128 0x1
 	.byte	0x9c
-	.4byte	0x8df
+	.4byte	0x8eb
 	.uleb128 0x30
 	.4byte	.LASF193
 	.byte	0x1
@@ -4361,7 +4367,7 @@ m_block_dev_sdc:
 	.4byte	.LLST1
 	.4byte	.LVUS1
 	.uleb128 0x26
-	.4byte	.LASF285
+	.4byte	.LASF286
 	.byte	0x1
 	.byte	0x2b
 	.byte	0xb
@@ -4370,7 +4376,7 @@ m_block_dev_sdc:
 	.byte	0x91
 	.sleb128 -28
 	.uleb128 0x31
-	.4byte	.LASF286
+	.4byte	.LASF287
 	.byte	0x1
 	.byte	0x2c
 	.byte	0xd
@@ -4378,28 +4384,28 @@ m_block_dev_sdc:
 	.4byte	.LLST2
 	.4byte	.LVUS2
 	.uleb128 0x26
-	.4byte	.LASF287
+	.4byte	.LASF288
 	.byte	0x1
 	.byte	0x2d
 	.byte	0x1d
-	.4byte	0x8df
+	.4byte	0x8eb
 	.uleb128 0x5
 	.byte	0x3
-	.4byte	drives.9499
+	.4byte	drives.9500
 	.uleb128 0x32
-	.4byte	.LASF288
+	.4byte	.LASF289
 	.byte	0x1
 	.byte	0x41
 	.byte	0xb
 	.4byte	0x12c
 	.uleb128 0x32
-	.4byte	.LASF289
+	.4byte	.LASF290
 	.byte	0x1
 	.byte	0x42
 	.byte	0xe
 	.4byte	0x12c
 	.uleb128 0x31
-	.4byte	.LASF281
+	.4byte	.LASF282
 	.byte	0x1
 	.byte	0x4d
 	.byte	0xd
@@ -4409,9 +4415,9 @@ m_block_dev_sdc:
 	.uleb128 0x33
 	.4byte	.LBB2
 	.4byte	.LBE2-.LBB2
-	.4byte	0x75d
+	.4byte	0x769
 	.uleb128 0x31
-	.4byte	.LASF290
+	.4byte	.LASF291
 	.byte	0x1
 	.byte	0x36
 	.byte	0x13
@@ -4420,7 +4426,7 @@ m_block_dev_sdc:
 	.4byte	.LVUS4
 	.uleb128 0x2f
 	.4byte	.LVL5
-	.4byte	0x916
+	.4byte	0x922
 	.uleb128 0x2d
 	.uleb128 0x1
 	.byte	0x50
@@ -4430,8 +4436,8 @@ m_block_dev_sdc:
 	.byte	0
 	.uleb128 0x2c
 	.4byte	.LVL3
-	.4byte	0x922
-	.4byte	0x779
+	.4byte	0x92e
+	.4byte	0x785
 	.uleb128 0x2d
 	.uleb128 0x1
 	.byte	0x50
@@ -4449,7 +4455,7 @@ m_block_dev_sdc:
 	.uleb128 0x2
 	.byte	0x74
 	.sleb128 0
-	.4byte	0x78c
+	.4byte	0x798
 	.uleb128 0x2d
 	.uleb128 0x1
 	.byte	0x50
@@ -4462,7 +4468,7 @@ m_block_dev_sdc:
 	.uleb128 0x2
 	.byte	0x74
 	.sleb128 0
-	.4byte	0x79f
+	.4byte	0x7ab
 	.uleb128 0x2d
 	.uleb128 0x1
 	.byte	0x50
@@ -4472,8 +4478,8 @@ m_block_dev_sdc:
 	.byte	0
 	.uleb128 0x2c
 	.4byte	.LVL10
-	.4byte	0x92e
-	.4byte	0x7c4
+	.4byte	0x93a
+	.4byte	0x7d0
 	.uleb128 0x2d
 	.uleb128 0x1
 	.byte	0x50
@@ -4494,8 +4500,8 @@ m_block_dev_sdc:
 	.byte	0
 	.uleb128 0x2c
 	.4byte	.LVL13
-	.4byte	0x93b
-	.4byte	0x7e7
+	.4byte	0x947
+	.4byte	0x7f3
 	.uleb128 0x2d
 	.uleb128 0x1
 	.byte	0x50
@@ -4517,8 +4523,8 @@ m_block_dev_sdc:
 	.byte	0
 	.uleb128 0x2c
 	.4byte	.LVL15
-	.4byte	0x947
-	.4byte	0x7fb
+	.4byte	0x953
+	.4byte	0x807
 	.uleb128 0x2d
 	.uleb128 0x1
 	.byte	0x50
@@ -4528,8 +4534,8 @@ m_block_dev_sdc:
 	.byte	0
 	.uleb128 0x2c
 	.4byte	.LVL16
-	.4byte	0x954
-	.4byte	0x81e
+	.4byte	0x960
+	.4byte	0x82a
 	.uleb128 0x2d
 	.uleb128 0x1
 	.byte	0x50
@@ -4551,8 +4557,8 @@ m_block_dev_sdc:
 	.byte	0
 	.uleb128 0x2c
 	.4byte	.LVL18
-	.4byte	0x960
-	.4byte	0x835
+	.4byte	0x96c
+	.4byte	0x841
 	.uleb128 0x2d
 	.uleb128 0x1
 	.byte	0x50
@@ -4562,8 +4568,8 @@ m_block_dev_sdc:
 	.byte	0
 	.uleb128 0x2c
 	.4byte	.LVL19
-	.4byte	0x92e
-	.4byte	0x856
+	.4byte	0x93a
+	.4byte	0x862
 	.uleb128 0x2d
 	.uleb128 0x1
 	.byte	0x50
@@ -4583,8 +4589,8 @@ m_block_dev_sdc:
 	.byte	0
 	.uleb128 0x2c
 	.4byte	.LVL21
-	.4byte	0x96c
-	.4byte	0x869
+	.4byte	0x978
+	.4byte	0x875
 	.uleb128 0x2d
 	.uleb128 0x1
 	.byte	0x50
@@ -4593,8 +4599,8 @@ m_block_dev_sdc:
 	.byte	0
 	.uleb128 0x2c
 	.4byte	.LVL23
-	.4byte	0x978
-	.4byte	0x880
+	.4byte	0x984
+	.4byte	0x88c
 	.uleb128 0x2d
 	.uleb128 0x1
 	.byte	0x51
@@ -4604,8 +4610,8 @@ m_block_dev_sdc:
 	.byte	0
 	.uleb128 0x2c
 	.4byte	.LVL26
-	.4byte	0x985
-	.4byte	0x897
+	.4byte	0x991
+	.4byte	0x8a3
 	.uleb128 0x2d
 	.uleb128 0x1
 	.byte	0x51
@@ -4615,8 +4621,8 @@ m_block_dev_sdc:
 	.byte	0
 	.uleb128 0x2c
 	.4byte	.LVL29
-	.4byte	0x978
-	.4byte	0x8b4
+	.4byte	0x984
+	.4byte	0x8c0
 	.uleb128 0x2d
 	.uleb128 0x1
 	.byte	0x51
@@ -4632,8 +4638,8 @@ m_block_dev_sdc:
 	.byte	0
 	.uleb128 0x2c
 	.4byte	.LVL32
-	.4byte	0x985
-	.4byte	0x8cb
+	.4byte	0x991
+	.4byte	0x8d7
 	.uleb128 0x2d
 	.uleb128 0x1
 	.byte	0x51
@@ -4643,7 +4649,7 @@ m_block_dev_sdc:
 	.byte	0
 	.uleb128 0x2f
 	.4byte	.LVL35
-	.4byte	0x985
+	.4byte	0x991
 	.uleb128 0x2d
 	.uleb128 0x1
 	.byte	0x51
@@ -4654,86 +4660,86 @@ m_block_dev_sdc:
 	.byte	0
 	.uleb128 0x11
 	.4byte	0x340
-	.4byte	0x8ef
+	.4byte	0x8fb
 	.uleb128 0x12
 	.4byte	0x5e
 	.byte	0
 	.byte	0
 	.uleb128 0x35
-	.4byte	.LASF291
-	.4byte	.LASF291
+	.4byte	.LASF292
+	.4byte	.LASF292
 	.byte	0x14
 	.2byte	0x363
 	.byte	0xc
 	.uleb128 0x35
-	.4byte	.LASF292
-	.4byte	.LASF292
+	.4byte	.LASF293
+	.4byte	.LASF293
 	.byte	0x14
 	.2byte	0x589
 	.byte	0xc
 	.uleb128 0x35
-	.4byte	.LASF293
-	.4byte	.LASF293
+	.4byte	.LASF294
+	.4byte	.LASF294
 	.byte	0x14
 	.2byte	0x289
 	.byte	0xc
 	.uleb128 0x36
-	.4byte	.LASF294
-	.4byte	.LASF294
+	.4byte	.LASF295
+	.4byte	.LASF295
 	.byte	0x8
 	.byte	0x70
 	.byte	0x9
 	.uleb128 0x36
-	.4byte	.LASF295
-	.4byte	.LASF295
+	.4byte	.LASF296
+	.4byte	.LASF296
 	.byte	0x8
 	.byte	0xb2
 	.byte	0x6
 	.uleb128 0x35
-	.4byte	.LASF296
-	.4byte	.LASF296
+	.4byte	.LASF297
+	.4byte	.LASF297
 	.byte	0xd
 	.2byte	0x112
 	.byte	0x9
 	.uleb128 0x36
-	.4byte	.LASF297
-	.4byte	.LASF297
+	.4byte	.LASF298
+	.4byte	.LASF298
 	.byte	0xd
 	.byte	0xf8
 	.byte	0x9
 	.uleb128 0x35
-	.4byte	.LASF298
-	.4byte	.LASF298
+	.4byte	.LASF299
+	.4byte	.LASF299
 	.byte	0x19
 	.2byte	0x1d6
 	.byte	0x8
 	.uleb128 0x36
-	.4byte	.LASF299
-	.4byte	.LASF299
+	.4byte	.LASF300
+	.4byte	.LASF300
 	.byte	0xd
 	.byte	0xfb
 	.byte	0x9
 	.uleb128 0x36
-	.4byte	.LASF300
-	.4byte	.LASF300
+	.4byte	.LASF301
+	.4byte	.LASF301
 	.byte	0xd
 	.byte	0xf9
 	.byte	0x9
 	.uleb128 0x36
-	.4byte	.LASF301
-	.4byte	.LASF301
+	.4byte	.LASF302
+	.4byte	.LASF302
 	.byte	0x8
 	.byte	0x7b
 	.byte	0x9
 	.uleb128 0x35
-	.4byte	.LASF302
-	.4byte	.LASF302
+	.4byte	.LASF303
+	.4byte	.LASF303
 	.byte	0x16
 	.2byte	0x1b4
 	.byte	0x6
 	.uleb128 0x35
-	.4byte	.LASF303
-	.4byte	.LASF303
+	.4byte	.LASF304
+	.4byte	.LASF304
 	.byte	0x16
 	.2byte	0x1ab
 	.byte	0x6
@@ -5611,7 +5617,7 @@ m_block_dev_sdc:
 	.4byte	0x347
 	.2byte	0x2
 	.4byte	.Ldebug_info0
-	.4byte	0x993
+	.4byte	0x99f
 	.4byte	0x2b
 	.ascii	"FR_OK\000"
 	.4byte	0x31
@@ -5670,42 +5676,42 @@ m_block_dev_sdc:
 	.ascii	"NRF_LOG_SEVERITY_DEBUG\000"
 	.4byte	0x49
 	.ascii	"NRF_LOG_SEVERITY_INFO_RAW\000"
-	.4byte	0x580
+	.4byte	0x58c
 	.ascii	"m_block_dev_sdc_work\000"
-	.4byte	0x592
+	.4byte	0x59e
 	.ascii	"m_block_dev_sdc\000"
-	.4byte	0x5a4
+	.4byte	0x5b0
 	.ascii	"fs\000"
-	.4byte	0x5b5
-	.ascii	"dir\000"
 	.4byte	0x5c1
-	.ascii	"fno\000"
+	.ascii	"dir\000"
 	.4byte	0x5cd
+	.ascii	"fno\000"
+	.4byte	0x5d9
 	.ascii	"file\000"
-	.4byte	0x5df
+	.4byte	0x5eb
 	.ascii	"failed\000"
-	.4byte	0x5f1
+	.4byte	0x5fd
 	.ascii	"disk_state\000"
-	.4byte	0x580
+	.4byte	0x58c
 	.ascii	"m_block_dev_sdc_work\000"
-	.4byte	0x5a4
+	.4byte	0x5b0
 	.ascii	"fs\000"
-	.4byte	0x5b5
-	.ascii	"dir\000"
 	.4byte	0x5c1
-	.ascii	"fno\000"
+	.ascii	"dir\000"
 	.4byte	0x5cd
+	.ascii	"fno\000"
+	.4byte	0x5d9
 	.ascii	"file\000"
-	.4byte	0x603
+	.4byte	0x60f
 	.ascii	"microsd_task\000"
-	.4byte	0x68d
+	.4byte	0x699
 	.ascii	"microsd_write\000"
 	.4byte	0
 	.section	.debug_pubtypes,"",%progbits
 	.4byte	0x327
 	.2byte	0x2
 	.4byte	.Ldebug_info0
-	.4byte	0x993
+	.4byte	0x99f
 	.4byte	0x2f
 	.ascii	"char\000"
 	.4byte	0x3b
@@ -5796,7 +5802,7 @@ m_block_dev_sdc:
 	.ascii	"nrf_log_module_reduced_dynamic_data_t\000"
 	.4byte	0x429
 	.ascii	"TaskHandle_t\000"
-	.4byte	0x531
+	.4byte	0x53d
 	.ascii	"float\000"
 	.4byte	0
 	.section	.debug_aranges,"",%progbits
@@ -6184,7 +6190,7 @@ m_block_dev_sdc:
 	.section	.debug_str,"MS",%progbits,1
 .LASF192:
 	.ascii	"winsect\000"
-.LASF274:
+.LASF275:
 	.ascii	"gRight\000"
 .LASF185:
 	.ascii	"last_clst\000"
@@ -6208,9 +6214,9 @@ m_block_dev_sdc:
 	.ascii	"geometry\000"
 .LASF259:
 	.ascii	"xTickMutex\000"
-.LASF268:
+.LASF269:
 	.ascii	"USEBLUETOOTH\000"
-.LASF295:
+.LASF296:
 	.ascii	"diskio_blockdev_register\000"
 .LASF232:
 	.ascii	"nrf_nvic_state_t\000"
@@ -6252,9 +6258,9 @@ m_block_dev_sdc:
 	.ascii	"__StackLimit\000"
 .LASF111:
 	.ascii	"int_frac_digits\000"
-.LASF265:
+.LASF266:
 	.ascii	"queue_microsd\000"
-.LASF297:
+.LASF298:
 	.ascii	"f_open\000"
 .LASF109:
 	.ascii	"positive_sign\000"
@@ -6268,7 +6274,7 @@ m_block_dev_sdc:
 	.ascii	"result\000"
 .LASF75:
 	.ascii	"NRF_BLOCK_DEV_EVT_UNINIT\000"
-.LASF266:
+.LASF267:
 	.ascii	"gHandshook\000"
 .LASF168:
 	.ascii	"sect\000"
@@ -6300,9 +6306,9 @@ m_block_dev_sdc:
 	.ascii	"app_sdc_config_t\000"
 .LASF146:
 	.ascii	"FR_WRITE_PROTECTED\000"
-.LASF303:
+.LASF304:
 	.ascii	"nrf_log_frontend_std_0\000"
-.LASF302:
+.LASF303:
 	.ascii	"nrf_log_frontend_std_1\000"
 .LASF53:
 	.ascii	"ioctl\000"
@@ -6330,15 +6336,16 @@ m_block_dev_sdc:
 	.ascii	"__wctomb\000"
 .LASF193:
 	.ascii	"filename\000"
-.LASF137:
-	.ascii	"FR_DISK_ERR\000"
+.LASF306:
+	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
+	.ascii	"al\\slam_application-master\\drivers\\microsd.c\000"
 .LASF172:
 	.ascii	"dir_sect\000"
 .LASF154:
 	.ascii	"FR_TOO_MANY_OPEN_FILES\000"
 .LASF10:
 	.ascii	"unsigned char\000"
-.LASF298:
+.LASF299:
 	.ascii	"strlen\000"
 .LASF74:
 	.ascii	"NRF_BLOCK_DEV_EVT_INIT\000"
@@ -6348,7 +6355,7 @@ m_block_dev_sdc:
 	.ascii	"sck_pin\000"
 .LASF190:
 	.ascii	"dirbase\000"
-.LASF264:
+.LASF265:
 	.ascii	"scanStatusQ\000"
 .LASF179:
 	.ascii	"fs_type\000"
@@ -6358,13 +6365,13 @@ m_block_dev_sdc:
 	.ascii	"nrf_block_device_sdc_ops\000"
 .LASF139:
 	.ascii	"FR_NOT_READY\000"
-.LASF263:
+.LASF264:
 	.ascii	"poseControllerQ\000"
 .LASF39:
 	.ascii	"last_result\000"
 .LASF216:
 	.ascii	"__RAL_data_utf8_space\000"
-.LASF301:
+.LASF302:
 	.ascii	"disk_uninitialize\000"
 .LASF45:
 	.ascii	"_Bool\000"
@@ -6372,9 +6379,9 @@ m_block_dev_sdc:
 	.ascii	"char\000"
 .LASF187:
 	.ascii	"n_fatent\000"
-.LASF275:
+.LASF276:
 	.ascii	"gRightWheelTicks\000"
-.LASF289:
+.LASF290:
 	.ascii	"capacity\000"
 .LASF18:
 	.ascii	"nrf_block_dev_sdc_work_t\000"
@@ -6400,7 +6407,7 @@ m_block_dev_sdc:
 	.ascii	"UINT\000"
 .LASF107:
 	.ascii	"mon_thousands_sep\000"
-.LASF277:
+.LASF278:
 	.ascii	"m_block_dev_sdc_work\000"
 .LASF4:
 	.ascii	"NRF_LOG_SEVERITY_NONE\000"
@@ -6420,12 +6427,16 @@ m_block_dev_sdc:
 	.ascii	"NRF_LOG_SEVERITY_INFO\000"
 .LASF60:
 	.ascii	"p_product\000"
-.LASF279:
+.LASF280:
 	.ascii	"file\000"
 .LASF169:
 	.ascii	"_FDID\000"
 .LASF50:
 	.ascii	"uninit\000"
+.LASF307:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF54:
 	.ascii	"ret_code_t\000"
 .LASF200:
@@ -6450,7 +6461,7 @@ m_block_dev_sdc:
 	.ascii	"abbrev_month_names\000"
 .LASF58:
 	.ascii	"NRF_BLOCK_DEV_IOCTL_REQ_INFO_STRINGS\000"
-.LASF304:
+.LASF305:
 	.ascii	"GNU C99 9.2.1 20191025 (release) [ARM/arm-9-branch "
 	.ascii	"revision 277599] -fmessage-length=0 -mcpu=cortex-m4"
 	.ascii	" -mlittle-endian -mfloat-abi=hard -mfpu=fpv4-sp-d16"
@@ -6465,13 +6476,13 @@ m_block_dev_sdc:
 	.ascii	"codeset\000"
 .LASF70:
 	.ascii	"nrf_block_dev_event_type_t\000"
-.LASF293:
+.LASF294:
 	.ascii	"xQueueGenericSend\000"
 .LASF59:
 	.ascii	"p_vendor\000"
-.LASF290:
+.LASF291:
 	.ascii	"retries\000"
-.LASF300:
+.LASF301:
 	.ascii	"f_close\000"
 .LASF135:
 	.ascii	"__wchar\000"
@@ -6497,16 +6508,12 @@ m_block_dev_sdc:
 	.ascii	"__StackTop\000"
 .LASF174:
 	.ascii	"attr\000"
-.LASF291:
+.LASF292:
 	.ascii	"xQueueReceive\000"
 .LASF189:
 	.ascii	"fatbase\000"
 .LASF129:
 	.ascii	"am_pm_indicator\000"
-.LASF306:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_application\\\\pca10040\\\\s132\\\\"
-	.ascii	"ses\000"
 .LASF114:
 	.ascii	"p_sep_by_space\000"
 .LASF0:
@@ -6521,6 +6528,8 @@ m_block_dev_sdc:
 	.ascii	"FR_LOCKED\000"
 .LASF204:
 	.ascii	"long long int\000"
+.LASF263:
+	.ascii	"xCollisionMutex\000"
 .LASF133:
 	.ascii	"__mbstate_s\000"
 .LASF160:
@@ -6537,21 +6546,23 @@ m_block_dev_sdc:
 	.ascii	"__category\000"
 .LASF69:
 	.ascii	"p_blk_req\000"
-.LASF283:
+.LASF284:
 	.ascii	"microsd_task\000"
 .LASF6:
 	.ascii	"NRF_LOG_SEVERITY_WARNING\000"
 .LASF224:
 	.ascii	"ITM_RxBuffer\000"
-.LASF276:
+.LASF277:
 	.ascii	"gLeftWheelTicks\000"
+.LASF137:
+	.ascii	"FR_DISK_ERR\000"
 .LASF132:
 	.ascii	"date_time_format\000"
-.LASF270:
+.LASF271:
 	.ascii	"float\000"
 .LASF44:
 	.ascii	"DSTATUS\000"
-.LASF288:
+.LASF289:
 	.ascii	"blocks_per_mb\000"
 .LASF43:
 	.ascii	"nrf_block_dev_result_t\000"
@@ -6565,7 +6576,7 @@ m_block_dev_sdc:
 	.ascii	"FR_NOT_ENOUGH_CORE\000"
 .LASF117:
 	.ascii	"p_sign_posn\000"
-.LASF284:
+.LASF285:
 	.ascii	"microsd_write\000"
 .LASF250:
 	.ascii	"handle_user_task\000"
@@ -6599,7 +6610,7 @@ m_block_dev_sdc:
 	.ascii	"FR_NOT_ENABLED\000"
 .LASF150:
 	.ascii	"FR_MKFS_ABORTED\000"
-.LASF269:
+.LASF270:
 	.ascii	"gTheta_hat\000"
 .LASF254:
 	.ascii	"communication_task\000"
@@ -6645,16 +6656,13 @@ m_block_dev_sdc:
 	.ascii	"miso_pin\000"
 .LASF63:
 	.ascii	"blk_count\000"
-.LASF305:
-	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
-	.ascii	"al\\slam_application\\drivers\\microsd.c\000"
 .LASF151:
 	.ascii	"FR_TIMEOUT\000"
 .LASF188:
 	.ascii	"volbase\000"
 .LASF243:
 	.ascii	"TickType_t\000"
-.LASF292:
+.LASF293:
 	.ascii	"xQueueSemaphoreTake\000"
 .LASF25:
 	.ascii	"ev_handler\000"
@@ -6664,9 +6672,9 @@ m_block_dev_sdc:
 	.ascii	"grouping\000"
 .LASF42:
 	.ascii	"diskio_blkdev_config_t\000"
-.LASF273:
+.LASF274:
 	.ascii	"gLeft\000"
-.LASF299:
+.LASF300:
 	.ascii	"f_write\000"
 .LASF19:
 	.ascii	"block_size\000"
@@ -6686,11 +6694,11 @@ m_block_dev_sdc:
 	.ascii	"dir_ptr\000"
 .LASF93:
 	.ascii	"__toupper\000"
-.LASF287:
+.LASF288:
 	.ascii	"drives\000"
 .LASF87:
 	.ascii	"name\000"
-.LASF267:
+.LASF268:
 	.ascii	"gPaused\000"
 .LASF112:
 	.ascii	"frac_digits\000"
@@ -6706,19 +6714,19 @@ m_block_dev_sdc:
 	.ascii	"FATFS\000"
 .LASF134:
 	.ascii	"__state\000"
-.LASF286:
+.LASF287:
 	.ascii	"ff_result\000"
 .LASF202:
 	.ascii	"int16_t\000"
-.LASF272:
+.LASF273:
 	.ascii	"gY_hat\000"
 .LASF72:
 	.ascii	"NRF_BLOCK_DEV_RESULT_IO_ERROR\000"
 .LASF261:
 	.ascii	"xCommandReadyBSem\000"
-.LASF296:
+.LASF297:
 	.ascii	"f_mount\000"
-.LASF278:
+.LASF279:
 	.ascii	"m_block_dev_sdc\000"
 .LASF249:
 	.ascii	"handle_display_task\000"
@@ -6744,7 +6752,7 @@ m_block_dev_sdc:
 	.ascii	"content\000"
 .LASF1:
 	.ascii	"padding\000"
-.LASF285:
+.LASF286:
 	.ascii	"bytes_written\000"
 .LASF34:
 	.ascii	"cs_pin\000"
@@ -6758,7 +6766,7 @@ m_block_dev_sdc:
 	.ascii	"__RAL_data_empty_string\000"
 .LASF136:
 	.ascii	"FR_OK\000"
-.LASF281:
+.LASF282:
 	.ascii	"disk_state\000"
 .LASF113:
 	.ascii	"p_cs_precedes\000"
@@ -6772,9 +6780,9 @@ m_block_dev_sdc:
 	.ascii	"mosi_pin\000"
 .LASF149:
 	.ascii	"FR_NO_FILESYSTEM\000"
-.LASF294:
+.LASF295:
 	.ascii	"disk_initialize\000"
-.LASF280:
+.LASF281:
 	.ascii	"failed\000"
 .LASF29:
 	.ascii	"nrf_block_req_t\000"
@@ -6796,11 +6804,11 @@ m_block_dev_sdc:
 	.ascii	"clust\000"
 .LASF52:
 	.ascii	"write_req\000"
-.LASF282:
+.LASF283:
 	.ascii	"write_operation\000"
 .LASF78:
 	.ascii	"blk_id\000"
-.LASF271:
+.LASF272:
 	.ascii	"gX_hat\000"
 .LASF27:
 	.ascii	"nrf_block_dev_geometry_t\000"

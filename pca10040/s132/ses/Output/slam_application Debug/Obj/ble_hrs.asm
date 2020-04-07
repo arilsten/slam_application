@@ -15799,8 +15799,6 @@ ble_hrs_on_gatt_evt:
 	.ascii	"p_data\000"
 .LASF211:
 	.ascii	"ch_sdu_buf_released\000"
-.LASF222:
-	.ascii	"sdu_len\000"
 .LASF421:
 	.ascii	"int_frac_digits\000"
 .LASF219:
@@ -16441,10 +16439,8 @@ ble_hrs_on_gatt_evt:
 	.ascii	"__RAL_c_locale\000"
 .LASF485:
 	.ascii	"body_sensor_location\000"
-.LASF536:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
+.LASF222:
+	.ascii	"sdu_len\000"
 .LASF323:
 	.ascii	"key_type\000"
 .LASF404:
@@ -16492,6 +16488,10 @@ ble_hrs_on_gatt_evt:
 	.ascii	"BLE_GAP_EVT_DATA_LENGTH_UPDATE\000"
 .LASF370:
 	.ascii	"BLE_GAP_EVT_SEC_INFO_REQUEST\000"
+.LASF536:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF358:
 	.ascii	"aux_phy\000"
 .LASF320:

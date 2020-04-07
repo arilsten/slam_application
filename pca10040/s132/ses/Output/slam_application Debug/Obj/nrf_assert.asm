@@ -2112,10 +2112,6 @@ assert_nrf_callback:
 	.ascii	"short unsigned int\000"
 .LASF9:
 	.ascii	"char\000"
-.LASF101:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF66:
 	.ascii	"int32_t\000"
 .LASF43:
@@ -2199,4 +2195,8 @@ assert_nrf_callback:
 	.ascii	"next\000"
 .LASF11:
 	.ascii	"__locale_s\000"
+.LASF101:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 	.ident	"GCC: (GNU) 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599]"

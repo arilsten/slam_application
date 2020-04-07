@@ -21669,8 +21669,6 @@ m_flag_sec_proc_pairing:
 	.ascii	"srv_uuid\000"
 .LASF142:
 	.ascii	"report_ref_handle\000"
-.LASF260:
-	.ascii	"sdu_len\000"
 .LASF457:
 	.ascii	"SD_BLE_GAP_DEVICE_NAME_GET\000"
 .LASF614:
@@ -22514,10 +22512,8 @@ m_flag_sec_proc_pairing:
 	.ascii	"__RAL_c_locale\000"
 .LASF100:
 	.ascii	"PM_EVT_PEERS_DELETE_SUCCEEDED\000"
-.LASF669:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
+.LASF260:
+	.ascii	"sdu_len\000"
 .LASF374:
 	.ascii	"key_type\000"
 .LASF495:
@@ -22558,6 +22554,10 @@ m_flag_sec_proc_pairing:
 	.ascii	"BLE_GAP_EVT_DATA_LENGTH_UPDATE\000"
 .LASF419:
 	.ascii	"BLE_GAP_EVT_SEC_INFO_REQUEST\000"
+.LASF669:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF90:
 	.ascii	"PM_EVT_CONN_SEC_SUCCEEDED\000"
 .LASF408:

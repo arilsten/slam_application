@@ -21204,10 +21204,8 @@ log_mempool:
 	.ascii	"nrf_log_module_dynamic_data_t\000"
 .LASF120:
 	.ascii	"int_n_cs_precedes\000"
-.LASF317:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
+.LASF202:
+	.ascii	"id_available\000"
 .LASF242:
 	.ascii	"nrf_log_frontend_std_0\000"
 .LASF241:
@@ -21314,6 +21312,10 @@ log_mempool:
 	.ascii	"nrf_log_frontend_hexdump\000"
 .LASF192:
 	.ascii	"__stop_log_const_data\000"
+.LASF317:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF161:
 	.ascii	"ret_code_t\000"
 .LASF50:
@@ -21459,8 +21461,6 @@ log_mempool:
 	.ascii	"log_skip\000"
 .LASF301:
 	.ascii	"nrf_memobj_write\000"
-.LASF202:
-	.ascii	"id_available\000"
 .LASF287:
 	.ascii	"timestamp_freq\000"
 .LASF111:

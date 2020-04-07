@@ -9285,10 +9285,6 @@ m_sd_state_observer:
 	.ascii	"p_is_running\000"
 .LASF105:
 	.ascii	"SD_ECB_BLOCKS_ENCRYPT\000"
-.LASF361:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF106:
 	.ascii	"SD_RADIO_SESSION_OPEN\000"
 .LASF243:
@@ -9407,6 +9403,10 @@ m_sd_state_observer:
 	.ascii	"NRF_EVT_RADIO_SIGNAL_CALLBACK_INVALID_RETURN\000"
 .LASF183:
 	.ascii	"SWI5_EGU5_IRQn\000"
+.LASF361:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF46:
 	.ascii	"NRF_DRV_CLOCK_EVT_CAL_DONE\000"
 .LASF292:

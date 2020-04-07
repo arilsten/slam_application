@@ -9001,10 +9001,6 @@ m_nrf_log_CLOCK_logs_data_dynamic:
 	.ascii	"int_n_cs_precedes\000"
 .LASF332:
 	.ascii	"IRQn\000"
-.LASF338:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF330:
 	.ascii	"_NRFX_IRQ_PRIORITY_SET\000"
 .LASF325:
@@ -9138,6 +9134,10 @@ m_nrf_log_CLOCK_logs_data_dynamic:
 	.ascii	"nrf_clock_int_disable\000"
 .LASF166:
 	.ascii	"SWI5_EGU5_IRQn\000"
+.LASF338:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF130:
 	.ascii	"STIR\000"
 .LASF278:

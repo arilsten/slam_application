@@ -14,6 +14,7 @@
 #define MOTOR_FORWARDS      1
 #define MOTOR_BACKWARDS    -1
 APP_PWM_INSTANCE(PWM1, 1);
+#define MAX_DUTY			20
 
 extern int RightMotorDirection;
 extern int LeftMotorDirection;
@@ -48,8 +49,8 @@ void motor_init() {
 static inline int SATURATE_DUTY(int duty) {
 	if (duty < 0)
 		duty = 0;
-	if (duty > 90)
-		duty = 90;
+	if (duty > MAX_DUTY)
+		duty = MAX_DUTY;
 	return duty;
 }
 
@@ -106,7 +107,7 @@ void motor_left_backward(int duty) {
 	nrfx_gpiote_out_set(PIN_IN4);
 	duty = SATURATE_DUTY(duty);
 	while (app_pwm_channel_duty_set(&PWM1, 1, duty) == NRF_ERROR_BUSY);
-        LeftMotorDirection  = MOTOR_BACKWARDS;
+    LeftMotorDirection  = MOTOR_BACKWARDS;
 }
 
 void motor_stop()  {
@@ -138,23 +139,27 @@ void motor_brake_left(){
 }
 
 void motor_brake_right(){
-      	nrfx_gpiote_out_set(PIN_IN1);
+    nrfx_gpiote_out_set(PIN_IN1);
 	nrfx_gpiote_out_set(PIN_IN2);
 	while (app_pwm_channel_duty_set(&PWM1, 0, 0) == NRF_ERROR_BUSY);
 }
 
 void vMotorMovementSwitch(int leftSpeed, int rightSpeed){
-    if (leftSpeed > 0){motor_left_forward(leftSpeed);
-      }else{ if(leftSpeed < 0){motor_left_backward(-leftSpeed);
-      }else{motor_brake_left();}
-     }
+    if (leftSpeed > 0){
+		motor_left_forward(leftSpeed);
+    }else if(leftSpeed < 0){
+		motor_left_backward(-leftSpeed);
+    }else{
+		motor_brake_left();
+    }
 	
     if (rightSpeed > 0) {
 		motor_right_forward(rightSpeed);
-        }else{
-             if (rightSpeed < 0) {motor_right_backward(-rightSpeed);
-             }else {motor_brake_right();}
-        }
+    }else if(rightSpeed < 0){
+		motor_right_backward(-rightSpeed);
+    }else{
+		motor_brake_right();
+    }
 }
 	
 	

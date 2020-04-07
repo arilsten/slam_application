@@ -9376,10 +9376,6 @@ m_state_obs:
 	.ascii	"rmap\000"
 .LASF123:
 	.ascii	"SD_CLOCK_HFCLK_REQUEST\000"
-.LASF311:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF40:
 	.ascii	"head\000"
 .LASF15:
@@ -9486,6 +9482,10 @@ m_state_obs:
 	.ascii	"nrf_fstorage_sdh_req_handler\000"
 .LASF137:
 	.ascii	"uninit\000"
+.LASF311:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF142:
 	.ascii	"ret_code_t\000"
 .LASF106:

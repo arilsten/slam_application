@@ -3297,8 +3297,10 @@ __getchar:
 	.ascii	"n_cs_precedes\000"
 .LASF19:
 	.ascii	"__printf_tag\000"
-.LASF32:
-	.ascii	"__isctype\000"
+.LASF137:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF59:
 	.ascii	"int_p_cs_precedes\000"
 .LASF78:
@@ -3355,10 +3357,6 @@ __getchar:
 	.ascii	"day_names\000"
 .LASF79:
 	.ascii	"__cr_flag\000"
-.LASF137:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF113:
 	.ascii	"timeval\000"
 .LASF8:
@@ -3462,6 +3460,8 @@ __getchar:
 	.ascii	"stderr\000"
 .LASF99:
 	.ascii	"__RAL_c_locale_month_names\000"
+.LASF32:
+	.ascii	"__isctype\000"
 .LASF121:
 	.ascii	"__printf_t\000"
 .LASF109:

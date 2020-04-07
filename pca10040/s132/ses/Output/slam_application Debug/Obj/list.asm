@@ -2936,8 +2936,10 @@ uxListRemove:
 	.ascii	"stdin\000"
 .LASF44:
 	.ascii	"grouping\000"
-.LASF33:
-	.ascii	"__isctype\000"
+.LASF128:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF60:
 	.ascii	"int_p_cs_precedes\000"
 .LASF125:
@@ -2996,10 +2998,6 @@ uxListRemove:
 	.ascii	"day_names\000"
 .LASF19:
 	.ascii	"__cr_flag\000"
-.LASF128:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF108:
 	.ascii	"timeval\000"
 .LASF111:
@@ -3100,6 +3098,8 @@ uxListRemove:
 	.ascii	"stderr\000"
 .LASF85:
 	.ascii	"__RAL_c_locale_month_names\000"
+.LASF33:
+	.ascii	"__isctype\000"
 .LASF20:
 	.ascii	"__RAL_error_decoder_s\000"
 .LASF96:

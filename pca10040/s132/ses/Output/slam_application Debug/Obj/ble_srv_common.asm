@@ -7476,6 +7476,8 @@ descriptor_add:
 	.ascii	"ble_srv_report_ref_encode\000"
 .LASF197:
 	.ascii	"p_descr_handle\000"
+.LASF107:
+	.ascii	"__isctype\000"
 .LASF143:
 	.ascii	"abbrev_month_names\000"
 .LASF19:
@@ -7532,8 +7534,10 @@ descriptor_add:
 	.ascii	"value_handle\000"
 .LASF205:
 	.ascii	"p_char_handle\000"
-.LASF107:
-	.ascii	"__isctype\000"
+.LASF234:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF134:
 	.ascii	"int_p_cs_precedes\000"
 .LASF121:
@@ -7632,10 +7636,8 @@ descriptor_add:
 	.ascii	"read_perm\000"
 .LASF127:
 	.ascii	"frac_digits\000"
-.LASF234:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
+.LASF82:
+	.ascii	"SD_BLE_GATTS_EXCHANGE_MTU_REPLY\000"
 .LASF190:
 	.ascii	"timeval\000"
 .LASF218:
@@ -7698,8 +7700,6 @@ descriptor_add:
 	.ascii	"SD_BLE_GATTS_RW_AUTHORIZE_REPLY\000"
 .LASF172:
 	.ascii	"__user_set_time_of_day\000"
-.LASF82:
-	.ascii	"SD_BLE_GATTS_EXCHANGE_MTU_REPLY\000"
 .LASF39:
 	.ascii	"report_id\000"
 .LASF160:

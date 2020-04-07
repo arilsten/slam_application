@@ -14088,10 +14088,6 @@ irq_handlers.8738:
 	.ascii	"IRQn\000"
 .LASF357:
 	.ascii	"nrf_spi_event_clear\000"
-.LASF375:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF362:
 	.ascii	"_NRFX_IRQ_PRIORITY_SET\000"
 .LASF9:
@@ -14234,6 +14230,10 @@ irq_handlers.8738:
 	.ascii	"SHCSR\000"
 .LASF177:
 	.ascii	"SWI5_EGU5_IRQn\000"
+.LASF375:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF141:
 	.ascii	"STIR\000"
 .LASF288:

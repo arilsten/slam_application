@@ -30,6 +30,7 @@ extern SemaphoreHandle_t xTickMutex;
 extern SemaphoreHandle_t xControllerBSem;
 extern SemaphoreHandle_t xCommandReadyBSem;
 extern SemaphoreHandle_t mutex_spi;
+extern SemaphoreHandle_t xCollisionMutex;
 
 /* Queues */
 //QueueHandle_t movementQ = 0;

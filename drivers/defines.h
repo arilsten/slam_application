@@ -16,20 +16,20 @@
  -> (((pi*80)/600)/4 != 1.02101761125 mm 
                         Length the robot travels per  tick
                         (Ticks are NO LONGER divided in motor.c)                     */
-#define WHEELBASE_MM			215  // 215 /* Length between wheel centers  */  //TODO REMEASURE THESE
-#define ROBOT_TOTAL_WIDTH_MM		175  // 235 /* From outer rim to outer rim   */
+#define WHEELBASE_MM				172  // Updated 30.03.2020 /* Length between wheel centers  */
+#define ROBOT_TOTAL_WIDTH_MM		197  // Updated 30.03.2020 /* From outer rim to outer rim   */
 #define ROBOT_TOTAL_LENGTH_MM		230  /* From front to aft, total	     */
-#define ROBOT_AXEL_OFFSET_MM		46   // 55  /* From center of square	     */
+#define ROBOT_AXEL_OFFSET_MM		67   // 55  /* From center of square	     */
 #define SENSOR_TOWER_OFFSET_X_MM	0   // 16  /* From center of square         */
 #define SENSOR_TOWER_OFFSET_Y_MM	0    /* From center of square		     */
 #define SENSOR_OFFSET_RADIUS_MM		21   /* From center of tower		     */
-#define ROBOT_DEADLINE_MS		200  /* Interval between measurements	     */
-#define SENSOR1_HEADING_DEG		0    /* Sensor angle relative to body	     */
-#define SENSOR2_HEADING_DEG		90
-#define SENSOR3_HEADING_DEG		180
-#define SENSOR4_HEADING_DEG		270
-#define WHEEL_CIRCUMFERENCE		250  // 263.7 257.48
-#define WHEEL_FACTOR_MM			(WHEEL_CIRCUMFERENCE)/2400.0        /* Calculated, see above */ 
+#define ROBOT_DEADLINE_MS			200  /* Interval between measurements	     */
+#define SENSOR1_HEADING_DEG			0    /* Sensor angle relative to body	     */
+#define SENSOR2_HEADING_DEG			90
+#define SENSOR3_HEADING_DEG			180
+#define SENSOR4_HEADING_DEG			270
+#define WHEEL_CIRCUMFERENCE			228  // [mm] Updated 30.03.2020
+#define WHEEL_FACTOR_MM				(WHEEL_CIRCUMFERENCE)/272.0        /* Gearratio(34:1)*pulses pr rev(4) = 136.. Calculated, see above */ 
 
 
 /************************************************************************/
@@ -49,8 +49,8 @@
 
 
 /****** Motor ******/
-#define MOTOR_FORWARDS      1
-#define MOTOR_BACKWARDS    -1
+#define MOTOR_FORWARDS			1
+#define MOTOR_BACKWARDS			-1
 
 
 

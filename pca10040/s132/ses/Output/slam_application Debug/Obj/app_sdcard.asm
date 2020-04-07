@@ -28083,10 +28083,6 @@ m_spi:
 	.ascii	"app_sdc_config_t\000"
 .LASF237:
 	.ascii	"EVENTS_STARTED\000"
-.LASF386:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF14:
 	.ascii	"rw_op\000"
 .LASF205:
@@ -28233,6 +28229,10 @@ m_spi:
 	.ascii	"__iswctype\000"
 .LASF372:
 	.ascii	"input\000"
+.LASF386:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF289:
 	.ascii	"ret_code_t\000"
 .LASF43:

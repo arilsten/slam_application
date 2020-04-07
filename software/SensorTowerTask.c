@@ -19,14 +19,17 @@
 #include "functions.h"
 #include "SensorTowerTask.h"
 #include "globals.h"
+#include "MainComTask.h"
 #include <stdlib.h>
 
 int newMsgCounter = 0;
 int time = 0;
 
+/* _________ SETUP VARIABLES __________ */
+bool newServer = false;          // Changes between old and new message-style, when false it supports Grindviks server from 2019.
+
 void vMainSensorTowerTask(void *pvParameters) {
     int count = 0;
-    bool newServer = false;          // Changes between old and new message-style
 
     /* Task init */
     float thetahat = 0;
@@ -40,13 +43,9 @@ void vMainSensorTowerTask(void *pvParameters) {
     int16_t previous_left = 0;
     int16_t previous_right = 0;
 
-    int16_t waypoint[2] = {0};
-    uint8_t msgType;
-	
     // Initialize the xLastWakeTime variable with the current time.
     TickType_t xLastWakeTime;
-
-    uint8_t incr = 0;
+	
     while (true) {
         if ((gHandshook == true) && (gPaused == false)) {
             // xLastWakeTime variable with the current time.
@@ -103,16 +102,6 @@ void vMainSensorTowerTask(void *pvParameters) {
             yhat = gY_hat;
             xSemaphoreGive(xPoseMutex);
 
-            /*
-            count++;
-            if(count > 1000){
-                NRF_LOG_INFO("S-gT: %i", (int)((gTheta_hat)*RAD2DEG));
-                count = 0;
-            }
-            */
-			
-			
-
             // Experimental
             if ((idleCounter > 10) && (robotMovement == moveStop)) {
                 // If the robot stands idle for 1 second, send 'status:idle' in case the server missed it.
@@ -121,116 +110,42 @@ void vMainSensorTowerTask(void *pvParameters) {
             } else if ((idleCounter >= 1) && (robotMovement == moveStop)) {
                 idleCounter++;
             }
-
-            // Send updates to server
-            // Java server
-            if(USEBLUETOOTH){                                                                    // distSensFwd, distSensLeft, distSensRear, distSensRight
-                send_update(xhat / 10, yhat / 10, thetahat * RAD2DEG, servoStep * servoResolution, sensor[0], sensor[1],  sensor[2], sensor[3]);
-            }
-
-            /*
-            int oldtime = time;
-            time = (xTaskGetTickCount()/1000);
-            if (oldtime != time){
-                NRF_LOG_INFO("Ticks: %i", (int)time);
-            }
-            */
-            
-            
-            // C++ server
-            if(!USEBLUETOOTH){
-                int8_t* sendData;
-                if(newServer){
-                    
-                    sendData = getPoseMessage(xhat, yhat, thetahat, servoStep, sensor16);
-                    i2cSendNOADDR(I2C_DEVICE_DONGLE, sendData, 23);     // Message from Feb 2020 contains 23 bytes
-                }else{
-                    sendOldPoseMessage(xhat, yhat, thetahat, servoStep, sensor16);
-                }
-            
-				
-				
-				/* THE RECEIVING AND SENDING OF MESSAGES SHOULD MAYBE BE MOVED TO ANOTHER TASK */
-				
-                newMsgCounter++;
-                if(newMsgCounter > 20){
-					/*
-                    int16_t oldwaypoint[2];
-					int16_t initialPos[2];
-                    
-                    uint8_t message[5];
-                    i2cReciveNOADDR(I2C_DEVICE_DONGLE, &message, 5);
-                    oldwaypoint[0] = waypoint[0];
-					oldwaypoint[1] = waypoint[1];
-					waypoint[0] = *((int16_t*)&message[1]);
-					waypoint[1] = *((int16_t*)&message[3]);
-					
-					if(oldwaypoint[0] != waypoint[0] || oldwaypoint[1] != waypoint[1]){  //Setter nytt setpoint kun hvis de nye er ulike de gamle
-						struct sCartesian Setpoint = {(waypoint[0])/10, (waypoint[1])/10}; // Gets waypoints in cm, converts to mm
-						xQueueSend(poseControllerQ, &Setpoint, 100);
-						NRF_LOG_INFO("SEND SETPOINT FROM");
-					}
-					*/
-				
-					
-					
-					
-					/*
-					switch(message[0]){
-  
-                        case INITIAL_POSE:
-                            //Set robot-position to what server decides
-							initialPos[0] = *((int16_t*)&message[1]);
-							initialPos[1] = *((int16_t*)&message[3]);
-							//FIXME: Set startposition
-
-                        break;
-
-                        case WAYPOINT:
-                            //Set target-point to what server decides
-							oldwaypoint[0] = waypoint[0];
-							oldwaypoint[1] = waypoint[1];
-							waypoint[0] = *((int16_t*)&message[1]);
-							waypoint[1] = *((int16_t*)&message[3]);
-							if(oldwaypoint[0] != waypoint[0] || oldwaypoint[1] != waypoint[1]){  //Setter nytt setpoint kun hvis de nye er ulike de gamle
-								struct sCartesian Setpoint = {(waypoint[0])/10, (waypoint[1])/10}; // Gets waypoints in mm, converts to cm
-								xQueueSend(poseControllerQ, &Setpoint, 100);
-								NRF_LOG_INFO("SEND SETPOINT FROM");
-							}	
-							break;
-
-                        default:
-                            NRF_LOG_INFO("Got a message Im not programmed to execute...");
-
-                    }*/
-
-                
-           
-
-                    
-                    newMsgCounter = 0;
-                 }
-            } //end if(!USEBLUETOOTH)
-          
-
-            
-            // Low level anti collision
-
-            /* NO ANTICOLLITION AT CURRENT TIME
-            uint8_t objectX;
-            if ((servoStep*servoResolution) <= 30) objectX = forwardSensor;    // * cos(servoStep*5);
-            else if((servoStep*servoResolution) >= 60) objectX = rightSensor;  // * cos(270 + servoStep*5);
-            else objectX = 0;
-            
-
 			
-            if ((objectX > 0) && (objectX < 25)){
-                // Stop controller
-                struct sCartesian Setpoint = {xhat/10, yhat/10};
-                display_text_on_line(5,"COLISION "); //FOR DEBUG
-                xQueueSend(poseControllerQ, &Setpoint, 100);
-            }
-            */
+
+            // Send update to server
+            // Java server message
+            if(USEBLUETOOTH){                                                                    // distSensFwd, distSensLeft, distSensRear, distSensRight
+                send_update(xhat/10, yhat/10, thetahat * RAD2DEG, servoStep * servoResolution, sensor[0], sensor[1],  sensor[2], sensor[3]);
+				
+            }else{ // C++ server message
+				if(newServer){
+					sendNewPoseMessage(xhat, yhat, thetahat, servoStep, sensor16); // New format from 2020.
+				}else{
+					sendOldPoseMessage(xhat, yhat, thetahat, servoStep, sensor16); // Old message formats supports Grindviks server from 2019.
+				}
+			}
+			
+			// Anti-collision
+			int8_t angles[NUM_DIST_SENSORS];
+			for(int i = 0; i < NUM_DIST_SENSORS; i++){
+				uint16_t xObject = distObjectXlocal(thetahat, servoStep, sensor16, i);
+				uint16_t yObject = distObjectYlocal(thetahat, servoStep, sensor16, i);
+				uint16_t dist = sqrt(xObject*xObject + yObject*yObject);
+				
+				if(dist < COLLISION_THRESHOLD_MM){
+					angles[i] = atan2(yObject, xObject)*RAD2DEG;
+					//struct sCartesian Setpoint = {xhat/10, yhat/10};
+					//xQueueSend(poseControllerQ, &Setpoint, 100);
+					
+				}else{
+					angles[i] = 400; // Above 360 degrees 
+				}
+				
+			}
+			xSemaphoreTake(xCollisionMutex, 20);
+			memcpy(&collisionAngles, &angles, sizeof(angles));
+			xSemaphoreGive(xCollisionMutex);
+
 
             // Iterate in a increasing/decreasign manner and depending on the robots movement
             if ((servoStep * servoResolution <= 90) && (servoDirection == moveCounterClockwise) && (robotMovement < moveClockwise)) {

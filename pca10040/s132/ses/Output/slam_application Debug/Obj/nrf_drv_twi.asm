@@ -8205,10 +8205,6 @@ delay_bytecode.7993:
 	.ascii	"int_n_cs_precedes\000"
 .LASF217:
 	.ascii	"nrfx_twi_evt_t\000"
-.LASF255:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
 .LASF245:
 	.ascii	"nrfx_coredep_delay_us\000"
 .LASF77:
@@ -8313,6 +8309,10 @@ delay_bytecode.7993:
 	.ascii	"EVENTS_TXDSENT\000"
 .LASF132:
 	.ascii	"__iswctype\000"
+.LASF255:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF110:
 	.ascii	"TWIM_PSEL_Type\000"
 .LASF214:

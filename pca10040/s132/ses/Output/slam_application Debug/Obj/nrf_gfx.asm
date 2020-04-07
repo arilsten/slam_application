@@ -15162,8 +15162,10 @@ m_nrf_log_gfx_logs_data_dynamic:
 	.ascii	"uint16_t\000"
 .LASF202:
 	.ascii	"nrf_gfx_uninit\000"
-.LASF71:
-	.ascii	"__isctype\000"
+.LASF216:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF98:
 	.ascii	"int_p_cs_precedes\000"
 .LASF55:
@@ -15252,10 +15254,8 @@ m_nrf_log_gfx_logs_data_dynamic:
 	.ascii	"day_names\000"
 .LASF51:
 	.ascii	"NRF_LCD_ROTATE_0\000"
-.LASF216:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
+.LASF173:
+	.ascii	"p_font\000"
 .LASF26:
 	.ascii	"startChar\000"
 .LASF150:
@@ -15387,8 +15387,6 @@ m_nrf_log_gfx_logs_data_dynamic:
 	.ascii	"nrf_gfx_background_set\000"
 .LASF44:
 	.ascii	"uint32_t\000"
-.LASF173:
-	.ascii	"p_font\000"
 .LASF2:
 	.ascii	"debug_color_id\000"
 .LASF36:
@@ -15431,6 +15429,8 @@ m_nrf_log_gfx_logs_data_dynamic:
 	.ascii	"stderr\000"
 .LASF128:
 	.ascii	"__RAL_c_locale_month_names\000"
+.LASF71:
+	.ascii	"__isctype\000"
 .LASF63:
 	.ascii	"__RAL_error_decoder_s\000"
 .LASF138:

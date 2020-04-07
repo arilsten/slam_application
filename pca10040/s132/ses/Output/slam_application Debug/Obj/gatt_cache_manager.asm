@@ -16582,8 +16582,6 @@ m_flag_service_changed_sent:
 	.ascii	"srv_uuid\000"
 .LASF142:
 	.ascii	"report_ref_handle\000"
-.LASF269:
-	.ascii	"sdu_len\000"
 .LASF561:
 	.ascii	"ble_conn_state_user_flag_acquire\000"
 .LASF448:
@@ -17303,10 +17301,8 @@ m_flag_service_changed_sent:
 	.ascii	"apply_pending_flags_check\000"
 .LASF101:
 	.ascii	"PM_EVT_PEERS_DELETE_SUCCEEDED\000"
-.LASF575:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
+.LASF269:
+	.ascii	"sdu_len\000"
 .LASF375:
 	.ascii	"key_type\000"
 .LASF431:
@@ -17347,6 +17343,10 @@ m_flag_service_changed_sent:
 	.ascii	"rand\000"
 .LASF175:
 	.ascii	"ble_gatts_evt_exchange_mtu_request_t\000"
+.LASF575:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF91:
 	.ascii	"PM_EVT_CONN_SEC_SUCCEEDED\000"
 .LASF408:

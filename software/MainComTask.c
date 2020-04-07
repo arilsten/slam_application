@@ -17,9 +17,12 @@
 #include "nrf_log.h"
 #include "i2c.h"
 
+int8_t collisionAngles[NUM_DIST_SENSORS] = {400}; // Just to be above 360 degrees
+
 message_t message_in;
-int16_t waypoint[2] = {0};
+
 uint8_t counter = 0;
+
 
 void vMainCommunicationTask(void *pvParameters){
     struct sCartesian Setpoint = {0, 0}; // Struct for setpoints from server
@@ -109,6 +112,8 @@ void vMainCommunicationTask(void *pvParameters){
 			counter++;
 			uint8_t message[5] = {0};
 			int16_t oldwaypoint[2];
+			int16_t waypoint[2] = {0};
+			int8_t collAngles[NUM_DIST_SENSORS];
 			i2cReciveNOADDR(I2C_DEVICE_DONGLE, &message, 5);
 		
 			switch(message[0]){
@@ -124,11 +129,17 @@ void vMainCommunicationTask(void *pvParameters){
 					}
 					break;
 			
-				case NEW_WAYPOINT:
+				case NEW_WAYPOINT: // New waypoint from Grindviks server has message code 114, check MainComTask.h.
 					oldwaypoint[0] = waypoint[0];
 					oldwaypoint[1] = waypoint[1];
 					waypoint[0] = *((int16_t*)&message[1]);
 					waypoint[1] = *((int16_t*)&message[3]);
+					
+					xSemaphoreTake(xCollisionMutex, 20);
+					memcpy(&collAngles, &collisionAngles, sizeof(collisionAngles));
+					xSemaphoreGive(xCollisionMutex);
+					
+					// Add functionality to check if the new waypoint is valid
 					if(oldwaypoint[0] != waypoint[0] || oldwaypoint[1] != waypoint[1]){
 						struct sCartesian target = {waypoint[0]/10, waypoint[1]/10};
 						xQueueSend(poseControllerQ, &target, 100);

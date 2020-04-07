@@ -14649,8 +14649,6 @@ m_nrf_sdh_ble_evts_poll:
 	.ascii	"p_data\000"
 .LASF199:
 	.ascii	"ch_sdu_buf_released\000"
-.LASF210:
-	.ascii	"sdu_len\000"
 .LASF390:
 	.ascii	"INFO\000"
 .LASF25:
@@ -15305,10 +15303,8 @@ m_nrf_sdh_ble_evts_poll:
 	.ascii	"__RAL_c_locale\000"
 .LASF94:
 	.ascii	"SD_BLE_VERSION_GET\000"
-.LASF547:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_applicationLeithe\\\\pca10040\\\\s"
-	.ascii	"132\\\\ses\000"
+.LASF210:
+	.ascii	"sdu_len\000"
 .LASF334:
 	.ascii	"key_type\000"
 .LASF419:
@@ -15353,6 +15349,10 @@ m_nrf_sdh_ble_evts_poll:
 	.ascii	"ble_gatts_evt_exchange_mtu_request_t\000"
 .LASF517:
 	.ascii	"iter\000"
+.LASF547:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF19:
 	.ascii	"handler\000"
 .LASF369:

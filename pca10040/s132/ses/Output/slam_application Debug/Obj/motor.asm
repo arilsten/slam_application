@@ -24,12 +24,12 @@
 pwm_ready_callback:
 .LVL0:
 .LFB317:
-	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\motor.c"
-	.loc 1 22 1 view -0
+	.file 1 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application-master\\drivers\\motor.c"
+	.loc 1 23 1 view -0
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
 	@ link register save eliminated.
-	.loc 1 24 1 view .LVU1
+	.loc 1 25 1 view .LVU1
 	bx	lr
 .LFE317:
 	.size	pwm_ready_callback, .-pwm_ready_callback
@@ -37,7 +37,7 @@ pwm_ready_callback:
 	.align	2
 .LC1:
 	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
-	.ascii	"al\\slam_application\\drivers\\motor.c\000"
+	.ascii	"al\\slam_application-master\\drivers\\motor.c\000"
 	.section	.text.motor_init,"ax",%progbits
 	.align	1
 	.global	motor_init
@@ -48,141 +48,141 @@ pwm_ready_callback:
 	.type	motor_init, %function
 motor_init:
 .LFB318:
-	.loc 1 26 19 view -0
+	.loc 1 27 19 view -0
 	@ args = 0, pretend = 0, frame = 32
 	@ frame_needed = 0, uses_anonymous_args = 0
 	push	{r4, r5, r6, lr}
 .LCFI0:
 	sub	sp, sp, #32
 .LCFI1:
-	.loc 1 27 2 view .LVU3
-	.loc 1 29 2 view .LVU4
-	.loc 1 29 6 is_stmt 0 view .LVU5
+	.loc 1 28 2 view .LVU3
+	.loc 1 30 2 view .LVU4
+	.loc 1 30 6 is_stmt 0 view .LVU5
 	bl	nrfx_gpiote_is_init
 .LVL1:
-	.loc 1 29 4 view .LVU6
+	.loc 1 30 4 view .LVU6
 	cmp	r0, #0
 	beq	.L7
 .L3:
 .LVL2:
-	.loc 1 31 2 is_stmt 1 view .LVU7
+	.loc 1 32 2 is_stmt 1 view .LVU7
 .LBB14:
-	.loc 1 31 7 view .LVU8
-	.loc 1 31 46 view .LVU9
-	.loc 1 31 49 is_stmt 0 view .LVU10
+	.loc 1 32 7 view .LVU8
+	.loc 1 32 46 view .LVU9
+	.loc 1 32 49 is_stmt 0 view .LVU10
 	cmp	r4, #0
 	bne	.L8
 .L4:
-	.loc 1 31 241 is_stmt 1 discriminator 3 view .LVU11
+	.loc 1 32 248 is_stmt 1 discriminator 3 view .LVU11
 .LBE14:
-	.loc 1 31 256 discriminator 3 view .LVU12
-	.loc 1 33 2 discriminator 3 view .LVU13
-	.loc 1 33 27 is_stmt 0 discriminator 3 view .LVU14
+	.loc 1 32 263 discriminator 3 view .LVU12
+	.loc 1 34 2 discriminator 3 view .LVU13
+	.loc 1 34 27 is_stmt 0 discriminator 3 view .LVU14
 	movs	r4, #0
 .LVL3:
-	.loc 1 33 27 discriminator 3 view .LVU15
+	.loc 1 34 27 discriminator 3 view .LVU15
 	strh	r4, [sp, #28]	@ movhi
 	strb	r4, [sp, #30]
 	movs	r6, #1
 	strb	r6, [sp, #29]
-	.loc 1 34 2 is_stmt 1 discriminator 3 view .LVU16
-	.loc 1 34 27 is_stmt 0 discriminator 3 view .LVU17
+	.loc 1 35 2 is_stmt 1 discriminator 3 view .LVU16
+	.loc 1 35 27 is_stmt 0 discriminator 3 view .LVU17
 	strh	r4, [sp, #24]	@ movhi
 	strb	r4, [sp, #26]
-	.loc 1 35 2 is_stmt 1 discriminator 3 view .LVU18
+	.loc 1 36 2 is_stmt 1 discriminator 3 view .LVU18
 	add	r1, sp, #28
 	movs	r0, #3
 	bl	nrfx_gpiote_out_init
 .LVL4:
-	.loc 1 36 2 discriminator 3 view .LVU19
+	.loc 1 37 2 discriminator 3 view .LVU19
 	add	r1, sp, #24
 	movs	r0, #4
 	bl	nrfx_gpiote_out_init
 .LVL5:
-	.loc 1 37 2 discriminator 3 view .LVU20
+	.loc 1 38 2 discriminator 3 view .LVU20
 	add	r1, sp, #28
 	mov	r0, r6
 	bl	nrfx_gpiote_out_init
 .LVL6:
-	.loc 1 38 2 discriminator 3 view .LVU21
+	.loc 1 39 2 discriminator 3 view .LVU21
 	add	r1, sp, #24
 	mov	r0, r4
 	bl	nrfx_gpiote_out_init
 .LVL7:
-	.loc 1 40 2 discriminator 3 view .LVU22
-	.loc 1 40 19 is_stmt 0 discriminator 3 view .LVU23
+	.loc 1 41 2 discriminator 3 view .LVU22
+	.loc 1 41 19 is_stmt 0 discriminator 3 view .LVU23
 	add	r4, sp, #4
 	ldr	r5, .L10
 	ldmia	r5!, {r0, r1, r2, r3}
 	stmia	r4!, {r0, r1, r2, r3}
 	ldr	r3, [r5]
 	str	r3, [r4]
-	.loc 1 41 2 is_stmt 1 discriminator 3 view .LVU24
-	.loc 1 41 27 is_stmt 0 discriminator 3 view .LVU25
+	.loc 1 42 2 is_stmt 1 discriminator 3 view .LVU24
+	.loc 1 42 27 is_stmt 0 discriminator 3 view .LVU25
 	strb	r6, [sp, #12]
-	.loc 1 42 2 is_stmt 1 discriminator 3 view .LVU26
-	.loc 1 42 27 is_stmt 0 discriminator 3 view .LVU27
+	.loc 1 43 2 is_stmt 1 discriminator 3 view .LVU26
+	.loc 1 43 27 is_stmt 0 discriminator 3 view .LVU27
 	strb	r6, [sp, #13]
-	.loc 1 43 2 is_stmt 1 discriminator 3 view .LVU28
-	.loc 1 43 8 is_stmt 0 discriminator 3 view .LVU29
+	.loc 1 44 2 is_stmt 1 discriminator 3 view .LVU28
+	.loc 1 44 8 is_stmt 0 discriminator 3 view .LVU29
 	ldr	r2, .L10+4
 	add	r1, sp, #4
 	ldr	r0, .L10+8
 	bl	app_pwm_init
 .LVL8:
-	.loc 1 44 2 is_stmt 1 discriminator 3 view .LVU30
+	.loc 1 45 2 is_stmt 1 discriminator 3 view .LVU30
 .LBB15:
-	.loc 1 44 7 discriminator 3 view .LVU31
-	.loc 1 44 46 discriminator 3 view .LVU32
-	.loc 1 44 49 is_stmt 0 discriminator 3 view .LVU33
+	.loc 1 45 7 discriminator 3 view .LVU31
+	.loc 1 45 46 discriminator 3 view .LVU32
+	.loc 1 45 49 is_stmt 0 discriminator 3 view .LVU33
 	cbnz	r0, .L9
 .LVL9:
 .L5:
-	.loc 1 44 241 is_stmt 1 discriminator 3 view .LVU34
+	.loc 1 45 248 is_stmt 1 discriminator 3 view .LVU34
 .LBE15:
-	.loc 1 44 256 discriminator 3 view .LVU35
-	.loc 1 45 2 discriminator 3 view .LVU36
+	.loc 1 45 263 discriminator 3 view .LVU35
+	.loc 1 46 2 discriminator 3 view .LVU36
 	ldr	r0, .L10+8
 	bl	app_pwm_enable
 .LVL10:
-	.loc 1 46 1 is_stmt 0 discriminator 3 view .LVU37
+	.loc 1 47 1 is_stmt 0 discriminator 3 view .LVU37
 	add	sp, sp, #32
 .LCFI2:
 	@ sp needed
 	pop	{r4, r5, r6, pc}
 .L7:
 .LCFI3:
-	.loc 1 30 3 is_stmt 1 view .LVU38
-	.loc 1 30 9 is_stmt 0 view .LVU39
+	.loc 1 31 3 is_stmt 1 view .LVU38
+	.loc 1 31 9 is_stmt 0 view .LVU39
 	bl	nrfx_gpiote_init
 .LVL11:
 	mov	r4, r0
 .LVL12:
-	.loc 1 30 9 view .LVU40
+	.loc 1 31 9 view .LVU40
 	b	.L3
 .LVL13:
 .L8:
 .LBB16:
-	.loc 1 31 83 is_stmt 1 discriminator 1 view .LVU41
-	.loc 1 31 88 discriminator 1 view .LVU42
+	.loc 1 32 83 is_stmt 1 discriminator 1 view .LVU41
+	.loc 1 32 88 discriminator 1 view .LVU42
 	ldr	r2, .L10+12
-	movs	r1, #31
+	movs	r1, #32
 	mov	r0, r4
 	bl	app_error_handler
 .LVL14:
 	b	.L4
 .LVL15:
 .L9:
-	.loc 1 31 88 is_stmt 0 discriminator 1 view .LVU43
+	.loc 1 32 88 is_stmt 0 discriminator 1 view .LVU43
 .LBE16:
 .LBB17:
-	.loc 1 44 83 is_stmt 1 discriminator 1 view .LVU44
-	.loc 1 44 88 discriminator 1 view .LVU45
+	.loc 1 45 83 is_stmt 1 discriminator 1 view .LVU44
+	.loc 1 45 88 discriminator 1 view .LVU45
 	ldr	r2, .L10+12
-	movs	r1, #44
+	movs	r1, #45
 	bl	app_error_handler
 .LVL16:
-	.loc 1 44 88 is_stmt 0 discriminator 1 view .LVU46
+	.loc 1 45 88 is_stmt 0 discriminator 1 view .LVU46
 	b	.L5
 .L11:
 	.align	2
@@ -205,99 +205,99 @@ motor_init:
 motor_forward:
 .LVL17:
 .LFB320:
-	.loc 1 56 30 is_stmt 1 view -0
+	.loc 1 57 30 is_stmt 1 view -0
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
-	.loc 1 56 30 is_stmt 0 view .LVU48
+	.loc 1 57 30 is_stmt 0 view .LVU48
 	push	{r3, r4, r5, lr}
 .LCFI4:
 	mov	r5, r0
-	.loc 1 57 2 is_stmt 1 view .LVU49
+	.loc 1 58 2 is_stmt 1 view .LVU49
 	movs	r0, #3
 .LVL18:
-	.loc 1 57 2 is_stmt 0 view .LVU50
+	.loc 1 58 2 is_stmt 0 view .LVU50
 	bl	nrfx_gpiote_out_set
 .LVL19:
-	.loc 1 58 2 is_stmt 1 view .LVU51
+	.loc 1 59 2 is_stmt 1 view .LVU51
 	movs	r0, #4
 	bl	nrfx_gpiote_out_clear
 .LVL20:
-	.loc 1 59 2 view .LVU52
+	.loc 1 60 2 view .LVU52
 	movs	r0, #1
 	bl	nrfx_gpiote_out_set
 .LVL21:
-	.loc 1 60 2 view .LVU53
+	.loc 1 61 2 view .LVU53
 	movs	r0, #0
 	bl	nrfx_gpiote_out_clear
 .LVL22:
-	.loc 1 61 2 view .LVU54
+	.loc 1 62 2 view .LVU54
 .LBB18:
 .LBI18:
-	.loc 1 48 19 view .LVU55
+	.loc 1 49 19 view .LVU55
 .LBB19:
-	.loc 1 49 2 view .LVU56
-	.loc 1 49 5 is_stmt 0 view .LVU57
+	.loc 1 50 2 view .LVU56
+	.loc 1 50 5 is_stmt 0 view .LVU57
 	cmp	r5, #0
 	blt	.L16
-	.loc 1 51 2 is_stmt 1 view .LVU58
-	.loc 1 51 5 is_stmt 0 view .LVU59
-	cmp	r5, #90
+	.loc 1 52 2 is_stmt 1 view .LVU58
+	.loc 1 52 5 is_stmt 0 view .LVU59
+	cmp	r5, #20
 	ble	.L14
-	.loc 1 52 8 view .LVU60
-	movs	r5, #90
+	.loc 1 53 8 view .LVU60
+	movs	r5, #20
 .LVL23:
-	.loc 1 53 2 is_stmt 1 view .LVU61
-	.loc 1 53 2 is_stmt 0 view .LVU62
+	.loc 1 54 2 is_stmt 1 view .LVU61
+	.loc 1 54 2 is_stmt 0 view .LVU62
 .LBE19:
 .LBE18:
-	.loc 1 62 2 is_stmt 1 view .LVU63
-	.loc 1 62 8 is_stmt 0 view .LVU64
+	.loc 1 63 2 is_stmt 1 view .LVU63
+	.loc 1 63 8 is_stmt 0 view .LVU64
 	b	.L14
 .LVL24:
 .L16:
 .LBB21:
 .LBB20:
-	.loc 1 50 8 view .LVU65
+	.loc 1 51 8 view .LVU65
 	movs	r5, #0
 .LVL25:
 .L14:
-	.loc 1 50 8 view .LVU66
+	.loc 1 51 8 view .LVU66
 .LBE20:
 .LBE21:
-	.loc 1 62 66 is_stmt 1 discriminator 1 view .LVU67
-	.loc 1 62 8 discriminator 1 view .LVU68
-	.loc 1 62 9 is_stmt 0 discriminator 1 view .LVU69
+	.loc 1 63 66 is_stmt 1 discriminator 1 view .LVU67
+	.loc 1 63 8 discriminator 1 view .LVU68
+	.loc 1 63 9 is_stmt 0 discriminator 1 view .LVU69
 	uxth	r4, r5
 	mov	r2, r4
 	movs	r1, #0
 	ldr	r0, .L19
 	bl	app_pwm_channel_duty_set
 .LVL26:
-	.loc 1 62 8 discriminator 1 view .LVU70
+	.loc 1 63 8 discriminator 1 view .LVU70
 	cmp	r0, #17
 	beq	.L14
 .L15:
-	.loc 1 63 66 is_stmt 1 discriminator 1 view .LVU71
-	.loc 1 63 8 discriminator 1 view .LVU72
-	.loc 1 63 9 is_stmt 0 discriminator 1 view .LVU73
+	.loc 1 64 66 is_stmt 1 discriminator 1 view .LVU71
+	.loc 1 64 8 discriminator 1 view .LVU72
+	.loc 1 64 9 is_stmt 0 discriminator 1 view .LVU73
 	mov	r2, r4
 	movs	r1, #1
 	ldr	r0, .L19
 	bl	app_pwm_channel_duty_set
 .LVL27:
-	.loc 1 63 8 discriminator 1 view .LVU74
+	.loc 1 64 8 discriminator 1 view .LVU74
 	cmp	r0, #17
 	beq	.L15
-	.loc 1 64 9 is_stmt 1 view .LVU75
-	.loc 1 64 29 is_stmt 0 view .LVU76
+	.loc 1 65 9 is_stmt 1 view .LVU75
+	.loc 1 65 29 is_stmt 0 view .LVU76
 	movs	r3, #1
 	ldr	r2, .L19+4
 	str	r3, [r2]
-	.loc 1 65 9 is_stmt 1 view .LVU77
-	.loc 1 65 28 is_stmt 0 view .LVU78
+	.loc 1 66 9 is_stmt 1 view .LVU77
+	.loc 1 66 28 is_stmt 0 view .LVU78
 	ldr	r2, .L19+8
 	str	r3, [r2]
-	.loc 1 66 1 view .LVU79
+	.loc 1 67 1 view .LVU79
 	pop	{r3, r4, r5, pc}
 .L20:
 	.align	2
@@ -318,74 +318,74 @@ motor_forward:
 motor_right_forward:
 .LVL28:
 .LFB321:
-	.loc 1 68 36 is_stmt 1 view -0
+	.loc 1 69 36 is_stmt 1 view -0
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
-	.loc 1 68 36 is_stmt 0 view .LVU81
+	.loc 1 69 36 is_stmt 0 view .LVU81
 	push	{r4, lr}
 .LCFI5:
 	mov	r4, r0
-	.loc 1 69 2 is_stmt 1 view .LVU82
+	.loc 1 70 2 is_stmt 1 view .LVU82
 	movs	r0, #3
 .LVL29:
-	.loc 1 69 2 is_stmt 0 view .LVU83
+	.loc 1 70 2 is_stmt 0 view .LVU83
 	bl	nrfx_gpiote_out_set
 .LVL30:
-	.loc 1 70 2 is_stmt 1 view .LVU84
+	.loc 1 71 2 is_stmt 1 view .LVU84
 	movs	r0, #4
 	bl	nrfx_gpiote_out_clear
 .LVL31:
-	.loc 1 71 2 view .LVU85
+	.loc 1 72 2 view .LVU85
 .LBB22:
 .LBI22:
-	.loc 1 48 19 view .LVU86
+	.loc 1 49 19 view .LVU86
 .LBB23:
-	.loc 1 49 2 view .LVU87
-	.loc 1 49 5 is_stmt 0 view .LVU88
+	.loc 1 50 2 view .LVU87
+	.loc 1 50 5 is_stmt 0 view .LVU88
 	cmp	r4, #0
 	blt	.L24
-	.loc 1 51 2 is_stmt 1 view .LVU89
-	.loc 1 51 5 is_stmt 0 view .LVU90
-	cmp	r4, #90
+	.loc 1 52 2 is_stmt 1 view .LVU89
+	.loc 1 52 5 is_stmt 0 view .LVU90
+	cmp	r4, #20
 	ble	.L23
-	.loc 1 52 8 view .LVU91
-	movs	r4, #90
+	.loc 1 53 8 view .LVU91
+	movs	r4, #20
 .LVL32:
-	.loc 1 53 2 is_stmt 1 view .LVU92
-	.loc 1 53 2 is_stmt 0 view .LVU93
+	.loc 1 54 2 is_stmt 1 view .LVU92
+	.loc 1 54 2 is_stmt 0 view .LVU93
 .LBE23:
 .LBE22:
-	.loc 1 72 2 is_stmt 1 view .LVU94
-	.loc 1 72 8 is_stmt 0 view .LVU95
+	.loc 1 73 2 is_stmt 1 view .LVU94
+	.loc 1 73 8 is_stmt 0 view .LVU95
 	b	.L23
 .LVL33:
 .L24:
 .LBB25:
 .LBB24:
-	.loc 1 50 8 view .LVU96
+	.loc 1 51 8 view .LVU96
 	movs	r4, #0
 .LVL34:
 .L23:
-	.loc 1 50 8 view .LVU97
+	.loc 1 51 8 view .LVU97
 .LBE24:
 .LBE25:
-	.loc 1 72 66 is_stmt 1 discriminator 1 view .LVU98
-	.loc 1 72 8 discriminator 1 view .LVU99
-	.loc 1 72 9 is_stmt 0 discriminator 1 view .LVU100
+	.loc 1 73 66 is_stmt 1 discriminator 1 view .LVU98
+	.loc 1 73 8 discriminator 1 view .LVU99
+	.loc 1 73 9 is_stmt 0 discriminator 1 view .LVU100
 	uxth	r2, r4
 	movs	r1, #0
 	ldr	r0, .L27
 	bl	app_pwm_channel_duty_set
 .LVL35:
-	.loc 1 72 8 discriminator 1 view .LVU101
+	.loc 1 73 8 discriminator 1 view .LVU101
 	cmp	r0, #17
 	beq	.L23
-	.loc 1 73 9 is_stmt 1 view .LVU102
-	.loc 1 73 29 is_stmt 0 view .LVU103
+	.loc 1 74 9 is_stmt 1 view .LVU102
+	.loc 1 74 29 is_stmt 0 view .LVU103
 	ldr	r3, .L27+4
 	movs	r2, #1
 	str	r2, [r3]
-	.loc 1 74 1 view .LVU104
+	.loc 1 75 1 view .LVU104
 	pop	{r4, pc}
 .L28:
 	.align	2
@@ -405,74 +405,74 @@ motor_right_forward:
 motor_left_forward:
 .LVL36:
 .LFB322:
-	.loc 1 76 35 is_stmt 1 view -0
+	.loc 1 77 35 is_stmt 1 view -0
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
-	.loc 1 76 35 is_stmt 0 view .LVU106
+	.loc 1 77 35 is_stmt 0 view .LVU106
 	push	{r4, lr}
 .LCFI6:
 	mov	r4, r0
-	.loc 1 77 2 is_stmt 1 view .LVU107
+	.loc 1 78 2 is_stmt 1 view .LVU107
 	movs	r0, #1
 .LVL37:
-	.loc 1 77 2 is_stmt 0 view .LVU108
+	.loc 1 78 2 is_stmt 0 view .LVU108
 	bl	nrfx_gpiote_out_set
 .LVL38:
-	.loc 1 78 2 is_stmt 1 view .LVU109
+	.loc 1 79 2 is_stmt 1 view .LVU109
 	movs	r0, #0
 	bl	nrfx_gpiote_out_clear
 .LVL39:
-	.loc 1 79 2 view .LVU110
+	.loc 1 80 2 view .LVU110
 .LBB26:
 .LBI26:
-	.loc 1 48 19 view .LVU111
+	.loc 1 49 19 view .LVU111
 .LBB27:
-	.loc 1 49 2 view .LVU112
-	.loc 1 49 5 is_stmt 0 view .LVU113
+	.loc 1 50 2 view .LVU112
+	.loc 1 50 5 is_stmt 0 view .LVU113
 	cmp	r4, #0
 	blt	.L32
-	.loc 1 51 2 is_stmt 1 view .LVU114
-	.loc 1 51 5 is_stmt 0 view .LVU115
-	cmp	r4, #90
+	.loc 1 52 2 is_stmt 1 view .LVU114
+	.loc 1 52 5 is_stmt 0 view .LVU115
+	cmp	r4, #20
 	ble	.L31
-	.loc 1 52 8 view .LVU116
-	movs	r4, #90
+	.loc 1 53 8 view .LVU116
+	movs	r4, #20
 .LVL40:
-	.loc 1 53 2 is_stmt 1 view .LVU117
-	.loc 1 53 2 is_stmt 0 view .LVU118
+	.loc 1 54 2 is_stmt 1 view .LVU117
+	.loc 1 54 2 is_stmt 0 view .LVU118
 .LBE27:
 .LBE26:
-	.loc 1 80 2 is_stmt 1 view .LVU119
-	.loc 1 80 8 is_stmt 0 view .LVU120
+	.loc 1 81 2 is_stmt 1 view .LVU119
+	.loc 1 81 8 is_stmt 0 view .LVU120
 	b	.L31
 .LVL41:
 .L32:
 .LBB29:
 .LBB28:
-	.loc 1 50 8 view .LVU121
+	.loc 1 51 8 view .LVU121
 	movs	r4, #0
 .LVL42:
 .L31:
-	.loc 1 50 8 view .LVU122
+	.loc 1 51 8 view .LVU122
 .LBE28:
 .LBE29:
-	.loc 1 80 66 is_stmt 1 discriminator 1 view .LVU123
-	.loc 1 80 8 discriminator 1 view .LVU124
-	.loc 1 80 9 is_stmt 0 discriminator 1 view .LVU125
+	.loc 1 81 66 is_stmt 1 discriminator 1 view .LVU123
+	.loc 1 81 8 discriminator 1 view .LVU124
+	.loc 1 81 9 is_stmt 0 discriminator 1 view .LVU125
 	uxth	r2, r4
 	movs	r1, #1
 	ldr	r0, .L35
 	bl	app_pwm_channel_duty_set
 .LVL43:
-	.loc 1 80 8 discriminator 1 view .LVU126
+	.loc 1 81 8 discriminator 1 view .LVU126
 	cmp	r0, #17
 	beq	.L31
-	.loc 1 81 9 is_stmt 1 view .LVU127
-	.loc 1 81 28 is_stmt 0 view .LVU128
+	.loc 1 82 9 is_stmt 1 view .LVU127
+	.loc 1 82 28 is_stmt 0 view .LVU128
 	ldr	r3, .L35+4
 	movs	r2, #1
 	str	r2, [r3]
-	.loc 1 82 1 view .LVU129
+	.loc 1 83 1 view .LVU129
 	pop	{r4, pc}
 .L36:
 	.align	2
@@ -492,99 +492,99 @@ motor_left_forward:
 motor_backward:
 .LVL44:
 .LFB323:
-	.loc 1 84 31 is_stmt 1 view -0
+	.loc 1 85 31 is_stmt 1 view -0
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
-	.loc 1 84 31 is_stmt 0 view .LVU131
+	.loc 1 85 31 is_stmt 0 view .LVU131
 	push	{r3, r4, r5, lr}
 .LCFI7:
 	mov	r5, r0
-	.loc 1 85 2 is_stmt 1 view .LVU132
+	.loc 1 86 2 is_stmt 1 view .LVU132
 	movs	r0, #3
 .LVL45:
-	.loc 1 85 2 is_stmt 0 view .LVU133
+	.loc 1 86 2 is_stmt 0 view .LVU133
 	bl	nrfx_gpiote_out_clear
 .LVL46:
-	.loc 1 86 2 is_stmt 1 view .LVU134
+	.loc 1 87 2 is_stmt 1 view .LVU134
 	movs	r0, #4
 	bl	nrfx_gpiote_out_set
 .LVL47:
-	.loc 1 87 2 view .LVU135
+	.loc 1 88 2 view .LVU135
 	movs	r0, #1
 	bl	nrfx_gpiote_out_clear
 .LVL48:
-	.loc 1 88 2 view .LVU136
+	.loc 1 89 2 view .LVU136
 	movs	r0, #0
 	bl	nrfx_gpiote_out_set
 .LVL49:
-	.loc 1 89 2 view .LVU137
+	.loc 1 90 2 view .LVU137
 .LBB30:
 .LBI30:
-	.loc 1 48 19 view .LVU138
+	.loc 1 49 19 view .LVU138
 .LBB31:
-	.loc 1 49 2 view .LVU139
-	.loc 1 49 5 is_stmt 0 view .LVU140
+	.loc 1 50 2 view .LVU139
+	.loc 1 50 5 is_stmt 0 view .LVU140
 	cmp	r5, #0
 	blt	.L41
-	.loc 1 51 2 is_stmt 1 view .LVU141
-	.loc 1 51 5 is_stmt 0 view .LVU142
-	cmp	r5, #90
+	.loc 1 52 2 is_stmt 1 view .LVU141
+	.loc 1 52 5 is_stmt 0 view .LVU142
+	cmp	r5, #20
 	ble	.L39
-	.loc 1 52 8 view .LVU143
-	movs	r5, #90
+	.loc 1 53 8 view .LVU143
+	movs	r5, #20
 .LVL50:
-	.loc 1 53 2 is_stmt 1 view .LVU144
-	.loc 1 53 2 is_stmt 0 view .LVU145
+	.loc 1 54 2 is_stmt 1 view .LVU144
+	.loc 1 54 2 is_stmt 0 view .LVU145
 .LBE31:
 .LBE30:
-	.loc 1 90 2 is_stmt 1 view .LVU146
-	.loc 1 90 8 is_stmt 0 view .LVU147
+	.loc 1 91 2 is_stmt 1 view .LVU146
+	.loc 1 91 8 is_stmt 0 view .LVU147
 	b	.L39
 .LVL51:
 .L41:
 .LBB33:
 .LBB32:
-	.loc 1 50 8 view .LVU148
+	.loc 1 51 8 view .LVU148
 	movs	r5, #0
 .LVL52:
 .L39:
-	.loc 1 50 8 view .LVU149
+	.loc 1 51 8 view .LVU149
 .LBE32:
 .LBE33:
-	.loc 1 90 66 is_stmt 1 discriminator 1 view .LVU150
-	.loc 1 90 8 discriminator 1 view .LVU151
-	.loc 1 90 9 is_stmt 0 discriminator 1 view .LVU152
+	.loc 1 91 66 is_stmt 1 discriminator 1 view .LVU150
+	.loc 1 91 8 discriminator 1 view .LVU151
+	.loc 1 91 9 is_stmt 0 discriminator 1 view .LVU152
 	uxth	r4, r5
 	mov	r2, r4
 	movs	r1, #0
 	ldr	r0, .L44
 	bl	app_pwm_channel_duty_set
 .LVL53:
-	.loc 1 90 8 discriminator 1 view .LVU153
+	.loc 1 91 8 discriminator 1 view .LVU153
 	cmp	r0, #17
 	beq	.L39
 .L40:
-	.loc 1 91 66 is_stmt 1 discriminator 1 view .LVU154
-	.loc 1 91 8 discriminator 1 view .LVU155
-	.loc 1 91 9 is_stmt 0 discriminator 1 view .LVU156
+	.loc 1 92 66 is_stmt 1 discriminator 1 view .LVU154
+	.loc 1 92 8 discriminator 1 view .LVU155
+	.loc 1 92 9 is_stmt 0 discriminator 1 view .LVU156
 	mov	r2, r4
 	movs	r1, #1
 	ldr	r0, .L44
 	bl	app_pwm_channel_duty_set
 .LVL54:
-	.loc 1 91 8 discriminator 1 view .LVU157
+	.loc 1 92 8 discriminator 1 view .LVU157
 	cmp	r0, #17
 	beq	.L40
-	.loc 1 92 9 is_stmt 1 view .LVU158
-	.loc 1 92 29 is_stmt 0 view .LVU159
+	.loc 1 93 9 is_stmt 1 view .LVU158
+	.loc 1 93 29 is_stmt 0 view .LVU159
 	mov	r3, #-1
 	ldr	r2, .L44+4
 	str	r3, [r2]
-	.loc 1 93 9 is_stmt 1 view .LVU160
-	.loc 1 93 28 is_stmt 0 view .LVU161
+	.loc 1 94 9 is_stmt 1 view .LVU160
+	.loc 1 94 28 is_stmt 0 view .LVU161
 	ldr	r2, .L44+8
 	str	r3, [r2]
-	.loc 1 94 1 view .LVU162
+	.loc 1 95 1 view .LVU162
 	pop	{r3, r4, r5, pc}
 .L45:
 	.align	2
@@ -605,74 +605,74 @@ motor_backward:
 motor_right_backward:
 .LVL55:
 .LFB324:
-	.loc 1 96 37 is_stmt 1 view -0
+	.loc 1 97 37 is_stmt 1 view -0
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
-	.loc 1 96 37 is_stmt 0 view .LVU164
+	.loc 1 97 37 is_stmt 0 view .LVU164
 	push	{r4, lr}
 .LCFI8:
 	mov	r4, r0
-	.loc 1 97 2 is_stmt 1 view .LVU165
+	.loc 1 98 2 is_stmt 1 view .LVU165
 	movs	r0, #3
 .LVL56:
-	.loc 1 97 2 is_stmt 0 view .LVU166
+	.loc 1 98 2 is_stmt 0 view .LVU166
 	bl	nrfx_gpiote_out_clear
 .LVL57:
-	.loc 1 98 2 is_stmt 1 view .LVU167
+	.loc 1 99 2 is_stmt 1 view .LVU167
 	movs	r0, #4
 	bl	nrfx_gpiote_out_set
 .LVL58:
-	.loc 1 99 2 view .LVU168
+	.loc 1 100 2 view .LVU168
 .LBB34:
 .LBI34:
-	.loc 1 48 19 view .LVU169
+	.loc 1 49 19 view .LVU169
 .LBB35:
-	.loc 1 49 2 view .LVU170
-	.loc 1 49 5 is_stmt 0 view .LVU171
+	.loc 1 50 2 view .LVU170
+	.loc 1 50 5 is_stmt 0 view .LVU171
 	cmp	r4, #0
 	blt	.L49
-	.loc 1 51 2 is_stmt 1 view .LVU172
-	.loc 1 51 5 is_stmt 0 view .LVU173
-	cmp	r4, #90
+	.loc 1 52 2 is_stmt 1 view .LVU172
+	.loc 1 52 5 is_stmt 0 view .LVU173
+	cmp	r4, #20
 	ble	.L48
-	.loc 1 52 8 view .LVU174
-	movs	r4, #90
+	.loc 1 53 8 view .LVU174
+	movs	r4, #20
 .LVL59:
-	.loc 1 53 2 is_stmt 1 view .LVU175
-	.loc 1 53 2 is_stmt 0 view .LVU176
+	.loc 1 54 2 is_stmt 1 view .LVU175
+	.loc 1 54 2 is_stmt 0 view .LVU176
 .LBE35:
 .LBE34:
-	.loc 1 100 2 is_stmt 1 view .LVU177
-	.loc 1 100 8 is_stmt 0 view .LVU178
+	.loc 1 101 2 is_stmt 1 view .LVU177
+	.loc 1 101 8 is_stmt 0 view .LVU178
 	b	.L48
 .LVL60:
 .L49:
 .LBB37:
 .LBB36:
-	.loc 1 50 8 view .LVU179
+	.loc 1 51 8 view .LVU179
 	movs	r4, #0
 .LVL61:
 .L48:
-	.loc 1 50 8 view .LVU180
+	.loc 1 51 8 view .LVU180
 .LBE36:
 .LBE37:
-	.loc 1 100 66 is_stmt 1 discriminator 1 view .LVU181
-	.loc 1 100 8 discriminator 1 view .LVU182
-	.loc 1 100 9 is_stmt 0 discriminator 1 view .LVU183
+	.loc 1 101 66 is_stmt 1 discriminator 1 view .LVU181
+	.loc 1 101 8 discriminator 1 view .LVU182
+	.loc 1 101 9 is_stmt 0 discriminator 1 view .LVU183
 	uxth	r2, r4
 	movs	r1, #0
 	ldr	r0, .L52
 	bl	app_pwm_channel_duty_set
 .LVL62:
-	.loc 1 100 8 discriminator 1 view .LVU184
+	.loc 1 101 8 discriminator 1 view .LVU184
 	cmp	r0, #17
 	beq	.L48
-	.loc 1 101 9 is_stmt 1 view .LVU185
-	.loc 1 101 29 is_stmt 0 view .LVU186
+	.loc 1 102 9 is_stmt 1 view .LVU185
+	.loc 1 102 29 is_stmt 0 view .LVU186
 	ldr	r3, .L52+4
 	mov	r2, #-1
 	str	r2, [r3]
-	.loc 1 102 1 view .LVU187
+	.loc 1 103 1 view .LVU187
 	pop	{r4, pc}
 .L53:
 	.align	2
@@ -692,74 +692,74 @@ motor_right_backward:
 motor_left_backward:
 .LVL63:
 .LFB325:
-	.loc 1 104 36 is_stmt 1 view -0
+	.loc 1 105 36 is_stmt 1 view -0
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
-	.loc 1 104 36 is_stmt 0 view .LVU189
+	.loc 1 105 36 is_stmt 0 view .LVU189
 	push	{r4, lr}
 .LCFI9:
 	mov	r4, r0
-	.loc 1 105 2 is_stmt 1 view .LVU190
+	.loc 1 106 2 is_stmt 1 view .LVU190
 	movs	r0, #1
 .LVL64:
-	.loc 1 105 2 is_stmt 0 view .LVU191
+	.loc 1 106 2 is_stmt 0 view .LVU191
 	bl	nrfx_gpiote_out_clear
 .LVL65:
-	.loc 1 106 2 is_stmt 1 view .LVU192
+	.loc 1 107 2 is_stmt 1 view .LVU192
 	movs	r0, #0
 	bl	nrfx_gpiote_out_set
 .LVL66:
-	.loc 1 107 2 view .LVU193
+	.loc 1 108 2 view .LVU193
 .LBB38:
 .LBI38:
-	.loc 1 48 19 view .LVU194
+	.loc 1 49 19 view .LVU194
 .LBB39:
-	.loc 1 49 2 view .LVU195
-	.loc 1 49 5 is_stmt 0 view .LVU196
+	.loc 1 50 2 view .LVU195
+	.loc 1 50 5 is_stmt 0 view .LVU196
 	cmp	r4, #0
 	blt	.L57
-	.loc 1 51 2 is_stmt 1 view .LVU197
-	.loc 1 51 5 is_stmt 0 view .LVU198
-	cmp	r4, #90
+	.loc 1 52 2 is_stmt 1 view .LVU197
+	.loc 1 52 5 is_stmt 0 view .LVU198
+	cmp	r4, #20
 	ble	.L56
-	.loc 1 52 8 view .LVU199
-	movs	r4, #90
+	.loc 1 53 8 view .LVU199
+	movs	r4, #20
 .LVL67:
-	.loc 1 53 2 is_stmt 1 view .LVU200
-	.loc 1 53 2 is_stmt 0 view .LVU201
+	.loc 1 54 2 is_stmt 1 view .LVU200
+	.loc 1 54 2 is_stmt 0 view .LVU201
 .LBE39:
 .LBE38:
-	.loc 1 108 2 is_stmt 1 view .LVU202
-	.loc 1 108 8 is_stmt 0 view .LVU203
+	.loc 1 109 2 is_stmt 1 view .LVU202
+	.loc 1 109 8 is_stmt 0 view .LVU203
 	b	.L56
 .LVL68:
 .L57:
 .LBB41:
 .LBB40:
-	.loc 1 50 8 view .LVU204
+	.loc 1 51 8 view .LVU204
 	movs	r4, #0
 .LVL69:
 .L56:
-	.loc 1 50 8 view .LVU205
+	.loc 1 51 8 view .LVU205
 .LBE40:
 .LBE41:
-	.loc 1 108 66 is_stmt 1 discriminator 1 view .LVU206
-	.loc 1 108 8 discriminator 1 view .LVU207
-	.loc 1 108 9 is_stmt 0 discriminator 1 view .LVU208
+	.loc 1 109 66 is_stmt 1 discriminator 1 view .LVU206
+	.loc 1 109 8 discriminator 1 view .LVU207
+	.loc 1 109 9 is_stmt 0 discriminator 1 view .LVU208
 	uxth	r2, r4
 	movs	r1, #1
 	ldr	r0, .L60
 	bl	app_pwm_channel_duty_set
 .LVL70:
-	.loc 1 108 8 discriminator 1 view .LVU209
+	.loc 1 109 8 discriminator 1 view .LVU209
 	cmp	r0, #17
 	beq	.L56
-	.loc 1 109 9 is_stmt 1 view .LVU210
-	.loc 1 109 28 is_stmt 0 view .LVU211
+	.loc 1 110 5 is_stmt 1 view .LVU210
+	.loc 1 110 24 is_stmt 0 view .LVU211
 	ldr	r3, .L60+4
 	mov	r2, #-1
 	str	r2, [r3]
-	.loc 1 110 1 view .LVU212
+	.loc 1 111 1 view .LVU212
 	pop	{r4, pc}
 .L61:
 	.align	2
@@ -778,36 +778,36 @@ motor_left_backward:
 	.type	motor_stop, %function
 motor_stop:
 .LFB326:
-	.loc 1 112 19 is_stmt 1 view -0
+	.loc 1 113 19 is_stmt 1 view -0
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
 	push	{r3, lr}
 .LCFI10:
 .L63:
-	.loc 1 113 63 discriminator 1 view .LVU214
-	.loc 1 113 8 discriminator 1 view .LVU215
-	.loc 1 113 9 is_stmt 0 discriminator 1 view .LVU216
+	.loc 1 114 63 discriminator 1 view .LVU214
+	.loc 1 114 8 discriminator 1 view .LVU215
+	.loc 1 114 9 is_stmt 0 discriminator 1 view .LVU216
 	movs	r2, #0
 	mov	r1, r2
 	ldr	r0, .L66
 	bl	app_pwm_channel_duty_set
 .LVL71:
-	.loc 1 113 8 discriminator 1 view .LVU217
+	.loc 1 114 8 discriminator 1 view .LVU217
 	cmp	r0, #17
 	beq	.L63
 .L64:
-	.loc 1 114 63 is_stmt 1 discriminator 1 view .LVU218
-	.loc 1 114 8 discriminator 1 view .LVU219
-	.loc 1 114 9 is_stmt 0 discriminator 1 view .LVU220
+	.loc 1 115 63 is_stmt 1 discriminator 1 view .LVU218
+	.loc 1 115 8 discriminator 1 view .LVU219
+	.loc 1 115 9 is_stmt 0 discriminator 1 view .LVU220
 	movs	r2, #0
 	movs	r1, #1
 	ldr	r0, .L66
 	bl	app_pwm_channel_duty_set
 .LVL72:
-	.loc 1 114 8 discriminator 1 view .LVU221
+	.loc 1 115 8 discriminator 1 view .LVU221
 	cmp	r0, #17
 	beq	.L64
-	.loc 1 115 1 view .LVU222
+	.loc 1 116 1 view .LVU222
 	pop	{r3, pc}
 .L67:
 	.align	2
@@ -825,24 +825,24 @@ motor_stop:
 	.type	motor_right_stop, %function
 motor_right_stop:
 .LFB327:
-	.loc 1 117 25 is_stmt 1 view -0
+	.loc 1 118 25 is_stmt 1 view -0
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
 	push	{r3, lr}
 .LCFI11:
 .L69:
-	.loc 1 118 63 discriminator 1 view .LVU224
-	.loc 1 118 8 discriminator 1 view .LVU225
-	.loc 1 118 9 is_stmt 0 discriminator 1 view .LVU226
+	.loc 1 119 63 discriminator 1 view .LVU224
+	.loc 1 119 8 discriminator 1 view .LVU225
+	.loc 1 119 9 is_stmt 0 discriminator 1 view .LVU226
 	movs	r2, #0
 	mov	r1, r2
 	ldr	r0, .L71
 	bl	app_pwm_channel_duty_set
 .LVL73:
-	.loc 1 118 8 discriminator 1 view .LVU227
+	.loc 1 119 8 discriminator 1 view .LVU227
 	cmp	r0, #17
 	beq	.L69
-	.loc 1 119 1 view .LVU228
+	.loc 1 120 1 view .LVU228
 	pop	{r3, pc}
 .L72:
 	.align	2
@@ -860,24 +860,24 @@ motor_right_stop:
 	.type	motor_left_stop, %function
 motor_left_stop:
 .LFB328:
-	.loc 1 121 24 is_stmt 1 view -0
+	.loc 1 122 24 is_stmt 1 view -0
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
 	push	{r3, lr}
 .LCFI12:
 .L74:
-	.loc 1 122 63 discriminator 1 view .LVU230
-	.loc 1 122 8 discriminator 1 view .LVU231
-	.loc 1 122 9 is_stmt 0 discriminator 1 view .LVU232
+	.loc 1 123 63 discriminator 1 view .LVU230
+	.loc 1 123 8 discriminator 1 view .LVU231
+	.loc 1 123 9 is_stmt 0 discriminator 1 view .LVU232
 	movs	r2, #0
 	movs	r1, #1
 	ldr	r0, .L76
 	bl	app_pwm_channel_duty_set
 .LVL74:
-	.loc 1 122 8 discriminator 1 view .LVU233
+	.loc 1 123 8 discriminator 1 view .LVU233
 	cmp	r0, #17
 	beq	.L74
-	.loc 1 123 1 view .LVU234
+	.loc 1 124 1 view .LVU234
 	pop	{r3, pc}
 .L77:
 	.align	2
@@ -895,53 +895,53 @@ motor_left_stop:
 	.type	motor_brake, %function
 motor_brake:
 .LFB329:
-	.loc 1 125 20 is_stmt 1 view -0
+	.loc 1 126 20 is_stmt 1 view -0
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
 	push	{r3, lr}
 .LCFI13:
-	.loc 1 126 2 view .LVU236
+	.loc 1 127 2 view .LVU236
 	movs	r0, #3
 	bl	nrfx_gpiote_out_set
 .LVL75:
-	.loc 1 127 2 view .LVU237
+	.loc 1 128 2 view .LVU237
 	movs	r0, #4
 	bl	nrfx_gpiote_out_set
 .LVL76:
-	.loc 1 128 2 view .LVU238
+	.loc 1 129 2 view .LVU238
 	movs	r0, #1
 	bl	nrfx_gpiote_out_set
 .LVL77:
-	.loc 1 129 2 view .LVU239
+	.loc 1 130 2 view .LVU239
 	movs	r0, #0
 	bl	nrfx_gpiote_out_set
 .LVL78:
-	.loc 1 130 2 view .LVU240
+	.loc 1 131 2 view .LVU240
 .L79:
-	.loc 1 130 63 discriminator 1 view .LVU241
-	.loc 1 130 8 discriminator 1 view .LVU242
-	.loc 1 130 9 is_stmt 0 discriminator 1 view .LVU243
+	.loc 1 131 63 discriminator 1 view .LVU241
+	.loc 1 131 8 discriminator 1 view .LVU242
+	.loc 1 131 9 is_stmt 0 discriminator 1 view .LVU243
 	movs	r2, #0
 	mov	r1, r2
 	ldr	r0, .L82
 	bl	app_pwm_channel_duty_set
 .LVL79:
-	.loc 1 130 8 discriminator 1 view .LVU244
+	.loc 1 131 8 discriminator 1 view .LVU244
 	cmp	r0, #17
 	beq	.L79
 .L80:
-	.loc 1 131 63 is_stmt 1 discriminator 1 view .LVU245
-	.loc 1 131 8 discriminator 1 view .LVU246
-	.loc 1 131 9 is_stmt 0 discriminator 1 view .LVU247
+	.loc 1 132 63 is_stmt 1 discriminator 1 view .LVU245
+	.loc 1 132 8 discriminator 1 view .LVU246
+	.loc 1 132 9 is_stmt 0 discriminator 1 view .LVU247
 	movs	r2, #0
 	movs	r1, #1
 	ldr	r0, .L82
 	bl	app_pwm_channel_duty_set
 .LVL80:
-	.loc 1 131 8 discriminator 1 view .LVU248
+	.loc 1 132 8 discriminator 1 view .LVU248
 	cmp	r0, #17
 	beq	.L80
-	.loc 1 132 1 view .LVU249
+	.loc 1 133 1 view .LVU249
 	pop	{r3, pc}
 .L83:
 	.align	2
@@ -959,33 +959,33 @@ motor_brake:
 	.type	motor_brake_left, %function
 motor_brake_left:
 .LFB330:
-	.loc 1 134 24 is_stmt 1 view -0
+	.loc 1 135 24 is_stmt 1 view -0
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
 	push	{r3, lr}
 .LCFI14:
-	.loc 1 135 3 view .LVU251
+	.loc 1 136 3 view .LVU251
 	movs	r0, #1
 	bl	nrfx_gpiote_out_set
 .LVL81:
-	.loc 1 136 2 view .LVU252
+	.loc 1 137 2 view .LVU252
 	movs	r0, #0
 	bl	nrfx_gpiote_out_set
 .LVL82:
-	.loc 1 137 2 view .LVU253
+	.loc 1 138 2 view .LVU253
 .L85:
-	.loc 1 137 63 discriminator 1 view .LVU254
-	.loc 1 137 8 discriminator 1 view .LVU255
-	.loc 1 137 9 is_stmt 0 discriminator 1 view .LVU256
+	.loc 1 138 63 discriminator 1 view .LVU254
+	.loc 1 138 8 discriminator 1 view .LVU255
+	.loc 1 138 9 is_stmt 0 discriminator 1 view .LVU256
 	movs	r2, #0
 	movs	r1, #1
 	ldr	r0, .L87
 	bl	app_pwm_channel_duty_set
 .LVL83:
-	.loc 1 137 8 discriminator 1 view .LVU257
+	.loc 1 138 8 discriminator 1 view .LVU257
 	cmp	r0, #17
 	beq	.L85
-	.loc 1 138 1 view .LVU258
+	.loc 1 139 1 view .LVU258
 	pop	{r3, pc}
 .L88:
 	.align	2
@@ -1003,33 +1003,33 @@ motor_brake_left:
 	.type	motor_brake_right, %function
 motor_brake_right:
 .LFB331:
-	.loc 1 140 25 is_stmt 1 view -0
+	.loc 1 141 25 is_stmt 1 view -0
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
 	push	{r3, lr}
 .LCFI15:
-	.loc 1 141 8 view .LVU260
+	.loc 1 142 5 view .LVU260
 	movs	r0, #3
 	bl	nrfx_gpiote_out_set
 .LVL84:
-	.loc 1 142 2 view .LVU261
+	.loc 1 143 2 view .LVU261
 	movs	r0, #4
 	bl	nrfx_gpiote_out_set
 .LVL85:
-	.loc 1 143 2 view .LVU262
+	.loc 1 144 2 view .LVU262
 .L90:
-	.loc 1 143 63 discriminator 1 view .LVU263
-	.loc 1 143 8 discriminator 1 view .LVU264
-	.loc 1 143 9 is_stmt 0 discriminator 1 view .LVU265
+	.loc 1 144 63 discriminator 1 view .LVU263
+	.loc 1 144 8 discriminator 1 view .LVU264
+	.loc 1 144 9 is_stmt 0 discriminator 1 view .LVU265
 	movs	r2, #0
 	mov	r1, r2
 	ldr	r0, .L92
 	bl	app_pwm_channel_duty_set
 .LVL86:
-	.loc 1 143 8 discriminator 1 view .LVU266
+	.loc 1 144 8 discriminator 1 view .LVU266
 	cmp	r0, #17
 	beq	.L90
-	.loc 1 144 1 view .LVU267
+	.loc 1 145 1 view .LVU267
 	pop	{r3, pc}
 .L93:
 	.align	2
@@ -1048,67 +1048,67 @@ motor_brake_right:
 vMotorMovementSwitch:
 .LVL87:
 .LFB332:
-	.loc 1 146 57 is_stmt 1 view -0
+	.loc 1 147 57 is_stmt 1 view -0
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
-	.loc 1 146 57 is_stmt 0 view .LVU269
+	.loc 1 147 57 is_stmt 0 view .LVU269
 	push	{r4, lr}
 .LCFI16:
 	mov	r4, r1
-	.loc 1 147 5 is_stmt 1 view .LVU270
-	.loc 1 147 8 is_stmt 0 view .LVU271
+	.loc 1 148 5 is_stmt 1 view .LVU270
+	.loc 1 148 8 is_stmt 0 view .LVU271
 	cmp	r0, #0
-	.loc 1 147 8 view .LVU272
+	.loc 1 148 8 view .LVU272
 	bgt	.L102
-	.loc 1 148 14 is_stmt 1 view .LVU273
-	.loc 1 148 16 is_stmt 0 view .LVU274
+	.loc 1 150 11 is_stmt 1 view .LVU273
+	.loc 1 150 13 is_stmt 0 view .LVU274
 	cmp	r0, #0
 	blt	.L103
-	.loc 1 149 13 is_stmt 1 view .LVU275
+	.loc 1 153 3 is_stmt 1 view .LVU275
 	bl	motor_brake_left
 .LVL88:
-	.loc 1 149 13 is_stmt 0 view .LVU276
+	.loc 1 153 3 is_stmt 0 view .LVU276
 	b	.L96
 .LVL89:
 .L102:
-	.loc 1 147 24 is_stmt 1 discriminator 1 view .LVU277
+	.loc 1 149 3 is_stmt 1 view .LVU277
 	bl	motor_left_forward
 .LVL90:
 .L96:
-	.loc 1 152 5 view .LVU278
-	.loc 1 152 8 is_stmt 0 view .LVU279
+	.loc 1 156 5 view .LVU278
+	.loc 1 156 8 is_stmt 0 view .LVU279
 	cmp	r4, #0
 	bgt	.L104
-	.loc 1 155 14 is_stmt 1 view .LVU280
-	.loc 1 155 17 is_stmt 0 view .LVU281
+	.loc 1 158 11 is_stmt 1 view .LVU280
+	.loc 1 158 13 is_stmt 0 view .LVU281
 	cmp	r4, #0
 	blt	.L105
-	.loc 1 156 21 is_stmt 1 view .LVU282
+	.loc 1 161 3 is_stmt 1 view .LVU282
 	bl	motor_brake_right
 .LVL91:
-	.loc 1 158 1 is_stmt 0 view .LVU283
+	.loc 1 163 1 is_stmt 0 view .LVU283
 	b	.L94
 .LVL92:
 .L103:
-	.loc 1 148 32 is_stmt 1 discriminator 1 view .LVU284
+	.loc 1 151 3 is_stmt 1 view .LVU284
 	rsbs	r0, r0, #0
 .LVL93:
-	.loc 1 148 32 is_stmt 0 discriminator 1 view .LVU285
+	.loc 1 151 3 is_stmt 0 view .LVU285
 	bl	motor_left_backward
 .LVL94:
-	.loc 1 148 32 discriminator 1 view .LVU286
+	.loc 1 151 3 view .LVU286
 	b	.L96
 .L104:
-	.loc 1 153 3 is_stmt 1 view .LVU287
+	.loc 1 157 3 is_stmt 1 view .LVU287
 	mov	r0, r4
 	bl	motor_right_forward
 .LVL95:
 .L94:
-	.loc 1 158 1 is_stmt 0 view .LVU288
+	.loc 1 163 1 is_stmt 0 view .LVU288
 	pop	{r4, pc}
 .LVL96:
 .L105:
-	.loc 1 155 35 is_stmt 1 discriminator 1 view .LVU289
+	.loc 1 159 3 is_stmt 1 view .LVU289
 	rsbs	r0, r4, #0
 	bl	motor_right_backward
 .LVL97:
@@ -3362,7 +3362,7 @@ m_pwm_PWM1_timer:
 	.file 19 "../../../../../../components/libraries/util/app_error.h"
 	.section	.debug_info,"",%progbits
 .Ldebug_info0:
-	.4byte	0xc99
+	.4byte	0xc9a
 	.2byte	0x4
 	.4byte	.Ldebug_abbrev0
 	.byte	0x4
@@ -3867,19 +3867,19 @@ m_pwm_PWM1_timer:
 	.uleb128 0x21
 	.4byte	.LASF211
 	.byte	0x1
-	.byte	0x12
+	.byte	0x13
 	.byte	0xc
 	.4byte	0x67
 	.uleb128 0x21
 	.4byte	.LASF212
 	.byte	0x1
-	.byte	0x13
+	.byte	0x14
 	.byte	0xc
 	.4byte	0x67
 	.uleb128 0x23
 	.4byte	.LASF217
 	.byte	0x1
-	.byte	0x92
+	.byte	0x93
 	.byte	0x6
 	.4byte	.LFB332
 	.4byte	.LFE332-.LFB332
@@ -3889,7 +3889,7 @@ m_pwm_PWM1_timer:
 	.uleb128 0x24
 	.4byte	.LASF213
 	.byte	0x1
-	.byte	0x92
+	.byte	0x93
 	.byte	0x1f
 	.4byte	0x67
 	.4byte	.LLST15
@@ -3897,7 +3897,7 @@ m_pwm_PWM1_timer:
 	.uleb128 0x24
 	.4byte	.LASF214
 	.byte	0x1
-	.byte	0x92
+	.byte	0x93
 	.byte	0x2e
 	.4byte	0x67
 	.4byte	.LLST16
@@ -3950,7 +3950,7 @@ m_pwm_PWM1_timer:
 	.uleb128 0x29
 	.4byte	.LASF215
 	.byte	0x1
-	.byte	0x8c
+	.byte	0x8d
 	.byte	0x6
 	.4byte	.LFB331
 	.4byte	.LFE331-.LFB331
@@ -3959,7 +3959,7 @@ m_pwm_PWM1_timer:
 	.4byte	0x4b8
 	.uleb128 0x26
 	.4byte	.LVL84
-	.4byte	0xc2f
+	.4byte	0xc30
 	.4byte	0x487
 	.uleb128 0x27
 	.uleb128 0x1
@@ -3969,7 +3969,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL85
-	.4byte	0xc2f
+	.4byte	0xc30
 	.4byte	0x49a
 	.uleb128 0x27
 	.uleb128 0x1
@@ -3979,7 +3979,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x28
 	.4byte	.LVL86
-	.4byte	0xc3b
+	.4byte	0xc3c
 	.uleb128 0x27
 	.uleb128 0x1
 	.byte	0x50
@@ -4001,7 +4001,7 @@ m_pwm_PWM1_timer:
 	.uleb128 0x29
 	.4byte	.LASF216
 	.byte	0x1
-	.byte	0x86
+	.byte	0x87
 	.byte	0x6
 	.4byte	.LFB330
 	.4byte	.LFE330-.LFB330
@@ -4010,7 +4010,7 @@ m_pwm_PWM1_timer:
 	.4byte	0x512
 	.uleb128 0x26
 	.4byte	.LVL81
-	.4byte	0xc2f
+	.4byte	0xc30
 	.4byte	0x4e1
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4020,7 +4020,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL82
-	.4byte	0xc2f
+	.4byte	0xc30
 	.4byte	0x4f4
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4030,7 +4030,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x28
 	.4byte	.LVL83
-	.4byte	0xc3b
+	.4byte	0xc3c
 	.uleb128 0x27
 	.uleb128 0x1
 	.byte	0x50
@@ -4052,7 +4052,7 @@ m_pwm_PWM1_timer:
 	.uleb128 0x23
 	.4byte	.LASF218
 	.byte	0x1
-	.byte	0x7d
+	.byte	0x7e
 	.byte	0x6
 	.4byte	.LFB329
 	.4byte	.LFE329-.LFB329
@@ -4061,7 +4061,7 @@ m_pwm_PWM1_timer:
 	.4byte	0x5b3
 	.uleb128 0x26
 	.4byte	.LVL75
-	.4byte	0xc2f
+	.4byte	0xc30
 	.4byte	0x53b
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4071,7 +4071,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL76
-	.4byte	0xc2f
+	.4byte	0xc30
 	.4byte	0x54e
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4081,7 +4081,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL77
-	.4byte	0xc2f
+	.4byte	0xc30
 	.4byte	0x561
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4091,7 +4091,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL78
-	.4byte	0xc2f
+	.4byte	0xc30
 	.4byte	0x574
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4101,7 +4101,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL79
-	.4byte	0xc3b
+	.4byte	0xc3c
 	.4byte	0x595
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4122,7 +4122,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x28
 	.4byte	.LVL80
-	.4byte	0xc3b
+	.4byte	0xc3c
 	.uleb128 0x27
 	.uleb128 0x1
 	.byte	0x50
@@ -4144,7 +4144,7 @@ m_pwm_PWM1_timer:
 	.uleb128 0x29
 	.4byte	.LASF219
 	.byte	0x1
-	.byte	0x79
+	.byte	0x7a
 	.byte	0x6
 	.4byte	.LFB328
 	.4byte	.LFE328-.LFB328
@@ -4153,7 +4153,7 @@ m_pwm_PWM1_timer:
 	.4byte	0x5e7
 	.uleb128 0x28
 	.4byte	.LVL74
-	.4byte	0xc3b
+	.4byte	0xc3c
 	.uleb128 0x27
 	.uleb128 0x1
 	.byte	0x50
@@ -4175,7 +4175,7 @@ m_pwm_PWM1_timer:
 	.uleb128 0x29
 	.4byte	.LASF220
 	.byte	0x1
-	.byte	0x75
+	.byte	0x76
 	.byte	0x6
 	.4byte	.LFB327
 	.4byte	.LFE327-.LFB327
@@ -4184,7 +4184,7 @@ m_pwm_PWM1_timer:
 	.4byte	0x61b
 	.uleb128 0x28
 	.4byte	.LVL73
-	.4byte	0xc3b
+	.4byte	0xc3c
 	.uleb128 0x27
 	.uleb128 0x1
 	.byte	0x50
@@ -4206,7 +4206,7 @@ m_pwm_PWM1_timer:
 	.uleb128 0x23
 	.4byte	.LASF221
 	.byte	0x1
-	.byte	0x70
+	.byte	0x71
 	.byte	0x6
 	.4byte	.LFB326
 	.4byte	.LFE326-.LFB326
@@ -4215,7 +4215,7 @@ m_pwm_PWM1_timer:
 	.4byte	0x670
 	.uleb128 0x26
 	.4byte	.LVL71
-	.4byte	0xc3b
+	.4byte	0xc3c
 	.4byte	0x652
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4236,7 +4236,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x28
 	.4byte	.LVL72
-	.4byte	0xc3b
+	.4byte	0xc3c
 	.uleb128 0x27
 	.uleb128 0x1
 	.byte	0x50
@@ -4258,7 +4258,7 @@ m_pwm_PWM1_timer:
 	.uleb128 0x23
 	.4byte	.LASF222
 	.byte	0x1
-	.byte	0x68
+	.byte	0x69
 	.byte	0x6
 	.4byte	.LFB325
 	.4byte	.LFE325-.LFB325
@@ -4268,7 +4268,7 @@ m_pwm_PWM1_timer:
 	.uleb128 0x24
 	.4byte	.LASF223
 	.byte	0x1
-	.byte	0x68
+	.byte	0x69
 	.byte	0x1e
 	.4byte	0x67
 	.4byte	.LLST13
@@ -4279,7 +4279,7 @@ m_pwm_PWM1_timer:
 	.byte	.LVU194
 	.4byte	.Ldebug_ranges0+0xa8
 	.byte	0x1
-	.byte	0x6b
+	.byte	0x6c
 	.byte	0x9
 	.4byte	0x6bd
 	.uleb128 0x2b
@@ -4289,7 +4289,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL65
-	.4byte	0xc48
+	.4byte	0xc49
 	.4byte	0x6d0
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4299,7 +4299,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL66
-	.4byte	0xc2f
+	.4byte	0xc30
 	.4byte	0x6e3
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4309,7 +4309,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x28
 	.4byte	.LVL70
-	.4byte	0xc3b
+	.4byte	0xc3c
 	.uleb128 0x27
 	.uleb128 0x1
 	.byte	0x50
@@ -4332,7 +4332,7 @@ m_pwm_PWM1_timer:
 	.uleb128 0x23
 	.4byte	.LASF224
 	.byte	0x1
-	.byte	0x60
+	.byte	0x61
 	.byte	0x6
 	.4byte	.LFB324
 	.4byte	.LFE324-.LFB324
@@ -4342,7 +4342,7 @@ m_pwm_PWM1_timer:
 	.uleb128 0x24
 	.4byte	.LASF223
 	.byte	0x1
-	.byte	0x60
+	.byte	0x61
 	.byte	0x1f
 	.4byte	0x67
 	.4byte	.LLST11
@@ -4353,7 +4353,7 @@ m_pwm_PWM1_timer:
 	.byte	.LVU169
 	.4byte	.Ldebug_ranges0+0x90
 	.byte	0x1
-	.byte	0x63
+	.byte	0x64
 	.byte	0x9
 	.4byte	0x74f
 	.uleb128 0x2b
@@ -4363,7 +4363,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL57
-	.4byte	0xc48
+	.4byte	0xc49
 	.4byte	0x762
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4373,7 +4373,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL58
-	.4byte	0xc2f
+	.4byte	0xc30
 	.4byte	0x775
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4383,7 +4383,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x28
 	.4byte	.LVL62
-	.4byte	0xc3b
+	.4byte	0xc3c
 	.uleb128 0x27
 	.uleb128 0x1
 	.byte	0x50
@@ -4406,7 +4406,7 @@ m_pwm_PWM1_timer:
 	.uleb128 0x23
 	.4byte	.LASF225
 	.byte	0x1
-	.byte	0x54
+	.byte	0x55
 	.byte	0x6
 	.4byte	.LFB323
 	.4byte	.LFE323-.LFB323
@@ -4416,7 +4416,7 @@ m_pwm_PWM1_timer:
 	.uleb128 0x24
 	.4byte	.LASF223
 	.byte	0x1
-	.byte	0x54
+	.byte	0x55
 	.byte	0x19
 	.4byte	0x67
 	.4byte	.LLST9
@@ -4427,7 +4427,7 @@ m_pwm_PWM1_timer:
 	.byte	.LVU138
 	.4byte	.Ldebug_ranges0+0x78
 	.byte	0x1
-	.byte	0x59
+	.byte	0x5a
 	.byte	0x9
 	.4byte	0x7e1
 	.uleb128 0x2b
@@ -4437,7 +4437,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL46
-	.4byte	0xc48
+	.4byte	0xc49
 	.4byte	0x7f4
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4447,7 +4447,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL47
-	.4byte	0xc2f
+	.4byte	0xc30
 	.4byte	0x807
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4457,7 +4457,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL48
-	.4byte	0xc48
+	.4byte	0xc49
 	.4byte	0x81a
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4467,7 +4467,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL49
-	.4byte	0xc2f
+	.4byte	0xc30
 	.4byte	0x82d
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4477,7 +4477,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL53
-	.4byte	0xc3b
+	.4byte	0xc3c
 	.4byte	0x84f
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4499,7 +4499,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x28
 	.4byte	.LVL54
-	.4byte	0xc3b
+	.4byte	0xc3c
 	.uleb128 0x27
 	.uleb128 0x1
 	.byte	0x50
@@ -4522,7 +4522,7 @@ m_pwm_PWM1_timer:
 	.uleb128 0x23
 	.4byte	.LASF226
 	.byte	0x1
-	.byte	0x4c
+	.byte	0x4d
 	.byte	0x6
 	.4byte	.LFB322
 	.4byte	.LFE322-.LFB322
@@ -4532,7 +4532,7 @@ m_pwm_PWM1_timer:
 	.uleb128 0x24
 	.4byte	.LASF223
 	.byte	0x1
-	.byte	0x4c
+	.byte	0x4d
 	.byte	0x1d
 	.4byte	0x67
 	.4byte	.LLST7
@@ -4543,7 +4543,7 @@ m_pwm_PWM1_timer:
 	.byte	.LVU111
 	.4byte	.Ldebug_ranges0+0x60
 	.byte	0x1
-	.byte	0x4f
+	.byte	0x50
 	.byte	0x9
 	.4byte	0x8bb
 	.uleb128 0x2b
@@ -4553,7 +4553,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL38
-	.4byte	0xc2f
+	.4byte	0xc30
 	.4byte	0x8ce
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4563,7 +4563,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL39
-	.4byte	0xc48
+	.4byte	0xc49
 	.4byte	0x8e1
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4573,7 +4573,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x28
 	.4byte	.LVL43
-	.4byte	0xc3b
+	.4byte	0xc3c
 	.uleb128 0x27
 	.uleb128 0x1
 	.byte	0x50
@@ -4596,7 +4596,7 @@ m_pwm_PWM1_timer:
 	.uleb128 0x23
 	.4byte	.LASF227
 	.byte	0x1
-	.byte	0x44
+	.byte	0x45
 	.byte	0x6
 	.4byte	.LFB321
 	.4byte	.LFE321-.LFB321
@@ -4606,7 +4606,7 @@ m_pwm_PWM1_timer:
 	.uleb128 0x24
 	.4byte	.LASF223
 	.byte	0x1
-	.byte	0x44
+	.byte	0x45
 	.byte	0x1e
 	.4byte	0x67
 	.4byte	.LLST5
@@ -4617,7 +4617,7 @@ m_pwm_PWM1_timer:
 	.byte	.LVU86
 	.4byte	.Ldebug_ranges0+0x48
 	.byte	0x1
-	.byte	0x47
+	.byte	0x48
 	.byte	0x9
 	.4byte	0x94d
 	.uleb128 0x2b
@@ -4627,7 +4627,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL30
-	.4byte	0xc2f
+	.4byte	0xc30
 	.4byte	0x960
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4637,7 +4637,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL31
-	.4byte	0xc48
+	.4byte	0xc49
 	.4byte	0x973
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4647,7 +4647,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x28
 	.4byte	.LVL35
-	.4byte	0xc3b
+	.4byte	0xc3c
 	.uleb128 0x27
 	.uleb128 0x1
 	.byte	0x50
@@ -4670,7 +4670,7 @@ m_pwm_PWM1_timer:
 	.uleb128 0x23
 	.4byte	.LASF228
 	.byte	0x1
-	.byte	0x38
+	.byte	0x39
 	.byte	0x6
 	.4byte	.LFB320
 	.4byte	.LFE320-.LFB320
@@ -4680,7 +4680,7 @@ m_pwm_PWM1_timer:
 	.uleb128 0x24
 	.4byte	.LASF223
 	.byte	0x1
-	.byte	0x38
+	.byte	0x39
 	.byte	0x18
 	.4byte	0x67
 	.4byte	.LLST3
@@ -4691,7 +4691,7 @@ m_pwm_PWM1_timer:
 	.byte	.LVU55
 	.4byte	.Ldebug_ranges0+0x30
 	.byte	0x1
-	.byte	0x3d
+	.byte	0x3e
 	.byte	0x9
 	.4byte	0x9df
 	.uleb128 0x2b
@@ -4701,7 +4701,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL19
-	.4byte	0xc2f
+	.4byte	0xc30
 	.4byte	0x9f2
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4711,7 +4711,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL20
-	.4byte	0xc48
+	.4byte	0xc49
 	.4byte	0xa05
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4721,7 +4721,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL21
-	.4byte	0xc2f
+	.4byte	0xc30
 	.4byte	0xa18
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4731,7 +4731,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL22
-	.4byte	0xc48
+	.4byte	0xc49
 	.4byte	0xa2b
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4741,7 +4741,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL26
-	.4byte	0xc3b
+	.4byte	0xc3c
 	.4byte	0xa4d
 	.uleb128 0x27
 	.uleb128 0x1
@@ -4763,7 +4763,7 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x28
 	.4byte	.LVL27
-	.4byte	0xc3b
+	.4byte	0xc3c
 	.uleb128 0x27
 	.uleb128 0x1
 	.byte	0x50
@@ -4786,7 +4786,7 @@ m_pwm_PWM1_timer:
 	.uleb128 0x2c
 	.4byte	.LASF247
 	.byte	0x1
-	.byte	0x30
+	.byte	0x31
 	.byte	0x13
 	.4byte	0x67
 	.byte	0x3
@@ -4794,24 +4794,24 @@ m_pwm_PWM1_timer:
 	.uleb128 0x2d
 	.4byte	.LASF223
 	.byte	0x1
-	.byte	0x30
+	.byte	0x31
 	.byte	0x25
 	.4byte	0x67
 	.byte	0
 	.uleb128 0x29
 	.4byte	.LASF229
 	.byte	0x1
-	.byte	0x1a
+	.byte	0x1b
 	.byte	0x6
 	.4byte	.LFB318
 	.4byte	.LFE318-.LFB318
 	.uleb128 0x1
 	.byte	0x9c
-	.4byte	0xc0a
+	.4byte	0xc0b
 	.uleb128 0x2e
 	.ascii	"err\000"
 	.byte	0x1
-	.byte	0x1b
+	.byte	0x1c
 	.byte	0xd
 	.4byte	0x302
 	.4byte	.LLST0
@@ -4819,7 +4819,7 @@ m_pwm_PWM1_timer:
 	.uleb128 0x2f
 	.4byte	.LASF230
 	.byte	0x1
-	.byte	0x21
+	.byte	0x22
 	.byte	0x1b
 	.4byte	0x315
 	.uleb128 0x2
@@ -4828,7 +4828,7 @@ m_pwm_PWM1_timer:
 	.uleb128 0x2f
 	.4byte	.LASF231
 	.byte	0x1
-	.byte	0x22
+	.byte	0x23
 	.byte	0x1b
 	.4byte	0x315
 	.uleb128 0x2
@@ -4837,7 +4837,7 @@ m_pwm_PWM1_timer:
 	.uleb128 0x2f
 	.4byte	.LASF232
 	.byte	0x1
-	.byte	0x28
+	.byte	0x29
 	.byte	0x13
 	.4byte	0x346
 	.uleb128 0x2
@@ -4845,18 +4845,18 @@ m_pwm_PWM1_timer:
 	.sleb128 -44
 	.uleb128 0x30
 	.4byte	.Ldebug_ranges0+0
-	.4byte	0xb1d
+	.4byte	0xb1e
 	.uleb128 0x31
 	.4byte	.LASF233
 	.byte	0x1
-	.byte	0x1f
+	.byte	0x20
 	.byte	0x16
 	.4byte	0x7a
 	.4byte	.LLST1
 	.4byte	.LVUS1
 	.uleb128 0x28
 	.4byte	.LVL14
-	.4byte	0xc54
+	.4byte	0xc55
 	.uleb128 0x27
 	.uleb128 0x1
 	.byte	0x50
@@ -4866,8 +4866,9 @@ m_pwm_PWM1_timer:
 	.uleb128 0x27
 	.uleb128 0x1
 	.byte	0x51
-	.uleb128 0x1
-	.byte	0x4f
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x20
 	.uleb128 0x27
 	.uleb128 0x1
 	.byte	0x52
@@ -4878,24 +4879,24 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x30
 	.4byte	.Ldebug_ranges0+0x18
-	.4byte	0xb54
+	.4byte	0xb55
 	.uleb128 0x31
 	.4byte	.LASF233
 	.byte	0x1
-	.byte	0x2c
+	.byte	0x2d
 	.byte	0x16
 	.4byte	0x7a
 	.4byte	.LLST2
 	.4byte	.LVUS2
 	.uleb128 0x28
 	.4byte	.LVL16
-	.4byte	0xc54
+	.4byte	0xc55
 	.uleb128 0x27
 	.uleb128 0x1
 	.byte	0x51
 	.uleb128 0x2
 	.byte	0x8
-	.byte	0x2c
+	.byte	0x2d
 	.uleb128 0x27
 	.uleb128 0x1
 	.byte	0x52
@@ -4906,11 +4907,11 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x25
 	.4byte	.LVL1
-	.4byte	0xc60
+	.4byte	0xc61
 	.uleb128 0x26
 	.4byte	.LVL4
-	.4byte	0xc6c
-	.4byte	0xb76
+	.4byte	0xc6d
+	.4byte	0xb77
 	.uleb128 0x27
 	.uleb128 0x1
 	.byte	0x50
@@ -4925,8 +4926,8 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL5
-	.4byte	0xc6c
-	.4byte	0xb8f
+	.4byte	0xc6d
+	.4byte	0xb90
 	.uleb128 0x27
 	.uleb128 0x1
 	.byte	0x50
@@ -4941,8 +4942,8 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL6
-	.4byte	0xc6c
-	.4byte	0xba9
+	.4byte	0xc6d
+	.4byte	0xbaa
 	.uleb128 0x27
 	.uleb128 0x1
 	.byte	0x50
@@ -4958,8 +4959,8 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL7
-	.4byte	0xc6c
-	.4byte	0xbc3
+	.4byte	0xc6d
+	.4byte	0xbc4
 	.uleb128 0x27
 	.uleb128 0x1
 	.byte	0x50
@@ -4975,8 +4976,8 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL8
-	.4byte	0xc78
-	.4byte	0xbe9
+	.4byte	0xc79
+	.4byte	0xbea
 	.uleb128 0x27
 	.uleb128 0x1
 	.byte	0x50
@@ -4998,8 +4999,8 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x26
 	.4byte	.LVL10
-	.4byte	0xc84
-	.4byte	0xc00
+	.4byte	0xc85
+	.4byte	0xc01
 	.uleb128 0x27
 	.uleb128 0x1
 	.byte	0x50
@@ -5009,22 +5010,22 @@ m_pwm_PWM1_timer:
 	.byte	0
 	.uleb128 0x25
 	.4byte	.LVL11
-	.4byte	0xc90
+	.4byte	0xc91
 	.byte	0
 	.uleb128 0x23
 	.4byte	.LASF234
 	.byte	0x1
-	.byte	0x15
+	.byte	0x16
 	.byte	0x6
 	.4byte	.LFB317
 	.4byte	.LFE317-.LFB317
 	.uleb128 0x1
 	.byte	0x9c
-	.4byte	0xc2f
+	.4byte	0xc30
 	.uleb128 0x32
 	.4byte	.LASF248
 	.byte	0x1
-	.byte	0x15
+	.byte	0x16
 	.byte	0x22
 	.4byte	0x6e
 	.uleb128 0x1
@@ -6282,7 +6283,7 @@ m_pwm_PWM1_timer:
 	.4byte	0x29e
 	.2byte	0x2
 	.4byte	.Ldebug_info0
-	.4byte	0xc9d
+	.4byte	0xc9e
 	.4byte	0x2b
 	.ascii	"NRF_GPIOTE_INITIAL_VALUE_LOW\000"
 	.4byte	0x31
@@ -6339,14 +6340,14 @@ m_pwm_PWM1_timer:
 	.ascii	"SATURATE_DUTY\000"
 	.4byte	0xa8a
 	.ascii	"motor_init\000"
-	.4byte	0xc0a
+	.4byte	0xc0b
 	.ascii	"pwm_ready_callback\000"
 	.4byte	0
 	.section	.debug_pubtypes,"",%progbits
 	.4byte	0x226
 	.2byte	0x2
 	.4byte	.Ldebug_info0
-	.4byte	0xc9d
+	.4byte	0xc9e
 	.4byte	0x29
 	.ascii	"signed char\000"
 	.4byte	0x3c
@@ -6540,7 +6541,7 @@ m_pwm_PWM1_timer:
 	.byte	0x3
 	.uleb128 0
 	.uleb128 0x1
-	.file 20 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application\\drivers\\motor.h"
+	.file 20 "C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripheral\\slam_application-master\\drivers\\motor.h"
 	.byte	0x3
 	.uleb128 0x1
 	.uleb128 0x14
@@ -6847,10 +6848,6 @@ m_pwm_PWM1_timer:
 	.ascii	"__RAL_error_decoder_fn_t\000"
 .LASF80:
 	.ascii	"NRF_GPIOTE_POLARITY_HITOLO\000"
-.LASF246:
-	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
-	.ascii	"ripheral\\\\slam_application\\\\pca10040\\\\s132\\\\"
-	.ascii	"ses\000"
 .LASF21:
 	.ascii	"app_pwm_polarity_t\000"
 .LASF141:
@@ -6970,8 +6967,10 @@ m_pwm_PWM1_timer:
 	.ascii	"nrfx_gpiote_out_clear\000"
 .LASF143:
 	.ascii	"n_cs_precedes\000"
-.LASF120:
-	.ascii	"__isctype\000"
+.LASF246:
+	.ascii	"C:\\\\nRF5_SDK_15.0.0_a53641a\\\\examples\\\\ble_pe"
+	.ascii	"ripheral\\\\slam_application-master\\\\pca10040\\\\"
+	.ascii	"s132\\\\ses\000"
 .LASF147:
 	.ascii	"int_p_cs_precedes\000"
 .LASF82:
@@ -6996,6 +6995,9 @@ m_pwm_PWM1_timer:
 	.ascii	"app_pwm_init\000"
 .LASF71:
 	.ascii	"action\000"
+.LASF245:
+	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
+	.ascii	"al\\slam_application-master\\drivers\\motor.c\000"
 .LASF136:
 	.ascii	"mon_grouping\000"
 .LASF123:
@@ -7180,8 +7182,6 @@ m_pwm_PWM1_timer:
 	.ascii	"instance_id\000"
 .LASF188:
 	.ascii	"__RAL_error_decoder_head\000"
-.LASF161:
-	.ascii	"__mbstate_s\000"
 .LASF197:
 	.ascii	"FILE\000"
 .LASF13:
@@ -7254,15 +7254,16 @@ m_pwm_PWM1_timer:
 	.ascii	"stderr\000"
 .LASF177:
 	.ascii	"__RAL_c_locale_month_names\000"
+.LASF120:
+	.ascii	"__isctype\000"
 .LASF156:
 	.ascii	"abbrev_month_names\000"
 .LASF111:
 	.ascii	"__RAL_error_decoder_s\000"
 .LASF187:
 	.ascii	"__RAL_error_decoder_t\000"
-.LASF245:
-	.ascii	"C:\\nRF5_SDK_15.0.0_a53641a\\examples\\ble_peripher"
-	.ascii	"al\\slam_application\\drivers\\motor.c\000"
+.LASF161:
+	.ascii	"__mbstate_s\000"
 .LASF22:
 	.ascii	"uint8_t\000"
 .LASF155:
